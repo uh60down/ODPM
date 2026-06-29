@@ -17,7 +17,7 @@ ODPM treats questions as tools for discovering reality, not a checklist to clear
 
 ## Open Threads (snapshots/002-prd-ontology.md)
 
-- What is ontology? *(resolved — see glossary.md)*
+- What is ontology? *(current best understanding — see glossary.md)*
 - How should ontology evolve across releases?
 - How should ontology be visualized?
 - How should ontology changes be reviewed?
