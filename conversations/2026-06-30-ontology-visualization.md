@@ -2,13 +2,13 @@
 
 Date reviewed: 2026-06-30
 
-Source: https://chatgpt.com/s/m_6a42ec2a6bf48191a0815b2ea4d2b6ea
+Artifact: [Ontology visualization image](assets/2026-06-30-ontology-visualization.png)
 
 ## Context
 
-This shared ChatGPT artifact was titled "Ontology visualization guidance and examples."
+This artifact was titled "Ontology visualization guidance and examples."
 
-The public share exposed a generated visual artifact rather than a full message-by-message transcript. Its embedded data included an image-generation attachment and no available conversation messages. This note preserves the enduring ideas visible from the shared artifact without copying a missing transcript into the repository.
+The available source was a generated visual artifact rather than a full message-by-message transcript. This note preserves the enduring ideas visible from that artifact without copying a transcript into the repository.
 
 The artifact asked how ontology should be visualized in ODPM.
 
