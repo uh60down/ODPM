@@ -19,8 +19,11 @@ The question is not: "Do we know everything?"
 These questions remain active areas for future refinement.
 
 - How should Ontology evolve across releases?
-- How should Ontology be visualized?
 - How should Ontology changes be reviewed?
 - Can Git become the history of understanding?
 - How should Ontology be organized across bounded contexts?
 - How can Chase Understanding be taught to new project members?
+
+## Current Working Answers
+
+- Ontology should start as a glossary plus a lightweight relationship diagram.

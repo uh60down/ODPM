@@ -8,6 +8,7 @@ The project treats product work as a discipline of clarity: framing problems, bu
 
 - `BOOK.md` is the current manuscript spine.
 - `questions.md` preserves foundational and open research questions.
+- `conversations/` preserves source conversations that shaped the framework.
 - `snapshots/` captures dated or numbered states of the thinking.
 - `principles/` holds durable operating principles.
 - `examples/` collects applied cases by domain.
@@ -15,4 +16,4 @@ The project treats product work as a discipline of clarity: framing problems, bu
 
 ## Current Snapshot
 
-Snapshot #003 captures the ODPM ontology model and the repository's knowledge structure.
+Snapshot #004 captures the current approach to ontology visualization.

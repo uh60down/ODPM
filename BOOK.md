@@ -117,7 +117,29 @@ They all consume the same ontology.
 
 ---
 
-## Chapter 5: Chase Understanding
+## Chapter 5: Visualizing Ontology
+
+Ontology should be visible enough to discuss.
+
+But ODPM does not need a heavy modeling tool.
+
+The practical starting point is a glossary plus a lightweight relationship diagram.
+
+The glossary defines the concepts.
+
+The diagram shows the most important relationships.
+
+Together they give both precision and overview.
+
+Different audiences may need different views of the same ontology.
+
+The goal is not the perfect diagram.
+
+The goal is Shared Understanding that can be reviewed, versioned, and improved.
+
+---
+
+## Chapter 6: Chase Understanding
 
 Traditional projects gather requirements.
 
@@ -135,7 +157,7 @@ The first answer is rarely the final understanding.
 
 ---
 
-## Chapter 6: Decision Readiness
+## Chapter 7: Decision Readiness
 
 The goal is not complete understanding.
 
@@ -151,7 +173,7 @@ Or, more simply:
 
 ---
 
-## Chapter 7: Brownfield Projects
+## Chapter 8: Brownfield Projects
 
 Most projects already exist.
 
@@ -173,7 +195,7 @@ Together they reveal the shared model of the world.
 
 ---
 
-## Chapter 8: User Stories Revisited
+## Chapter 9: User Stories Revisited
 
 User stories describe work.
 
@@ -187,7 +209,7 @@ This reduces duplication and improves consistency.
 
 ---
 
-## Chapter 9: The Boss Compass
+## Chapter 10: The Boss Compass
 
 These principles quietly guided the development of ODPM.
 
@@ -200,7 +222,7 @@ These principles quietly guided the development of ODPM.
 
 ---
 
-## Chapter 10: Conversations
+## Chapter 11: Conversations
 
 Artifacts preserve understanding.
 
@@ -214,7 +236,7 @@ Good conversations are where ontology grows.
 
 ---
 
-## Chapter 11: Snapshot Thinking
+## Chapter 12: Snapshot Thinking
 
 Every artifact is a snapshot.
 
