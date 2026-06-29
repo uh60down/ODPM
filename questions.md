@@ -1,29 +1,32 @@
 # Questions
 
-ODPM treats questions as tools for discovering reality, not a checklist to clear. This file collects the open and foundational questions raised across the manuscript so they remain visible rather than lost inside prose.
+ODPM treats questions as tools for discovering reality, not a checklist to clear. This file keeps foundational questions and open research questions visible without burying them inside prose.
 
-## Foundational (BOOK.md)
+## Foundational Questions
+
+These questions are part of the core ODPM model.
 
 - What exists?
 - How are things related?
 - What rules govern this world?
 - Why are we building this?
-
-## Chasing Understanding (principles/chase-understanding.md)
-
 - What would most improve the next decision?
 
-(Explicitly not the question: "Do we know everything?")
+The question is not: "Do we know everything?"
 
-## Open Threads (snapshots/002-prd-ontology.md)
+## Open Research Questions
 
-- What is ontology? *(current best understanding — see glossary.md)*
-- How should ontology evolve across releases?
-- How should ontology be visualized?
-- How should ontology changes be reviewed?
+These questions remain active areas for future refinement.
+
+- How should Ontology evolve across releases?
+- How should Ontology changes be reviewed?
 - Can Git become the history of understanding?
-- How should ontology be organized across bounded contexts?
+- How should Ontology be organized across bounded contexts?
 - How can Chase Understanding be taught to new project members? *(see Core Question Set below)*
+
+## Current Working Answers
+
+- Ontology should start as a glossary plus a lightweight relationship diagram.
 
 ## Core Question Set
 
