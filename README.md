@@ -14,5 +14,4 @@ The project treats product work as a discipline of clarity: framing problems, bu
 
 ## Current Snapshot
 
-Snapshot #002 introduces the PRD ontology: a way to describe product requirements as connected decisions, evidence, risks, constraints, and commitments.
-
+Snapshot #002 places ontology between PRD intent and downstream artifacts as the shared model of the world.

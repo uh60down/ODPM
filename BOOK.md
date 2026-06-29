@@ -15,23 +15,18 @@ ODPM is built on four early principles:
 - Chase understanding: keep moving toward the thing that would change the decision.
 - Shared understanding: create alignment that survives handoff, absence, and pressure.
 
-## 2. PRD Ontology
+## 2. Ontology
 
-A PRD is not only a document. It is a map of decisions.
+Ontology is the shared model of the world.
 
-The PRD ontology describes the parts that make a product requirement useful:
+It sits between PRD intent and every downstream artifact:
 
-- Context: why this matters now.
-- Problem: what needs to change for whom.
-- Evidence: what we know and how strongly we know it.
-- Decision: what has been chosen.
-- Alternatives: what was considered and why it was rejected.
-- Constraints: what boundaries shape the solution.
-- Risks: what could make the decision wrong.
-- Commitments: what teams are now expected to do.
-- Learning plan: what must be observed after the decision.
+- PRD expresses intent.
+- Ontology describes the world behind that intent.
+- Figma, Architecture, APIs, Code, and other artifacts execute that shared understanding.
+
+User stories describe work. Ontology describes the world. Stories should reference ontology rather than duplicate domain knowledge.
 
 ## Next
 
 The manuscript will expand each principle, connect them to examples, and refine the ontology through applied cases.
-
