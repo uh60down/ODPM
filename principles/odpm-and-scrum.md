@@ -56,7 +56,7 @@ A story is Decision Ready when it references the shared ontology.
 
 The question is not only "do we have capacity?"
 
-The question is also "do we have enough shared understanding to act responsibly on this scope?"
+The question is also "is our ontology aligned enough to act responsibly on this scope?"
 
 Decision Readiness applies at the sprint level, not just the story level.
 
@@ -111,7 +111,7 @@ The team keeps fixing symptoms because the shared model was never corrected.
 
 Scrum's ceremonies, cadence, and roles stay intact.
 
-ODPM changes the quality of what enters those ceremonies — stories that reference a shared model instead of each encoding a private one, and retrospectives that update understanding rather than only process.
+ODPM changes the quality of what enters those ceremonies — stories that reference a shared model instead of each encoding a private one, and retrospectives that update the ontology rather than only process.
 
 ---
 

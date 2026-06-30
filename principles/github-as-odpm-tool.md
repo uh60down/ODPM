@@ -14,11 +14,11 @@ ODPM makes that explicit.
 | ------------ | -------------------------- |
 | Issue        | Open Question              |
 | Discussion   | Chase Understanding        |
-| Labels       | Status of Understanding    |
-| Commit       | Snapshot of Understanding  |
+| Labels       | Status of the Ontology     |
+| Commit       | Snapshot of the Ontology   |
 | Pull Request | Proposed Refinement        |
-| Merge        | Shared Understanding       |
-| Git History  | Evolution of Understanding |
+| Merge        | Ontology Aligned           |
+| Git History  | Evolution of the Ontology  |
 
 ---
 
@@ -34,28 +34,28 @@ Discussions are not decisions.
 They are the conversations where understanding grows.
 The thread is the artifact.
 
-**Labels = Status of Understanding**
-Labels make the state of understanding visible.
+**Labels = Status of the Ontology**
+Labels make the state of the ontology visible.
 An idea can be `open-question`, `in-progress`, `landed`.
 The label is not a priority. It is an epistemic status.
 
-**Commit = Snapshot of Understanding**
+**Commit = Snapshot of the Ontology**
 Every commit captures the team's current best expression of reality.
 Not perfection. A snapshot.
-Git versions code. ODPM versions understanding.
+Git versions code. ODPM versions ontology.
 
 **Pull Request = Proposed Refinement**
 A PR is not just a code change.
-It is a proposal to refine shared understanding.
-The review is where understanding is tested.
+It is a proposal to refine the ontology.
+The review is where the ontology is tested.
 
-**Merge = Shared Understanding**
+**Merge = Ontology Aligned**
 A merge requires agreement.
 Someone reviews. Someone approves.
-Understanding must be shared before it can land.
+The ontology must be shared before it can land.
 That is not a metaphor. That is what happens.
 
-**Git History = Evolution of Understanding**
+**Git History = Evolution of the Ontology**
 The history shows not just where you are.
 It shows how you got there.
 That is rare in project artifacts.
@@ -84,9 +84,9 @@ When the idea crystallizes — commit it.
 Close the Issue. Link to the commit.
 The thread becomes the evidence of how the idea grew.
 
-When understanding needs to be shared — open a Pull Request.
+When the ontology needs to be shared — open a Pull Request.
 The review is not a formality.
-It is the moment shared understanding is tested.
+It is the moment the ontology is tested.
 
 ---
 
@@ -99,6 +99,6 @@ share the same underlying structure.
 Issues, discussions, commits, merges —
 these are not just code workflows.
 
-They are the lifecycle of shared understanding.
+They are the lifecycle of the ontology.
 
 ODPM just names what was always there.

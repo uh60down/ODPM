@@ -10,15 +10,15 @@ If the ontology can be changed by authority rather than agreement, it becomes a 
 
 Teams receive it but do not share it.
 
-Shared understanding requires the process of sharing, not just the result.
+A shared ontology requires the process of sharing, not just the result.
 
 ## How Agreement Works in Practice
 
 A proposed change to the ontology is a Pull Request.
 
-Review is where understanding is tested.
+Review is where the ontology is tested.
 
-Merge is where the team confirms enough shared understanding to move forward.
+Merge is where the team confirms the ontology is aligned enough to move forward.
 
 This is not bureaucracy. It is the minimum structure that makes "shared" mean something.
 
@@ -32,7 +32,7 @@ This is not bureaucracy. It is the minimum structure that makes "shared" mean so
 
 Agreement does not mean consensus on every word.
 
-It means Decision Readiness: enough shared understanding to move forward responsibly.
+It means Decision Readiness: the ontology is aligned enough to move forward responsibly.
 
 If two people disagree about a concept, that disagreement is an open question — not a blocker, but a thread to pull.
 
