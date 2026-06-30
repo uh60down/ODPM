@@ -279,7 +279,7 @@ ODPM is not tied to Scrum, PMBOK, GitHub, or any other framework.
 
 Instead, it occupies the same position in every framework.
 
-It sits immediately upstream of execution.
+Every framework has a moment where understanding becomes execution. ODPM lives immediately before that moment.
 
 Where that boundary lies depends on the framework.
 
@@ -327,7 +327,7 @@ The question is not: "How do we get them on board?"
 
 The question is: "What world are they seeing that we are not?"
 
-That question almost always reveals something real.
+That question often reveals something real.
 
 ---
 
@@ -346,7 +346,9 @@ becomes another opportunity to chase understanding together.
 
 ODPM began as a framework for software teams.
 
-It became a framework for any team facing a shared problem.
+It can apply wherever teams must act from shared understanding.
+
+The starting point is always the same: a PRD, a brief, a mandate — intent and requirements and constraints. The ontology makes the implicit model explicit. Everything downstream builds on that shared foundation.
 
 The insight was always the same.
 
