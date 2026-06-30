@@ -34,7 +34,7 @@ Feedback
 
         ↓
 
-Ontology Evolves
+Shared Understanding Evolves
 ```
 
 Every execution changes understanding.
@@ -122,7 +122,7 @@ Ask:
 
 ---
 
-## Core Definitions
+## Glossary
 
 **Ontology**
 
@@ -184,11 +184,15 @@ ODPM is framework-agnostic because it sits upstream of execution, regardless of 
 
 ## Memorable Quotes
 
+### Philosophy
+
 > Understanding is not a destination we arrive at.
 > It is a journey we share.
 
 > Shared understanding is not transferred.
 > It is co-created.
+
+### Ontology
 
 > A glossary defines words.
 > An ontology defines a world.
@@ -199,6 +203,8 @@ ODPM is framework-agnostic because it sits upstream of execution, regardless of 
 > Assumptions are unresolved ontology questions.
 
 > ODPM makes the implicit explicit.
+
+### Positioning
 
 > ODPM improves the quality of inputs.
 > Not the mechanics of execution.
