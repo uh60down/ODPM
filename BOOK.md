@@ -269,7 +269,7 @@ Rather than seeking perfection, we continuously refine our current best expressi
 
 Git versions code.
 
-ODPM versions ontology.
+ODPM versions the ontology.
 
 ---
 
@@ -309,7 +309,7 @@ The change plan is the path from one to the other.
 
 Most change failures are not execution failures.
 
-They are ontology failures.
+They are ontology alignment failures.
 
 People execute the change they understand, not the change that was planned.
 

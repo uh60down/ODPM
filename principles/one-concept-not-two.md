@@ -32,6 +32,14 @@ ODPM only needs to define the object teams collaborate around.
 
 Whether that model also exists mentally or socially is a separate question — one ODPM does not need to answer.
 
+## Understanding Is Still a Practice
+
+Removing "Shared Understanding" as a noun does not remove understanding.
+
+Understanding remains a human activity — what Chase Understanding describes, what conversation builds.
+
+Ontology is the shared object that activity produces and that ODPM manages.
+
 ## The Simplified Lifecycle
 
 Conversation builds the ontology.

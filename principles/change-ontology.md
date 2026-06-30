@@ -28,7 +28,7 @@ The ontology is what you are closing the gap toward.
 
 Most change failures are not execution failures.
 
-They are ontology failures.
+They are ontology alignment failures.
 
 People implement the change they understand, not the change that was planned.
 

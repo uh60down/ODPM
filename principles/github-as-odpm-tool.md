@@ -42,7 +42,7 @@ The label is not a priority. It is an epistemic status.
 **Commit = Snapshot of the Ontology**
 Every commit captures the team's current best expression of reality.
 Not perfection. A snapshot.
-Git versions code. ODPM versions ontology.
+Git versions code. ODPM versions the ontology.
 
 **Pull Request = Proposed Refinement**
 A PR is not just a code change.
