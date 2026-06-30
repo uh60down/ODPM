@@ -2,7 +2,7 @@
 
 **Ontology-Driven Project Management (ODPM)**
 
-> ODPM is a framework for building shared understanding before execution.
+> ODPM is a framework for building a shared ontology before execution.
 
 It does not replace existing project management frameworks.
 It complements them by making the team's shared model of the world explicit before planning, implementation, and execution begin.
@@ -34,11 +34,11 @@ Feedback
 
         ↓
 
-Shared Understanding Evolves
+Ontology Evolves
 ```
 
-Every execution changes understanding.
-Every understanding changes the ontology.
+Execution tests the ontology.
+Feedback refines it.
 
 ---
 
@@ -112,7 +112,7 @@ Ask:
 
 ## Core Principles
 
-- Shared understanding before execution.
+- A shared ontology before execution.
 - Questions over assumptions.
 - Clarity over complexity.
 - Principles over procedures.
@@ -144,19 +144,13 @@ Using questions to discover reality together.
 
 **Decision Readiness**
 
-The team's current shared understanding is sufficient to take the next responsible action.
-
----
-
-**Shared Understanding**
-
-The team's current shared model of the world.
+The team's current ontology is sufficient to take the next responsible action.
 
 ---
 
 **Snapshot**
 
-The team's current best expression of understanding at a point in time.
+The team's current best expression of the ontology at a point in time.
 
 ---
 
@@ -174,9 +168,9 @@ ODPM lives immediately before that moment.
 
 | Framework | Execution Begins | ODPM Position |
 |-----------|------------------|---------------|
-| GitHub | Commit / Merge | Before understanding becomes code |
-| Scrum | Sprint | Before understanding becomes work |
-| PMBOK | Planning & Execution | Before understanding becomes a plan |
+| GitHub | Commit / Merge | Before the ontology becomes code |
+| Scrum | Sprint | Before the ontology becomes work |
+| PMBOK | Planning & Execution | Before the ontology becomes a plan |
 
 ODPM is framework-agnostic because it sits upstream of execution, regardless of the framework being used.
 
@@ -189,7 +183,7 @@ ODPM is framework-agnostic because it sits upstream of execution, regardless of 
 > Understanding is not a destination we arrive at.
 > It is a journey we share.
 
-> Shared understanding is not transferred.
+> A shared ontology is not transferred.
 > It is co-created.
 
 ### Ontology
