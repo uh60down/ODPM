@@ -26,13 +26,13 @@ It is the story of discovering a better way to think together.
 
 ## Chapter 1: The Missing Piece
 
-Most software projects already have excellent artifacts.
+Most projects already have excellent artifacts.
 
-- PRDs
-- User Stories
-- Figma
-- Architecture
-- APIs
+- Plans
+- Requirements
+- Designs
+- Architectures
+- Processes
 - Code
 - Tests
 
@@ -42,17 +42,17 @@ Not because teams lack artifacts.
 
 But because they lack shared understanding.
 
-The quality of implementation rarely exceeds the quality of the team's shared understanding.
+The quality of execution rarely exceeds the quality of the team's shared understanding.
 
 ---
 
-## Chapter 2: The World Before the Software
+## Chapter 2: The World Before the Work
 
-Software does not implement user stories.
+Execution does not implement plans.
 
-Software implements a model of reality.
+Execution implements a model of reality.
 
-Before discussing implementation we should understand:
+Before discussing execution we should understand:
 
 - What exists?
 - How are things related?
@@ -110,10 +110,7 @@ Ontology
 
     v
 
-Design
-Architecture
-Implementation
-Testing
+Everything else
 ```
 
 The PRD starts the conversation.
@@ -129,6 +126,8 @@ Downstream work consumes the ontology:
 - APIs
 - Documentation
 - AI Agents
+- Project Plans
+- Change Plans
 - Future technologies we haven't imagined yet
 
 They all consume the same ontology.
@@ -274,6 +273,64 @@ ODPM versions understanding.
 
 ---
 
+## Chapter 13: Where ODPM Lives
+
+ODPM is not tied to Scrum, PMBOK, GitHub, or any other framework.
+
+Instead, it occupies the same position in every framework.
+
+It sits immediately upstream of execution.
+
+Where that boundary lies depends on the framework.
+
+| Framework | Execution Begins | ODPM Sits |
+|-----------|------------------|-----------|
+| GitHub | Commit | Before code is committed |
+| Scrum | Sprint | Before work begins |
+| PMBOK | Planning | Before plans become execution |
+
+The pattern is always the same.
+
+ODPM helps teams build shared understanding before that understanding is translated into action.
+
+That is why ODPM is framework-agnostic.
+
+---
+
+## Chapter 14: Change
+
+Every change initiative has two ontologies.
+
+The current-state ontology: what exists today.
+
+The target-state ontology: what will exist after the change.
+
+The change plan is the path from one to the other.
+
+Most change failures are not execution failures.
+
+They are shared understanding failures.
+
+People execute the change they understand, not the change that was planned.
+
+---
+
+When people resist a change, the instinct is to persuade.
+
+ODPM offers a different response.
+
+Resistance can reveal an ontology gap.
+
+Someone is seeing a world the change team is not seeing.
+
+The question is not: "How do we get them on board?"
+
+The question is: "What world are they seeing that we are not?"
+
+That question almost always reveals something real.
+
+---
+
 ## Epilogue
 
 This book has no final chapter.
@@ -287,7 +344,19 @@ every contradiction
 
 becomes another opportunity to chase understanding together.
 
-Perhaps that is what project management has always been.
+ODPM began as a framework for software teams.
+
+It became a framework for any team facing a shared problem.
+
+The insight was always the same.
+
+Before execution, there is a world.
+
+Before a plan, there is a model.
+
+Before action, there is understanding.
+
+The work of project management — in any framework, at any scale — is to build that understanding before it is too late to use it.
 
 Not managing projects.
 
@@ -314,3 +383,13 @@ But helping people discover reality together.
 > PRD gives everyone the mission and boundaries. Ontology ensures design, architecture, implementation, and testing aim at the same world.
 
 > The remaining unanswered questions no longer prevent the next responsible decision.
+
+> Resistance is evidence. Treat it as a question, not an obstacle.
+
+> Change is the delta between two ontologies.
+
+> Assumptions are unresolved ontology questions.
+
+> ODPM sits immediately upstream of execution, in every framework.
+
+> ODPM improves the quality of inputs. Not the mechanics of execution.
