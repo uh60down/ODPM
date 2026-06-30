@@ -4,7 +4,19 @@ This is a tooling guide for teams using Jira and Confluence alongside ODPM and S
 
 The principles of how ODPM integrates with Scrum do not depend on any specific tool.
 
-This guide shows one implementation. Jira can be replaced with Linear, GitHub Issues, or any backlog tool. Confluence can be replaced with Notion, Coda, or any wiki.
+## Three Tool Roles
+
+Any ODPM + Scrum implementation needs three roles filled:
+
+| Role | Purpose | Example tools |
+|---|---|---|
+| Knowledge Base | Holds the living ontology: glossary, relationship map, decision log | Confluence, Notion, Coda |
+| Work Management | Tracks stories, bugs, and sprints that execute the ontology | Jira, Linear, GitHub Issues |
+| Conversation | Preserves Chase Understanding discussions as evidence | Confluence comments, Slack threads, GitHub Discussions |
+
+This guide uses Confluence as the Knowledge Base and Jira as Work Management.
+
+The patterns apply to any equivalent tool pair.
 
 ---
 
@@ -45,6 +57,8 @@ Update these pages at the end of each sprint. The page history becomes the evolu
 | Comment thread | Chase Understanding conversation on a specific item |
 
 ### Labels for Understanding Status
+
+These are example labels. Adapt them to your organization's existing conventions.
 
 | Label | Meaning |
 |---|---|

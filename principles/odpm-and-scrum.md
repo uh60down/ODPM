@@ -16,6 +16,8 @@ ODPM is understanding-cadenced.
 
 Scrum structures delivery. ODPM structures the shared model that delivery executes.
 
+> ODPM improves the quality of Scrum's inputs, not Scrum's mechanics.
+
 ---
 
 ## Before Meaningful Backlog Refinement Begins
