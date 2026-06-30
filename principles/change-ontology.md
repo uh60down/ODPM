@@ -12,7 +12,7 @@ Every change has a current-state ontology and a target-state ontology.
 
 **Target-state ontology**: what will exist after the change, how relationships will differ, what new rules will apply, what new states will matter.
 
-## The Delta Is Not Enough on Its Own
+## The Delta Is the Destination, Not the Plan
 
 The ontology delta explains what must change.
 
