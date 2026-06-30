@@ -40,3 +40,7 @@ Building the target-state ontology — and sharing it — before execution begin
 2. Model the target state with the same four building blocks: Concepts, Relationships, Rules, States.
 3. Make the delta between the two models visible and discussable.
 4. Treat every point of confusion or resistance as a question about which model the person is holding.
+
+---
+
+See also: [Resistance Is an Ontology Gap](resistance-is-an-ontology-gap.md) · [One Ontology, Multiple Views](one-ontology-multiple-views.md)

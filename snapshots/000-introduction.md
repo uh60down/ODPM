@@ -10,5 +10,5 @@ A product manager helps a team know:
 - what tradeoffs are acceptable,
 - and what must be learned next.
 
-The artifact is useful only when it improves shared understanding.
+The artifact is useful only when it improves Shared Understanding.
 
