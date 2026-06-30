@@ -1,8 +1,8 @@
 # Snapshot 001: Foundation
 
-The foundation of ODPM is decision readiness.
+The foundation of ODPM is Decision Readiness.
 
-Decision readiness means a team can see the current state of a decision:
+Decision Readiness means a team can see the current state of a decision:
 
 - the goal,
 - the knowns,

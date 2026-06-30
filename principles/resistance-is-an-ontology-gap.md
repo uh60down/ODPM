@@ -39,3 +39,7 @@ But it should not reduce every form of resistance to a misunderstanding.
 The question "What world are they seeing?" is a starting point, not a complete diagnosis.
 
 > Resistance is evidence. Treat it as a question, not an obstacle.
+
+---
+
+See also: [The Change Ontology](change-ontology.md)

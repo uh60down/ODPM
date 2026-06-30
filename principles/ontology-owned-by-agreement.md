@@ -35,3 +35,7 @@ Agreement does not mean consensus on every word.
 It means Decision Readiness: enough shared understanding to move forward responsibly.
 
 If two people disagree about a concept, that disagreement is an open question — not a blocker, but a thread to pull.
+
+---
+
+See also: [GitHub as an ODPM Tool](github-as-odpm-tool.md)

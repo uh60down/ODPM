@@ -16,4 +16,6 @@ The project treats product work as a discipline of clarity: framing problems, bu
 
 ## Current Snapshot
 
-Snapshot #004 captures ontology as the bridge from PRD to design, architecture, implementation, and testing.
+Snapshot #005 extends ODPM beyond software to project management and change management.
+
+Snapshot #006 explores what happens when ontology becomes a live platform layer.

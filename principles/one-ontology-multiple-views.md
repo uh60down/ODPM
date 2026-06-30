@@ -38,3 +38,7 @@ This principle makes it operational.
 Start with a single shared ontology.
 
 Then ask: what does this audience need to see first?
+
+---
+
+See also: [The Change Ontology](change-ontology.md)

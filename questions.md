@@ -20,8 +20,6 @@ The question is not: "Do we know everything?"
 These questions remain active areas for future refinement.
 
 - How should Ontology evolve across releases?
-- How should Ontology changes be reviewed?
-- Can Git become the history of understanding?
 - How should Ontology be organized across bounded contexts?
 - How can Chase Understanding be taught to new project members? *(see Core Question Set below)*
 
@@ -30,6 +28,8 @@ These questions remain active areas for future refinement.
 - Ontology should start as a glossary plus a lightweight relationship diagram.
 - Ontology should stay small: Concepts, Relationships, Rules, and States.
 - A PRD contains intent, requirements, assumptions, and constraints. Ontology makes the implicit world model explicit.
+- Ontology changes should be reviewed through agreement, not authority — proposed as a Pull Request, tested in review, confirmed at merge. *(see principles/ontology-owned-by-agreement.md)*
+- Git can become the history of understanding when commits are treated as snapshots of understanding, not just code changes. *(see principles/github-as-odpm-tool.md)*
 
 ## Core Question Set
 
