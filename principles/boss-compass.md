@@ -1,5 +1,7 @@
 # Boss Compass
 
+## Boss Compass as Product Alignment
+
 The Boss Compass is the principle that good decisions stay aligned to the larger intent — not just the immediate task.
 
 It is not blind obedience to a manager.
@@ -8,7 +10,7 @@ It is awareness of the direction that should guide local choices: the strategy, 
 
 Good product work translates that direction into choices teams can actually make.
 
-## ODPM's Own Boss Compass
+## Boss Compass as ODPM Design Compass
 
 These principles guided the development of ODPM itself.
 

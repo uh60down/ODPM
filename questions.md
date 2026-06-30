@@ -21,7 +21,6 @@ These questions remain active areas for future refinement.
 
 - How should Ontology evolve across releases?
 - How should Ontology be organized across bounded contexts?
-- How can Chase Understanding be taught to new project members? *(see Core Question Set below)*
 
 ## Current Working Answers
 
@@ -30,6 +29,7 @@ These questions remain active areas for future refinement.
 - A PRD contains intent, requirements, assumptions, and constraints. Ontology makes the implicit world model explicit.
 - Ontology changes should be reviewed through agreement, not authority — proposed as a Pull Request, tested in review, confirmed at merge. *(see principles/ontology-owned-by-agreement.md)*
 - Git can become the history of understanding when commits are treated as snapshots of understanding, not just code changes. *(see principles/github-as-odpm-tool.md)*
+- How can Chase Understanding be taught to new project members? Partially answered — teach through the Core Question Set, examples, and guided practice. *(see Core Question Set below)*
 
 ## Core Question Set
 

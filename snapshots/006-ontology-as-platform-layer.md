@@ -29,11 +29,11 @@ ODPM's four building blocks map directly to Palantir's Ontology model.
 | Rule | Action | What can be done, under what conditions |
 | State | Object State | Where an object is in its lifecycle |
 
-The building blocks are the same.
+The building blocks are closely aligned.
 
 The difference is form.
 
-ODPM's ontology is a document. Palantir's ontology is deployed code.
+ODPM's ontology is a document. Palantir's ontology becomes an operational platform layer.
 
 ---
 
@@ -67,6 +67,12 @@ Palantir's ontology is bidirectional.
 - It writes back. An Action — approve this order, escalate this alert — goes through the ontology and updates the source system.
 
 A decision-maker, an AI agent, and a workflow are all touching the same object, in the same state, through the same rules.
+
+This is powerful. But it also means ontology is no longer only a shared model.
+
+Once ontology writes back, it becomes part of operational governance.
+
+Permissions, auditability, validation, and ownership become as important as the concepts and relationships themselves.
 
 ---
 
