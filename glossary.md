@@ -36,13 +36,9 @@ A product requirements document that contains intent, requirements, assumptions,
 
 In ODPM, a PRD is evidence for ontology. It is not replaced by ontology.
 
-## Shared Understanding
-
-Alignment that can be carried across people, meetings, and time without losing the important parts of the decision.
-
 ## Decision Readiness
 
-The judgment that the team's current best understanding is sufficient to take the next responsible action.
+The judgment that the team's current ontology is sufficient to take the next responsible action.
 
 ## Chase Understanding
 

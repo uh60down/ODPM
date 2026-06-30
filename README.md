@@ -1,8 +1,8 @@
 # ODPM
 
-ODPM is a living product management manuscript about making decisions with enough Shared Understanding to move well.
+ODPM is a living product management manuscript about making decisions with a shared ontology that is good enough to move well.
 
-The project treats product work as a discipline of clarity: framing problems, building Decision Readiness, practicing Chase Understanding, and keeping teams aligned through Shared Understanding.
+The project treats product work as a discipline of clarity: framing problems, building Decision Readiness, practicing Chase Understanding, and keeping teams aligned through a shared ontology.
 
 ## Structure
 

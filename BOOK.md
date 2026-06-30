@@ -1,6 +1,6 @@
 # Ontology-Driven Project Management (ODPM)
 
-## Building Shared Understanding Through Ontology
+## Building a Shared Ontology
 
 ### A Journey with Champ
 
@@ -40,9 +40,9 @@ Yet projects still fail.
 
 Not because teams lack artifacts.
 
-But because they lack shared understanding.
+But because they lack a shared ontology.
 
-The quality of execution rarely exceeds the quality of the team's shared understanding.
+The quality of execution rarely exceeds the quality of the team's ontology.
 
 ---
 
@@ -152,7 +152,7 @@ Different audiences may need different views of the same ontology.
 
 The goal is not the perfect diagram.
 
-The goal is Shared Understanding that can be reviewed, versioned, and improved.
+The goal is an ontology that can be reviewed, versioned, and improved.
 
 ---
 
@@ -235,7 +235,7 @@ These principles quietly guided the development of ODPM.
 - Principles over procedures.
 - Questions over assumptions.
 - Alignment over individual brilliance.
-- Shared understanding before execution.
+- A shared ontology before execution.
 
 ---
 
@@ -245,7 +245,7 @@ Artifacts preserve understanding.
 
 Questions discover understanding.
 
-Shared understanding is not transferred.
+A shared ontology is not transferred.
 
 It is co-created.
 
@@ -269,7 +269,7 @@ Rather than seeking perfection, we continuously refine our current best expressi
 
 Git versions code.
 
-ODPM versions understanding.
+ODPM versions the ontology.
 
 ---
 
@@ -291,7 +291,7 @@ Where that boundary lies depends on the framework.
 
 The pattern is always the same.
 
-ODPM helps teams build shared understanding before that understanding is translated into action.
+ODPM helps teams build a shared ontology before that ontology is translated into action.
 
 That is why ODPM is framework-agnostic.
 
@@ -309,7 +309,7 @@ The change plan is the path from one to the other.
 
 Most change failures are not execution failures.
 
-They are shared understanding failures.
+They are ontology alignment failures.
 
 People execute the change they understand, not the change that was planned.
 
@@ -346,7 +346,7 @@ becomes another opportunity to chase understanding together.
 
 ODPM began as a framework for software teams.
 
-It can apply wherever teams must act from shared understanding.
+It can apply wherever teams must act from a shared ontology.
 
 The starting point is always the same: a PRD, a brief, a mandate — intent and requirements and constraints. The ontology makes the implicit model explicit. Everything downstream builds on that shared foundation.
 
@@ -370,9 +370,9 @@ But helping people discover reality together.
 
 > Understanding is not a destination we arrive at. It is a journey we share.
 
-> We don't begin with shared understanding. We build it by chasing understanding together.
+> We don't begin with a shared ontology. We build it by chasing understanding together.
 
-> Shared understanding is not transferred. It is co-created.
+> A shared ontology is not transferred. It is co-created.
 
 > Questions discover understanding.
 

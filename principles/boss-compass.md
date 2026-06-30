@@ -19,7 +19,7 @@ These principles guided the development of ODPM itself.
 - Principles over procedures.
 - Questions over assumptions.
 - Alignment over individual brilliance.
-- Shared understanding before execution.
+- A shared ontology before execution.
 
 When ODPM decisions were made, these were the compass.
 
