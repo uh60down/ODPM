@@ -235,7 +235,7 @@ These principles quietly guided the development of ODPM.
 - Principles over procedures.
 - Questions over assumptions.
 - Alignment over individual brilliance.
-- Shared understanding before execution.
+- A shared ontology before execution.
 
 ---
 
@@ -245,7 +245,7 @@ Artifacts preserve understanding.
 
 Questions discover understanding.
 
-Shared understanding is not transferred.
+A shared ontology is not transferred.
 
 It is co-created.
 
