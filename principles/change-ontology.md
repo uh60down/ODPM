@@ -12,11 +12,13 @@ Every change has a current-state ontology and a target-state ontology.
 
 **Target-state ontology**: what will exist after the change, how relationships will differ, what new rules will apply, what new states will matter.
 
-## The Delta Is the Change Plan
+## The Delta Is Not Enough on Its Own
 
-The change plan is not a project schedule.
+The ontology delta explains what must change.
 
-It is the path from one shared model of the world to another.
+But the change plan still needs sequencing, ownership, communication, timing, and risk management.
+
+The delta is the destination. The plan is the route.
 
 Tasks, communications, and training are how you close the gap.
 

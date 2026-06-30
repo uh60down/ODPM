@@ -18,7 +18,7 @@ A proposed change to the ontology is a Pull Request.
 
 Review is where understanding is tested.
 
-Merge is where shared understanding is confirmed.
+Merge is where the team confirms enough shared understanding to move forward.
 
 This is not bureaucracy. It is the minimum structure that makes "shared" mean something.
 

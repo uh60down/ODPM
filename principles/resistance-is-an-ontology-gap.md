@@ -4,7 +4,7 @@ When people resist a change or disagree in a project, the instinct is to persuad
 
 ODPM offers a different response.
 
-Resistance almost always means the resistant person's model of the world differs from the team's model.
+Resistance often means the resistant person's model of the world differs from the team's model.
 
 They may see a different current state.
 
@@ -18,12 +18,24 @@ The question is not: "How do we get them on board?"
 
 The question is: "What world are they seeing that we are not?"
 
-That question almost always reveals something real.
+That question often reveals something real.
 
 Either their model contains something the team missed.
 
 Or the team's model contains something they haven't yet seen.
 
 Either way, the gap is worth closing before moving forward.
+
+## A Caution
+
+Not all resistance is an ontology gap.
+
+Resistance can also come from incentives, politics, fatigue, lack of trust, or real constraints that the change team has not acknowledged.
+
+ODPM can still Chase Understanding in those cases.
+
+But it should not reduce every form of resistance to a misunderstanding.
+
+The question "What world are they seeing?" is a starting point, not a complete diagnosis.
 
 > Resistance is evidence. Treat it as a question, not an obstacle.

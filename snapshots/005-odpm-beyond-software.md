@@ -10,7 +10,7 @@ But the underlying logic is not exclusive to software.
 
 ## The Claim
 
-Any shared work that fails due to misalignment — not poor execution — can benefit from ODPM.
+Many forms of shared work that fail due to misalignment — not poor execution — can benefit from ODPM.
 
 Project management. Change management. Organizational design. Strategy execution.
 
@@ -56,3 +56,17 @@ Decision Readiness still applies. The goal is not complete understanding. It is 
 Snapshot Thinking still applies. Every plan and model is a current best expression of reality.
 
 The tools change. The principles do not.
+
+## What ODPM Does Not Replace
+
+ODPM complements existing project management and change management practices.
+
+It does not replace planning, governance, stakeholder management, or execution discipline.
+
+Those practices address scheduling, resourcing, accountability, and delivery.
+
+ODPM addresses the shared understanding that makes those practices effective.
+
+Without shared understanding, good planning still fails.
+
+With shared understanding, imperfect planning can still succeed.
