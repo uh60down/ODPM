@@ -16,4 +16,4 @@ The project treats product work as a discipline of clarity: framing problems, bu
 
 ## Current Snapshot
 
-Snapshot #004 captures the current approach to ontology visualization.
+Snapshot #004 captures ontology as the bridge from PRD to design, architecture, implementation, and testing.

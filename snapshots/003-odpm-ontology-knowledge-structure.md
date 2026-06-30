@@ -7,15 +7,20 @@ Snapshot #003 turns the ODPM manuscript into a clearer knowledge structure.
 The core model remains simple:
 
 ```text
-PRD (Intent)
+PRD
+(Intent + Requirements + Assumptions + Constraints)
 
     v
 
 Ontology
+(Shared Model of the World)
 
     v
 
-Everything else
+Design
+Architecture
+Implementation
+Testing
 ```
 
 ## What changed
@@ -40,6 +45,10 @@ Everything else
 The current core terms are:
 
 - Ontology
+- Concept
+- Relationship
+- Rule
+- State
 - Shared Understanding
 - Decision Readiness
 - Chase Understanding

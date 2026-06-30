@@ -9,6 +9,7 @@ These questions are part of the core ODPM model.
 - What exists?
 - How are things related?
 - What rules govern this world?
+- What states can things be in?
 - Why are we building this?
 - What would most improve the next decision?
 
@@ -27,6 +28,8 @@ These questions remain active areas for future refinement.
 ## Current Working Answers
 
 - Ontology should start as a glossary plus a lightweight relationship diagram.
+- Ontology should stay small: Concepts, Relationships, Rules, and States.
+- A PRD contains intent, requirements, assumptions, and constraints. Ontology makes the implicit world model explicit.
 
 ## Core Question Set
 
@@ -37,6 +40,7 @@ A teachable answer to "How can Chase Understanding be taught to new project memb
 - What exists?
 - How are things related?
 - What rules govern this world?
+- What states can things be in?
 
 ### Intent
 

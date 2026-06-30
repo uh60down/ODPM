@@ -9,15 +9,20 @@ We stopped asking "What is ontology?" and started using ontology as a practical 
 The biggest realization was not a new framework, but finding the natural place where ontology belongs.
 
 ```text
-PRD (Intent)
+PRD
+(Intent + Requirements + Assumptions + Constraints)
 
     v
 
 Ontology
+(Shared Model of the World)
 
     v
 
-Everything else
+Design
+Architecture
+Implementation
+Testing
 ```
 
 This simple model explains how existing project artifacts relate to each other without replacing them.
@@ -28,7 +33,7 @@ This simple model explains how existing project artifacts relate to each other w
 
 Ontology is the shared model of the world.
 
-It sits between intent and implementation.
+It sits between the PRD and implementation.
 
 It does not replace PRDs, Figma, Architecture, APIs, or Code.
 
@@ -36,17 +41,17 @@ Instead, every downstream artifact consumes the ontology.
 
 ### 2. PRD is not the problem
 
-A PRD expresses intent.
+A PRD contains intent, requirements, assumptions, and constraints.
 
 Example:
 
 > "As a user, I want to switch between vehicles."
 
-This statement is sufficient as intent.
+This statement expresses intent, but the complete PRD usually carries more.
 
-The missing piece was never additional user story details.
+The missing piece was never a replacement for the PRD.
 
-The missing piece was the ontology describing the world behind that intent.
+The missing piece was the ontology describing the world already implicit in the PRD.
 
 ### 3. Chase Understanding
 
@@ -121,20 +126,27 @@ It is becoming more faithful to reality.
 
 > Artifacts preserve understanding.
 
-> PRD gives everyone the mission. Ontology ensures everyone is aiming at the same world. Everything else executes that understanding.
+> Every good PRD already contains an implicit model of the world. ODPM makes that model explicit.
+
+> PRD gives everyone the mission and boundaries. Ontology ensures design, architecture, implementation, and testing aim at the same world.
 
 ## Current Core Model
 
 ```text
-PRD (Intent)
+PRD
+(Intent + Requirements + Assumptions + Constraints)
 
     v
 
 Ontology
+(Shared Model of the World)
 
     v
 
-Everything else
+Design
+Architecture
+Implementation
+Testing
 ```
 
 This model satisfies KISS.

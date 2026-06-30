@@ -57,6 +57,7 @@ Before discussing implementation we should understand:
 - What exists?
 - How are things related?
 - What rules govern this world?
+- What states can things be in?
 
 This shared model is the ontology.
 
@@ -64,51 +65,68 @@ Ontology is not philosophy.
 
 Ontology is simply the team's shared model of the world.
 
+In ODPM, a lightweight ontology has four building blocks:
+
+- Concepts: the things that exist in the world.
+- Relationships: how those things connect.
+- Rules: what must be true.
+- States: the meaningful conditions those things can be in.
+
 ---
 
 ## Chapter 3: PRD Is Not the Problem
 
-A PRD answers one question:
+A PRD usually contains more than one kind of knowledge.
 
-Why are we building this?
+It contains:
 
-Example:
+- Intent
+- Requirements
+- Assumptions
+- Constraints
 
-> As a user, I want to switch between vehicles.
+Those parts often imply a model of the world, even when the model is not written down directly.
 
-This is sufficient.
+Every good PRD already contains an implicit model of the world.
 
-It expresses intent.
+ODPM makes that model explicit.
 
-It was never intended to describe the complete world.
+The missing artifact is not a replacement for the PRD.
 
-The missing artifact is not a longer PRD.
-
-It is the ontology.
+It is the ontology extracted from the PRD and refined through Chase Understanding.
 
 ---
 
 ## Chapter 4: The Three-Layer Model
 
 ```text
-PRD (Intent)
+PRD
+(Intent + Requirements + Assumptions + Constraints)
 
     v
 
 Ontology
+(Shared Model of the World)
 
     v
 
-Everything else
+Design
+Architecture
+Implementation
+Testing
 ```
 
-Everything else includes:
+The PRD starts the conversation.
+
+The ontology organizes the world implied by that conversation.
+
+Downstream work consumes the ontology:
 
 - Design
 - Architecture
-- APIs
 - Implementation
 - Testing
+- APIs
 - Documentation
 - AI Agents
 - Future technologies we haven't imagined yet
@@ -185,7 +203,7 @@ Artifacts become evidence.
 
 Architecture reveals responsibilities.
 
-PRDs reveal intent.
+PRDs reveal intent, requirements, assumptions, and constraints.
 
 Code reveals behavior.
 
@@ -291,6 +309,8 @@ But helping people discover reality together.
 
 > User stories describe work. Ontology describes the world.
 
-> PRD gives everyone the mission. Ontology ensures everyone is aiming at the same world. Everything else executes that understanding.
+> Every good PRD already contains an implicit model of the world. ODPM makes that model explicit.
+
+> PRD gives everyone the mission and boundaries. Ontology ensures design, architecture, implementation, and testing aim at the same world.
 
 > The remaining unanswered questions no longer prevent the next responsible decision.

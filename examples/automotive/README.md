@@ -10,3 +10,6 @@ Possible areas:
 - fleet operations,
 - infotainment and navigation.
 
+## Examples
+
+- [OTA Ontology v2](ota-ontology-v2.md)
