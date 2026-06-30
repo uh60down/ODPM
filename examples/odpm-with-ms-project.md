@@ -57,7 +57,7 @@ MS Project tracks the work that delivers the ontology into reality.
 | WBS phases | Map to ontology domains or concept clusters |
 | Tasks | Implementation steps within the shared model |
 | Milestones | Phase gates — Decision Readiness checkpoints |
-| Resource assignments | Stakeholders as Concepts with roles and responsibilities |
+| Resource assignments | Execution ownership mapped to roles and responsibilities |
 | Custom fields | Status of understanding (optional — see labels below) |
 
 ### Custom Field Labels for Understanding Status

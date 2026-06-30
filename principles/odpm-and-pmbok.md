@@ -54,7 +54,7 @@ The Communications Plan becomes a One Ontology, Multiple Views exercise — diff
 
 **Executing**
 
-Stakeholder resistance is an ontology gap.
+Stakeholder resistance can reveal an ontology gap.
 
 When a stakeholder pushes back, the PMBOK response is "manage the stakeholder." The ODPM response is "what world are they seeing that we are not?"
 
@@ -86,12 +86,12 @@ That is ontology refinement for the next project, not just process improvement.
 
 | PMBOK Artifact | ODPM Role |
 |---|---|
-| Project Charter | PRD — contains the implicit ontology waiting to be extracted |
+| Project Charter | Contains intent, requirements, assumptions, and constraints from which an implicit ontology can be extracted |
 | Assumptions Log | Unresolved ontology questions — Chase Understanding targets |
 | Scope Statement | Work that executes the ontology |
 | WBS | Delivery structure downstream of the ontology |
 | Stakeholder Register | Stakeholders as Concepts in the project ontology |
-| Risk Register | Risks as Concepts with States |
+| Risk Register | Significant risks may reveal concepts, states, or rules that should be reflected in the ontology |
 | Change Request | Proposed ontology refinement |
 | Communications Plan | One Ontology, Multiple Views — per audience |
 | Lessons Learned | End-of-project ontology snapshot |
@@ -126,6 +126,10 @@ The fit with PMBOK 7 is more natural. The need is the same in both.
 ## What ODPM Does Not Change
 
 PMBOK's knowledge areas, process groups, roles, and governance remain intact.
+
+ODPM does not replace risk management, stakeholder management, scheduling, or change control.
+
+It improves the shared understanding those processes depend on.
 
 ODPM changes the quality of what enters those processes — a shared model of the world rather than each team member's private interpretation of the Project Charter.
 
