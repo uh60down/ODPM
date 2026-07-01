@@ -2,7 +2,7 @@
 
 ## Ontology
 
-The team's shared model of the world: what exists, how things are related, what rules govern that world, and what states matter.
+The team's shared model of the world: what exists, how things are related, what rules govern that world, what states matter, and what actions can legitimately change them.
 
 Every good PRD already contains an implicit model of the world. ODPM makes that model explicit.
 
@@ -29,6 +29,14 @@ Examples: an update cannot install while a vehicle is moving, a campaign cannot 
 A meaningful condition a concept can be in.
 
 Examples: update available, download in progress, install scheduled, install failed, rollback required.
+
+## Action
+
+A named, legitimate way to move a concept from one state to another.
+
+Distinct from a Rule, which constrains whether the action is allowed to happen, and from a State, which describes the condition before or after.
+
+Examples: Install (download in progress → install scheduled), Rollback (install failed → rollback required), Offer Update (not eligible → update available).
 
 ## PRD
 

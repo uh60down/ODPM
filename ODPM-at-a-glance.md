@@ -44,7 +44,7 @@ Feedback refines it.
 
 ## The Building Blocks of an Ontology
 
-An ontology is built from four fundamental elements.
+An ontology is built from five fundamental elements.
 
 ### Concepts
 
@@ -110,6 +110,24 @@ Ask:
 
 ---
 
+### Actions
+
+The named, legitimate ways a concept moves from one state to another.
+
+Examples:
+
+- Install (Downloading → Installing)
+- Rollback (Install Failed → Rollback Required)
+- Offer Update (Not Eligible → Available)
+
+Ask:
+
+> What is this transition called?
+>
+> Who is allowed to trigger it?
+
+---
+
 ## Core Principles
 
 - A shared ontology before execution.
@@ -133,6 +151,12 @@ The team's shared model of the world.
 **Concept**
 
 Something that exists in the world the team is building.
+
+---
+
+**Action**
+
+A named, legitimate way to move a concept from one state to another.
 
 ---
 
