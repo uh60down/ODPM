@@ -22,7 +22,7 @@ Fill the [Ontology Canvas](templates/ontology-canvas.md). One pass per building 
 - **Relationships** — how they connect.
 - **Rules** — what must always be true.
 - **States** — the conditions things can be in.
-- **Actions** — the named ways something moves between states (with *who* triggers it and *what must be true first*).
+- **Actions** — the named, legitimate ways something moves between states (with *who* triggers it and *what must be true first*).
 
 Keep it rough. Bullet points beat diagrams. If you get stuck naming an action's actor or guard — good, that's a finding.
 
