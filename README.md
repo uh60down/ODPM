@@ -7,6 +7,8 @@ The project treats product work as a discipline of clarity: framing problems, bu
 ## Structure
 
 - `BOOK.md` is the current manuscript spine.
+- `ODPM-at-a-glance.md` is the one-page reference for the whole framework.
+- `ODPM-method.md` is the repeatable cycle for putting ODPM to work.
 - `questions.md` preserves foundational and open research questions.
 - `conversations/` preserves source conversations that shaped the framework.
 - `snapshots/` captures dated or numbered states of the thinking.
