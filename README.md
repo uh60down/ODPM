@@ -18,8 +18,14 @@ The project treats product work as a discipline of clarity: framing problems, bu
 - `examples/` collects applied cases by domain.
 - `glossary.md` defines recurring terms.
 
-## Current Snapshot
+## Start Here
 
-Snapshot #005 extends ODPM beyond software to project management and change management.
+New to ODPM? Read these in order:
 
-Snapshot #006 explores what happens when ontology becomes a live platform layer.
+1. [ODPM at a Glance](ODPM-at-a-glance.md) — the whole framework on one page.
+2. [The ODPM Method](ODPM-method.md) — the repeatable cycle for putting it to work.
+3. [Templates](templates/) — pick-up-and-use canvases and checklists.
+4. [Maturity Model](maturity-model.md) — the Level 0–5 path from implicit to platformed.
+5. [Worked Example: Send Money](examples/banking/send-money-p2p.md) — the method run end to end on one feature.
+
+The [snapshots](snapshots/) trace how the thinking evolved, from software origins (#000–#004) through project and change management (#005), the platform layer (#006), framework-agnostic positioning (#007), the Action building block (#008), and the tool-vs-process distinction (#009).
