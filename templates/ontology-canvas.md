@@ -58,4 +58,23 @@ Anything unclear, disputed, missing, or assumed. Move each of these into the [Op
 
 ---
 
+## Example (filled)
+
+A small slice, using the software-update domain from the [glossary](../glossary.md), to show the shape:
+
+- **Concepts:** Vehicle, Software Update, Campaign.
+- **Relationships:** a Campaign targets Vehicles; a Vehicle receives a Software Update.
+- **Rules:** an update cannot install while a vehicle is moving.
+- **States:** Software Update — available → downloading → install scheduled → installed → install failed.
+- **Actions:**
+
+| Action | Actor | From → To | Guard |
+|---|---|---|---|
+| Install | Vehicle owner | install scheduled → installed | vehicle stationary; battery sufficient |
+| Roll back | System | install failed → available | update left the vehicle unsafe |
+
+- **Open question:** who is authorized to trigger *Roll back* — the owner, or the system automatically? _(→ Open Question Log)_
+
+---
+
 See also: [The ODPM Method](../ODPM-method.md) · [Glossary](../glossary.md)

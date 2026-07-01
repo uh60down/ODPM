@@ -22,6 +22,16 @@ The maturity jump — `open question → tracked item → owner → decision →
 
 See [GitHub as an ODPM Tool](../principles/github-as-odpm-tool.md) for the full mapping.
 
+**One-time setup:** GitHub only applies a label from an issue template if the label already exists. Create the ODPM label set once per repo so the issue template's `open-question` label takes effect:
+
+```sh
+gh label create open-question --description "An unresolved ontology question to chase"
+gh label create chase        --description "Understanding is being pursued"
+gh label create proposed     --description "A refinement has been suggested"
+gh label create landed       --description "Understanding crystallized into an artifact"
+gh label create archived     --description "Question closed without resolution"
+```
+
 ## Planned
 
 Follow-up templates mapping to specific frameworks:
