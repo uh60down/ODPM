@@ -116,6 +116,8 @@ The cycle is the same at every scale. Only the size of the ontology changes.
 
 Run it once and you get findings. Run it as a habit — with the maturity jump wired in — and the ontology becomes the team's durable memory of the world it is building.
 
+For a full run of the cycle on one feature, see the worked example: [Send Money (P2P Transfer)](examples/banking/send-money-p2p.md).
+
 ---
 
 See also: [ODPM at a Glance](ODPM-at-a-glance.md) · [Decision Readiness](principles/decision-readiness.md) · [Chase Understanding](principles/chase-understanding.md) · [GitHub as an ODPM Tool](principles/github-as-odpm-tool.md)
