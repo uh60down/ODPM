@@ -26,7 +26,7 @@ During product discovery, before stories are written, build the initial ontology
 
 A glossary and a lightweight relationship diagram are enough.
 
-The goal is for the team to agree on what exists — the Concepts, Relationships, Rules, and States — before agreeing on what to build.
+The goal is for the team to agree on what exists — the Concepts, Relationships, Rules, States, and Actions — before agreeing on what to build.
 
 Stories written before this agreement each encode a private model.
 

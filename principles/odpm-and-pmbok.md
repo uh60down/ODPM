@@ -64,7 +64,7 @@ That question is often faster and more durable than stakeholder management alone
 
 Integrated Change Control is the most important PMBOK process for ODPM.
 
-Every change request should be evaluated for whether it redefines the ontology — a concept, relationship, rule, or state.
+Every change request should be evaluated for whether it redefines the ontology — a concept, relationship, rule, state, or action.
 
 A change that redefines a concept is architecturally significant.
 
