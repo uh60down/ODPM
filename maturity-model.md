@@ -69,7 +69,7 @@ open question → tracked item → owner → decision → ontology update
 
 The ontology becomes executable or semi-executable through tools, workflows, agents, or systems. Applications query the same objects, follow the same relationships, respect the same rules — there is no per-application re-interpretation of what a concept means.
 
-**You're here when:** the ontology is not just describing the world, it is running part of it. See [Snapshot 006: Ontology as a Platform Layer](snapshots/006-ontology-as-platform-layer.md).
+**You're here when:** the ontology is not just describing the world, it is running part of it. See [Snapshot 006: Ontology as a Platform Layer](snapshots/006-ontology-as-platform-layer.md). (That snapshot predates the Action building block, so it maps four blocks to a platform's objects, links, rules, and states; at this level, Actions become the platform's operations.)
 
 **To advance:** there is no next level. The work here is keeping the platformed ontology honest — the higher the automation, the more governance, permissions, and auditability matter.
 
