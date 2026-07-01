@@ -2,9 +2,11 @@
 
 Date: 2026-07-01
 
-ODPM has always described itself as a way of thinking.
+ODPM has mostly described itself as a way of thinking.
 
-This is a note about the moment it stopped being only a way of thinking and became an instrument — and about the one step still missing before it becomes a standing process.
+This is a note about one occasion where it seemed to work as something more concrete — a way of reading existing work that turned up a few real findings — and about the step that still seems to be missing before it could become a standing process.
+
+These are early observations, not a claim that the method is proven.
 
 ---
 
@@ -14,9 +16,9 @@ A tool is something you pick up, use, and get a result from.
 
 A process is something that keeps working after you put it down.
 
-ODPM is now proven as a tool. Run the ontology lens over an existing piece of work and it produces real findings.
+This once, ODPM behaved more like a tool. Running the ontology lens over an existing piece of work produced a few real findings.
 
-It is not yet proven as a process. The findings it produces have nowhere to live between runs.
+It did not behave like a process. The findings it produced had nowhere to live between runs.
 
 ---
 
