@@ -60,12 +60,19 @@ Constraints that must always hold, independent of any single action.
 
 ### States
 
-The lifecycle of a Transfer:
+The lifecycle of a Transfer. Each arrow is an Action from the table below; `draft` is the initial state.
 
-```text
-draft → submitted → pending-review → cleared
-                 └→ failed
-       cleared → reversed
+```mermaid
+stateDiagram-v2
+    state "pending-review" as pr
+    [*] --> draft
+    draft --> submitted: Submit
+    submitted --> cleared: Clear
+    submitted --> pr: Hold for Review
+    submitted --> failed: Fail
+    pr --> cleared: Clear
+    pr --> failed: Fail
+    cleared --> reversed: Reverse
 ```
 
 ### Actions
