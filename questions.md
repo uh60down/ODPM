@@ -10,6 +10,7 @@ These questions are part of the core ODPM model.
 - How are things related?
 - What rules govern this world?
 - What states can things be in?
+- What actions can legitimately change them?
 - Why are we building this?
 - What would most improve the next decision?
 
@@ -25,7 +26,7 @@ These questions remain active areas for future refinement.
 ## Current Working Answers
 
 - Ontology should start as a glossary plus a lightweight relationship diagram.
-- Ontology should stay small: Concepts, Relationships, Rules, and States.
+- Ontology should stay small: Concepts, Relationships, Rules, States, and Actions.
 - A PRD contains intent, requirements, assumptions, and constraints. Ontology makes the implicit world model explicit.
 - Ontology changes should be reviewed through agreement, not authority — proposed as a Pull Request, tested in review, confirmed at merge. *(see principles/ontology-owned-by-agreement.md)*
 - Git can become the history of understanding when commits are treated as snapshots of understanding, not just code changes. *(see principles/github-as-odpm-tool.md)*
@@ -41,6 +42,7 @@ A teachable answer to "How can Chase Understanding be taught to new project memb
 - How are things related?
 - What rules govern this world?
 - What states can things be in?
+- What actions can legitimately change them?
 
 ### Intent
 
