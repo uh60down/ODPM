@@ -40,7 +40,7 @@ A minimal ontology space needs four pages:
 
 1. **Glossary** — one entry per concept: name, definition, example
 2. **Relationship Diagram** — the most important connections between concepts
-3. **Rules and States** — what must be true; what conditions concepts can be in
+3. **Rules, States, and Actions** — what must be true; what conditions concepts can be in; what legitimately moves a concept between them
 4. **Assumptions Log** — open questions being chased, with status and owner
 
 Update these at each phase gate. The version history becomes the evolution of understanding.
@@ -78,7 +78,7 @@ These are example labels. Adapt them to your organization's existing conventions
 
 1. Receive the approved Project Charter.
 2. Create the ontology space in SharePoint.
-3. Extract the implicit ontology from the Charter: What concepts exist? What relationships? What rules? What states?
+3. Extract the implicit ontology from the Charter: What concepts exist? What relationships? What rules? What states? What actions?
 4. Add unresolved assumptions to the Assumptions Log as open questions.
 
 ### During Planning
@@ -96,13 +96,13 @@ These are example labels. Adapt them to your organization's existing conventions
 
 ### During Monitoring and Controlling
 
-1. For every change request, ask first: does this redefine a concept, relationship, rule, or state?
+1. For every change request, ask first: does this redefine a concept, relationship, rule, state, or action?
 2. If yes — that is an ontology-level change. Evaluate it at that level before approving scope, schedule, or cost changes.
 3. Update the ontology in SharePoint when a change is approved. The version history records the snapshot.
 
 ### During Closing
 
-1. Conduct a Lessons Learned session structured around the ontology: What concepts were wrong or missing? What rules turned out not to hold? What states were we missing?
+1. Conduct a Lessons Learned session structured around the ontology: What concepts were wrong or missing? What rules turned out not to hold? What states were we missing? What actions were missing or wrongly guarded?
 2. Archive the final ontology alongside the project closure documents.
 3. The ontology becomes a starting point for similar future projects — brownfield onboarding rather than starting from zero.
 

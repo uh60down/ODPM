@@ -8,9 +8,9 @@ ODPM describes change as the delta between two ontologies.
 
 Every change has a current-state ontology and a target-state ontology.
 
-**Current-state ontology**: what exists today, how things relate, what rules govern, what states matter.
+**Current-state ontology**: what exists today, how things relate, what rules govern, what states matter, what actions are legitimate.
 
-**Target-state ontology**: what will exist after the change, how relationships will differ, what new rules will apply, what new states will matter.
+**Target-state ontology**: what will exist after the change, how relationships will differ, what new rules will apply, what new states will matter, what new actions will be legitimate.
 
 ## The Delta Is the Destination, Not the Plan
 
@@ -37,7 +37,7 @@ Building the target-state ontology — and sharing it — before execution begin
 ## How to Use This
 
 1. Before designing the change, model the current state. What actually exists? What rules actually govern? (Not what the org chart says. What is real.)
-2. Model the target state with the same four building blocks: Concepts, Relationships, Rules, States.
+2. Model the target state with the same five building blocks: Concepts, Relationships, Rules, States, Actions.
 3. Make the delta between the two models visible and discussable.
 4. Treat every point of confusion or resistance as a question about which model the person is holding.
 

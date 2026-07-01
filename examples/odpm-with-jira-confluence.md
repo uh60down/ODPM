@@ -38,7 +38,7 @@ A minimal ontology space needs three pages:
 
 1. **Glossary** — one entry per concept: name, definition, example
 2. **Relationship Map** — a Mermaid or draw.io diagram showing the most important connections
-3. **Rules and States** — what must be true; what conditions concepts can be in
+3. **Rules, States, and Actions** — what must be true; what conditions concepts can be in; what legitimately moves a concept between them
 
 Update these pages at the end of each sprint. The page history becomes the evolution of understanding.
 
@@ -85,7 +85,7 @@ A story that crosses Epic boundaries often signals an ontology relationship that
 
 1. Create a Confluence space for the ontology.
 2. Draft the glossary and relationship map with the team.
-3. Reach agreement on Concepts, Relationships, Rules, and States before opening Jira.
+3. Reach agreement on Concepts, Relationships, Rules, States, and Actions before opening Jira.
 
 ### During Backlog Refinement
 
