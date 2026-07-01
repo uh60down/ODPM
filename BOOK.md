@@ -58,6 +58,7 @@ Before discussing execution we should understand:
 - How are things related?
 - What rules govern this world?
 - What states can things be in?
+- What actions can legitimately change them?
 
 This shared model is the ontology.
 
@@ -65,12 +66,13 @@ Ontology is not philosophy.
 
 Ontology is simply the team's shared model of the world.
 
-In ODPM, a lightweight ontology has four building blocks:
+In ODPM, a lightweight ontology has five building blocks:
 
 - Concepts: the things that exist in the world.
 - Relationships: how those things connect.
 - Rules: what must be true.
 - States: the meaningful conditions those things can be in.
+- Actions: the named, legitimate ways a concept moves from one state to another.
 
 ---
 

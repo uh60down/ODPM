@@ -64,13 +64,11 @@ flowchart TD
 
 ## Rules
 
-- A vehicle must be eligible before an update is offered.
-- An update must not install when safety conditions are not met.
-- An update should not start if minimum battery or power conditions are not met.
+Constraints that hold regardless of which action is being attempted.
+
 - A campaign must define its target population.
 - A vehicle should report update state changes.
 - A failure must leave the vehicle in a known safe state.
-- Rollback must be available when the update can leave the vehicle unusable or unsafe.
 
 ## States
 
@@ -94,12 +92,29 @@ These states describe the world.
 
 They do not decide whether the implementation uses a state machine, workflow engine, message queue, or service callback.
 
+## Actions
+
+The named, legitimate ways an Update Package moves a Vehicle from one state to another. Each action is guarded by conditions that must hold before it is allowed to happen.
+
+| Action | Moves | Guard |
+| --- | --- | --- |
+| Offer Update | Eligible → Offered | Vehicle must be eligible. |
+| Accept Update | Offered → Accepted | User Consent given, if required. |
+| Schedule | Accepted → Scheduled | Must fall within the Installation Window. |
+| Install | Downloaded → Installing → Installed | Safety conditions met; minimum battery or power conditions met. |
+| Retry | Failed → Retrying | — |
+| Rollback | Failed → Rolled back | Must be available whenever the update could leave the vehicle unusable or unsafe. |
+| Cancel | Any pre-install state → Canceled | — |
+
+Naming these separately from Rules makes explicit who or what triggers a transition, not just what must be true before it can happen.
+
 ## Implementation Is Downstream
 
 Ontology says:
 
 - A vehicle has eligibility.
 - An update has states.
+- Install, Rollback, and the other actions are the legitimate ways between them.
 - Safety rules constrain installation.
 - Failure must be handled.
 
@@ -125,6 +140,7 @@ Keeping those separate prevents the ontology from becoming architecture too earl
 - What failures require human support?
 - What must be true before a campaign can begin?
 - What evidence proves an update completed successfully?
+- Who or what is authorized to trigger Install? Rollback?
 
 ## Working Standard
 
