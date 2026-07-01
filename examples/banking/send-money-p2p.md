@@ -115,7 +115,21 @@ Take the questions to the people who can answer them.
 - **Q4 (ledger hold):** Resolved by checking the code with Eng — the ledger **already supports holds**, so `pending-review` is not new work. Good news the PRD couldn't have told us.
 - **Q3 (new-account limit):** Deliberately left open, and **accepted as a risk** for v1: one limit for everyone now, revisit if fraud data warrants it. Owner and rationale recorded.
 
-Each resolution is written back into the ontology — the Reverse row is now complete, and a `Daily Limit resets at UTC midnight` rule is added.
+### Updated ontology after Chase Understanding
+
+Each resolution is written back into the model, so no one has to remember the answers. The changes from Step 2:
+
+**Rules** — one added:
+
+- A Daily Limit resets at UTC midnight. _(from Q2)_
+
+**Actions** — the previously-unclear Reverse row is now complete:
+
+| Action | Actor | From → To | Guard |
+|---|---|---|---|
+| Reverse | Support agent | cleared → reversed | within 24h of clearing _(from Q1)_ |
+
+Q4 produced no ontology change — it confirmed the existing ledger already supports the hold that `pending-review` needs, so the model was right and the build is cheaper than feared.
 
 ---
 

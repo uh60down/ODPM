@@ -36,7 +36,7 @@ The thread is the artifact.
 
 **Labels = Status of the Ontology**
 Labels make the state of the ontology visible.
-An idea can be `open-question`, `in-progress`, `landed`.
+An idea can be `open-question`, `chase`, `landed`.
 The label is not a priority. It is an epistemic status.
 
 **Commit = Snapshot of the Ontology**
