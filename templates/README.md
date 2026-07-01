@@ -12,6 +12,9 @@ The goal is not bureaucracy. The goal is to make ODPM usable without reading the
 | [PRD-to-Ontology Extraction](prd-to-ontology-extraction.md) | Reading a PRD or charter into an ontology | 1–2 |
 | [Open Question Log](open-question-log.md) | Keeping findings from leaking between runs | 3–4, 7 |
 | [Decision Readiness Checklist](decision-readiness-checklist.md) | Deciding whether to execute | 5 |
+| [Change Ontology Canvas](change-ontology-canvas.md) | Modeling a change as the delta between two ontologies | 1–2 |
+| [Sprint Ontology Review](sprint-ontology-review.md) | Running ODPM alongside Scrum ceremonies | 3–7 |
+| [PMBOK Phase Gate Ontology Review](pmbok-phase-gate-ontology-review.md) | Gating a PMBOK phase on ontology alignment | 2–5, 7 |
 
 ## Wiring to GitHub
 
@@ -31,14 +34,6 @@ gh label create proposed     --description "A refinement has been suggested"
 gh label create landed       --description "Understanding crystallized into an artifact"
 gh label create archived     --description "Question closed without resolution"
 ```
-
-## Planned
-
-Follow-up templates mapping to specific frameworks:
-
-- Change Ontology Canvas — for [change initiatives](../principles/change-ontology.md)
-- Sprint Ontology Review — for [Scrum](../principles/odpm-and-scrum.md)
-- PMBOK Phase Gate Ontology Review — for [PMBOK](../principles/odpm-and-pmbok.md)
 
 ---
 
