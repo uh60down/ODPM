@@ -13,6 +13,7 @@ The project treats product work as a discipline of clarity: framing problems, bu
 - `conversations/` preserves source conversations that shaped the framework.
 - `snapshots/` captures dated or numbered states of the thinking.
 - `principles/` holds durable operating principles.
+- `templates/` holds pick-up-and-use canvases and checklists for running the method.
 - `examples/` collects applied cases by domain.
 - `glossary.md` defines recurring terms.
 
