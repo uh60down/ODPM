@@ -14,7 +14,7 @@ The goal is not bureaucracy. The goal is to make ODPM usable without reading the
 | [Decision Readiness Checklist](decision-readiness-checklist.md) | Deciding whether to execute | 5 |
 | [Change Ontology Canvas](change-ontology-canvas.md) | Modeling a change as the delta between two ontologies | 1–2 |
 | [Sprint Ontology Review](sprint-ontology-review.md) | Running ODPM alongside Scrum ceremonies | 3–7 |
-| [PMBOK Phase Gate Ontology Review](pmbok-phase-gate-ontology-review.md) | Gating a PMBOK phase on ontology alignment | 5, 7 |
+| [PMBOK Phase Gate Ontology Review](pmbok-phase-gate-ontology-review.md) | Gating a PMBOK phase on ontology alignment | 2–5, 7 |
 
 ## Wiring to GitHub
 

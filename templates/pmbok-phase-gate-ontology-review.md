@@ -5,7 +5,7 @@ A gate review structured around the ontology, for teams running PMBOK. ODPM sits
 Copy this file per phase gate.
 
 > Project: _()_
-> Phase gate: _(Initiating → Planning → Executing → Monitoring → Closing)_
+> Phase gate: _(Initiating → Planning → Executing → Monitoring and Controlling → Closing)_
 > Date: _(YYYY-MM-DD)_
 
 ---
@@ -13,7 +13,7 @@ Copy this file per phase gate.
 ## Ontology at This Gate
 
 - [ ] The ontology has been extracted from the Charter / prior-phase artifacts: Concepts, Relationships, Rules, States, Actions.
-- [ ] The [Assumptions Log](prd-to-ontology-extraction.md) has been read as a source of open questions — assumptions are unresolved ontology questions.
+- [ ] The Assumptions Log has been read as a source of open questions — assumptions are unresolved ontology questions.
 - [ ] Open questions that could change this phase's decisions are in the [Open Question Log](open-question-log.md) with owners.
 
 ## Decision Readiness for the Gate

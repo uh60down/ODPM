@@ -4,7 +4,7 @@ A canvas for a change initiative. ODPM describes change as the delta between two
 
 Copy this file, model both states, and make the delta visible. The delta is the destination; the change plan is the route.
 
-> Change initiative: _()_
+> Change initiative: _(name)_
 > Date: _(YYYY-MM-DD)_
 > Owner: _(who maintains this canvas)_
 
