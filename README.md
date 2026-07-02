@@ -30,4 +30,4 @@ New to ODPM? Read these in order:
 5. [Maturity Model](maturity-model.md) — the Level 0–5 path from implicit to platformed.
 6. [Worked Example: Send Money](examples/banking/send-money-p2p.md) — the method run end to end on one feature.
 
-The [snapshots](snapshots/) trace how the thinking evolved, from software origins (#000–#004) through project and change management (#005), the platform layer (#006), framework-agnostic positioning (#007), the Action building block (#008), the tool-vs-process distinction (#009), and ontology design principles borrowed from software engineering (#010).
+The [snapshots](snapshots/) trace how the thinking evolved, from software origins (#000–#004) through project and change management (#005), the platform layer (#006), framework-agnostic positioning (#007), the Action building block (#008), the tool-vs-process distinction (#009), ontology design principles borrowed from software engineering (#010), and tracking execution against the ontology — progress as coverage, bugs as divergence (#011).
