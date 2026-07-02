@@ -22,27 +22,26 @@ That reframes both progress and bugs around the ontology instead of around a tas
 
 ---
 
-## Reframing 1: Progress Is Ontology Coverage
+## Reframing 1: Development Progress Is Ontology Coverage
 
-A task board tells you how many tasks are closed. It does not tell you how much of the *world you agreed to build* actually exists.
+This is about tracking development *during execution* — after Decision Readiness, while the team is building.
 
-ODPM already describes change as the delta between two ontologies — a current state and a target state ([The Change Ontology](../principles/change-ontology.md)). Build progress is the same delta, watched over time:
+By the time execution starts, the ontology is already **agreed**. It is not a moving target; it is the baseline — the definition of what "done" means for this build. The agreed ontology is the target-state model from [The Change Ontology](../principles/change-ontology.md): the full set of Concepts, Relationships, Rules, States, and Actions the team committed to realize.
 
-- The **target-state ontology** is what the team agreed to build (Concepts, Relationships, Rules, States, Actions).
-- The **realized ontology** is what actually exists and behaves in the running system.
-- Progress is that gap closing.
-
-Each element of the ontology moves through a small lifecycle:
+Development progress, then, is each agreed element moving from *not built* to *built and verified*:
 
 ```text
-agreed → built → verified
+not started → in progress → built → verified
 ```
 
-- **agreed** — the team has aligned on it (Decision Ready).
-- **built** — it exists in the system.
+- **not started** — agreed, but no work yet.
+- **in progress** — a developer is building it.
+- **built** — it exists in the running system.
 - **verified** — reality has been checked against it; it behaves as the ontology says.
 
-"80% of tasks done" can hide that a core Rule was never verified. "Every Rule and Action for the payment Concept is verified; the refund Concept is only built, not verified" is a truer status — and it is expressed in the shared vocabulary, not in story points.
+The unit of progress is the ontology element, not the task. Development work — tasks, commits, PRs — is tied to the element it realizes, so progress is read as *"which parts of the agreed model are real yet,"* weighted by the model itself.
+
+"80% of tasks done" can hide that a core Rule was never verified. "Every Rule and Action for the payment Concept is verified; the refund Concept is only built, not verified; two Actions are still not started" is a truer development status — and it is expressed in the shared vocabulary, not in story points.
 
 ---
 
@@ -77,7 +76,7 @@ Coverage status and divergence type are a *lens* laid over whatever tracker a te
 
 If these reframings hold, the thin steps of the method gain substance:
 
-- **Step 6 (Execute)** — execution is watched as ontology elements moving `agreed → built → verified`.
+- **Step 6 (Execute)** — development progress is watched as agreed ontology elements moving `not started → in progress → built → verified`.
 - **Step 7 (Update from feedback)** — a divergence bug that turns out to be "Missing Concept" or "Impossible State" feeds straight back into the ontology, which is exactly what step 7 is for.
 
 ---
