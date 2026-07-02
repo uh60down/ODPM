@@ -198,4 +198,4 @@ Understanding, into a research direction about how ontology evolves.
 
 ---
 
-See also: [Tracking Against the Ontology](011-tracking-against-the-ontology.md) · [Ontology Design Principles](010-ontology-design-principles.md) · [Chase Understanding](../principles/chase-understanding.md) · [One Concept, Not Two](../principles/one-concept-not-two.md) · [Open Research Questions](../questions.md)
+See also: [Ontology Design Principles](010-ontology-design-principles.md) · [Chase Understanding](../principles/chase-understanding.md) · [One Concept, Not Two](../principles/one-concept-not-two.md) · [Open Research Questions](../questions.md)
