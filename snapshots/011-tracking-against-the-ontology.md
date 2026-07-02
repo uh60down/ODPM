@@ -24,7 +24,7 @@ That reframes both progress and bugs around the ontology instead of around a tas
 
 ## Chase Progress: the Downstream Twin of Chase Understanding
 
-Upstream, Chase Understanding uses questions to discover reality about the *world*. The downstream twin uses questions to discover reality about the *build*.
+Upstream, [Chase Understanding](../principles/chase-understanding.md) uses questions to discover reality about the *world*. The downstream twin uses questions to discover reality about the *build*.
 
 | | Chase Understanding | Chase Progress |
 |---|---|---|
@@ -114,7 +114,7 @@ Two definitions fall out:
 - **What is development?** The realization of the agreed ontology in a running system.
 - **What is a bug?** A divergence, *typed by the building block it violates.*
 
-A Bug's properties, if modeled: the **element it diverges from**, the **divergence type** (broken Rule / impossible State / unguarded Action / missing Concept), the **fix locus** (code fix vs. ontology fix), severity, state, and evidence. The middle three are the ODPM-native properties a generic tracker lacks.
+A Bug's properties, if modeled: the **element it diverges from**, the **divergence type** (broken Rule / impossible State / unguarded Action / missing Concept or Relationship), the **fix locus** (code fix vs. ontology fix), severity, state, and evidence. The middle three are the ODPM-native properties a generic tracker lacks.
 
 Lifecycles:
 
@@ -123,6 +123,8 @@ Ontology Element: not started → in progress → built → verified → (diverg
 Bug:              open → triaged → fixed → verified-fixed
                               └→ ontology-updated   (when the model was wrong)
 ```
+
+A diverged element returns to `verified` once its bug reaches `verified-fixed`.
 
 This is deliberately unfinished. Naming these Concepts is easy; knowing which are load-bearing — and which are overmodeling — is the real work, and it isn't done here.
 
@@ -156,4 +158,4 @@ If these reframings hold, the thin steps of the method gain substance:
 
 ---
 
-See also: [The Change Ontology](../principles/change-ontology.md) · [ODPM and Scrum](../principles/odpm-and-scrum.md) · [GitHub as an ODPM Tool](../principles/github-as-odpm-tool.md) · [The ODPM Method](../ODPM-method.md)
+See also: [The Change Ontology](../principles/change-ontology.md) · [ODPM and Scrum](../principles/odpm-and-scrum.md) · [GitHub as an ODPM Tool](../principles/github-as-odpm-tool.md) · [Chase Understanding](../principles/chase-understanding.md) · [The ODPM Method](../ODPM-method.md)
