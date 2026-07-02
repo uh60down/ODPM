@@ -22,6 +22,28 @@ That reframes both progress and bugs around the ontology instead of around a tas
 
 ---
 
+## Chase Progress: the Downstream Twin of Chase Understanding
+
+Upstream, Chase Understanding uses questions to discover reality about the *world*. The downstream twin uses questions to discover reality about the *build*.
+
+| | Chase Understanding | Chase Progress |
+|---|---|---|
+| Discovers reality about | the world | the implementation |
+| The question | "what would most improve the next decision?" | "which part of the agreed model is verifiably real?" |
+| Kills | requirements theater | status theater ("90% done") |
+
+Each building block gives a concrete "is it real yet?" probe:
+
+- **Concept** — does it exist as a real thing in the system?
+- **Relationship** — is the link actually wired?
+- **Rule** — does the constraint actually hold? (try to violate it)
+- **State** — is every state reachable, and the impossible ones truly impossible?
+- **Action** — does the transition work, guard enforced, triggered by the right actor?
+
+Verified coverage — not claimed-built — is the honest measure.
+
+---
+
 ## Reframing 1: Development Progress Is Ontology Coverage
 
 This is about tracking development *during execution* — after Decision Readiness, while the team is building.
@@ -64,6 +86,48 @@ The value is in triage. "Broken Rule" bugs are usually code fixes. "Impossible S
 
 ---
 
+## A Rough Sketch: Delivery as Its Own Ontology
+
+*Still vague — this is a first imagining to react to, not a model to adopt.*
+
+If progress and bugs are worth tracking against the ontology, then the tracking domain itself can be modeled with the five building blocks — ODPM pointed at its own delivery layer.
+
+Two ontologies sit side by side:
+
+- the **product ontology** — what you build (Vehicle, Transfer, …).
+- the **delivery ontology** — how you track building it (Work Item, Change, Bug, …).
+
+The bridge is one Concept — the **Ontology Element**. Development turns agreed elements into verified ones.
+
+A first pass at the delivery Concepts:
+
+| Concept | What it is |
+|---|---|
+| Ontology Element | one element of the product ontology — the unit of work and of progress |
+| Work Item | planned development effort that realizes one or more elements |
+| Change | a commit / PR that advances a Work Item |
+| Verification | evidence that a built element behaves as the model says |
+| Bug | an observed divergence from the agreed model |
+
+Two definitions fall out:
+
+- **What is development?** The realization of the agreed ontology in a running system.
+- **What is a bug?** A divergence, *typed by the building block it violates.*
+
+A Bug's properties, if modeled: the **element it diverges from**, the **divergence type** (broken Rule / impossible State / unguarded Action / missing Concept), the **fix locus** (code fix vs. ontology fix), severity, state, and evidence. The middle three are the ODPM-native properties a generic tracker lacks.
+
+Lifecycles:
+
+```text
+Ontology Element: not started → in progress → built → verified → (diverged, on a bug)
+Bug:              open → triaged → fixed → verified-fixed
+                              └→ ontology-updated   (when the model was wrong)
+```
+
+This is deliberately unfinished. Naming these Concepts is easy; knowing which are load-bearing — and which are overmodeling — is the real work, and it isn't done here.
+
+---
+
 ## This Is a Lens, Not a New Tracker
 
 ODPM does not replace Jira, GitHub Issues, or a burndown chart — the same way [GitHub as an ODPM Tool](../principles/github-as-odpm-tool.md) reads GitHub's native concepts as ontology concepts rather than proposing a new tool.
@@ -85,7 +149,8 @@ If these reframings hold, the thin steps of the method gain substance:
 
 - What is the honest unit of "verified"? A test? A demo? A production observation? Or just a human saying "I checked reality against the model"?
 - Does "coverage" invite the same false precision as story points, if teams start scoring it?
-- Which of these earns promotion into a real principle or template, and which stays an idea? Candidates: a *Progress Is Ontology Coverage* principle, a *Bugs Are Ontology Divergence* principle, an ontology-coverage tracker template, a bug-triage-by-building-block template.
+- Is the delivery-ontology sketch (Work Item / Change / Verification / Bug) the right decomposition, or is it overmodeling something a team already does? Which of those Concepts are load-bearing?
+- Which of these earns promotion into a real principle or template, and which stays an idea? Candidates: a *Progress Is Ontology Coverage* principle, a *Bugs Are Ontology Divergence* principle, a *Chase Progress* question set, an ontology-coverage tracker template, a bug-triage-by-building-block template.
 
 > The test, as always: not whether the lens is elegant, but whether naming coverage and divergence would make the next status call or the next bug triage better.
 
