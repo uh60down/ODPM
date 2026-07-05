@@ -23,6 +23,20 @@ This snapshot records the findings of that exploration.
 
 ---
 
+## What Forced This Snapshot
+
+[Snapshot 011](011-tracking-against-the-ontology.md) sketched two ontologies side by side: product ontology and delivery ontology.
+
+That split was useful, but it raised a harder question. If ODPM can name separate ontologies, it also needs discipline for deciding when separation is justified.
+
+That tension forced this question:
+
+> What evidence justifies an ontology boundary?
+
+The answer became the center of this snapshot: boundaries are discovered, not designed.
+
+---
+
 ## Findings
 
 ### 1. Ontology boundaries are discovered, not designed
@@ -198,4 +212,4 @@ Understanding, into a research direction about how ontology evolves.
 
 ---
 
-See also: [Tracking Against the Ontology](011-tracking-against-the-ontology.md) · [What Is a Project?](013-what-is-a-project.md) · [Ontology Design Principles](010-ontology-design-principles.md) · [Chase Understanding](../principles/chase-understanding.md) · [One Concept, Not Two](../principles/one-concept-not-two.md) · [Open Research Questions](../questions.md)
+See also: [Boundaries Are Discovered](../principles/boundaries-are-discovered.md) · [Tracking Against the Ontology](011-tracking-against-the-ontology.md) · [What Is a Project?](013-what-is-a-project.md) · [Ontology Design Principles](010-ontology-design-principles.md) · [Chase Understanding](../principles/chase-understanding.md) · [One Concept, Not Two](../principles/one-concept-not-two.md) · [Open Research Questions](../questions.md)

@@ -24,6 +24,60 @@ An execution strategy such as PMBOK, Agile, Scrum, Kanban, or SAFe.
 
 ODPM does not replace methodologies. It clarifies the shared ontology those methodologies execute against.
 
+## Methodologies as Strategies Over Ontology
+
+The principle that methodologies do not define the world; they move work through a model of the world.
+
+PMBOK, Scrum, Kanban, SAFe, and similar methods are strategies over an ontology. ODPM makes that ontology explicit.
+
+## Delivery Ontology
+
+An ontology for the work of delivery: Work Items, Changes, Verifications, Bugs, dependencies, capacity, and the relationships between them.
+
+Distinct from a product ontology, which models the world being built.
+
+## Understanding-unit
+
+The atom of delivery in the project ontology: a unit of understanding being transformed into verified reality.
+
+In software delivery, a Story or Bug can be a delivery-shaped instance of an understanding-unit.
+
+## Verification Invariant
+
+The rule that done means verified, never merely claimed.
+
+A unit is not realized until reality has been checked against the understanding it was meant to express.
+
+## Done Means Verified
+
+The practical expression of the verification invariant.
+
+An item is done only when it has been confirmed to match the ontology, acceptance criteria, or model it was meant to realize.
+
+## Realizes
+
+The relationship between a delivery unit and the concept or understanding it brings into verified reality.
+
+Example: a Story realizes a Product Concept.
+
+## Realizes-beyond
+
+A relationship where a delivery grouping realizes more than its agreed concepts or child work items define.
+
+It is a signal of unrecorded scope or an ontology gap.
+
+## Ontology Boundary
+
+A boundary between ontologies or bounded contexts.
+
+In ODPM, boundaries are discovered through evidence, not imposed by preference. A boundary is justified when semantic divergence and independent evolution both appear.
+
+## Term Migration
+
+An ontology evolution operation where a term changes meaning, name, or scope.
+
+Term migrations should be evidence-driven because a premature rename can hide confusion rather than resolve it.
+
 ## Concept
 
 A thing that exists in the world the team is modeling.

@@ -35,6 +35,24 @@ More fully:
 
 ---
 
+## What Forced This Snapshot
+
+[Snapshot 013](013-what-is-a-project.md) made the deeper position explicit:
+
+> What ODPM builds is not a methodology. It is the ontology that methodologies are strategies over.
+
+Once that was named, "Project Management" became the wrong genus for the framework.
+
+ODPM was no longer best described as another way to manage projects. It was a practice model beneath product, project, change, delivery, and other execution strategies.
+
+That tension forced this question:
+
+> If ODPM is not a project-management methodology, what does ODPM now stand for?
+
+This snapshot records the current answer: Ontology-Driven Practice Model.
+
+---
+
 ## The Two Layers
 
 ODPM has two layers.
@@ -141,4 +159,4 @@ Lightweight Execution Layer
 
 ---
 
-See also: [ODPM at a Glance](../ODPM-at-a-glance.md) · [The ODPM Method](../ODPM-method.md) · [Ontology Evolution](012-ontology-evolution.md) · [What Is a Project?](013-what-is-a-project.md) · [Open Research Questions](../questions.md)
+See also: [Methodologies Are Strategies Over Ontology](../principles/methodologies-as-strategies-over-ontology.md) · [ODPM at a Glance](../ODPM-at-a-glance.md) · [The ODPM Method](../ODPM-method.md) · [Ontology Evolution](012-ontology-evolution.md) · [What Is a Project?](013-what-is-a-project.md) · [Open Research Questions](../questions.md)
