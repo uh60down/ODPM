@@ -25,11 +25,11 @@ This snapshot states that answer, and shows the rest of ODPM falling out of it. 
 
 This is not a chapter among chapters. It is the sentence from which the rest of ODPM is *derivable*.
 
-It also repositions the framework. ODPM has described itself as a project-management methodology. On this foundation, it is not one:
+It also repositions the framework. ODPM has been described as a *framework*, and its working guide is titled [The ODPM Method](../ODPM-method.md). Both stay true — but the axiom names the deeper thing the method produces, and that thing is not itself a delivery strategy:
 
-> **ODPM is not a methodology. It is the ontology that methodologies are strategies over.**
+> **What ODPM builds is not a methodology. It is the ontology that methodologies are strategies over.**
 
-That explains why ODPM kept feeling different from PMBOK, Scrum, and SAFe: it operates one level below them. They are strategies; it is the board they are played on.
+The method — the seven-step cycle — is how you build the ontology. The ontology is what PMBOK, Scrum, and SAFe are strategies over. That is why ODPM kept feeling different from them: it operates one level below. They are strategies; it is the board they are played on. (The repo already gestures at this — ODPM "sits upstream of execution" and "around Scrum's ceremonies, not inside them"; the axiom is why.)
 
 ---
 
@@ -77,7 +77,7 @@ What binds entities, and where projects actually get hard.
 The conservation laws. The strongest claims, because one counterexample kills them.
 
 - **Done means verified, never claimed.** No unit is realized until confirmed to match its understanding.
-- **Every realized unit realizes some concept.** Realization without a concept is either undocumented understanding or waste — there is no third case.
+- **Every realized unit realizes some concept** (the *coverage* invariant). Realization without a concept is either undocumented understanding or waste — there is no third case.
 - **Consumed constraint never exceeds available.** Violate it and the project is not behind; it is *ended.* The hardest invariant, the one methodologies pretend is soft.
 - **Understanding only increases.** The project never knows less than before; even a reversal is a gain (you learned the boundary was wrong). This is why *Superseded / Refuted* is a legitimate terminal state, not a failure.
 - **A project terminates.** *(The open crack — see below.)*
@@ -124,6 +124,8 @@ The four-part form is not a second vocabulary — that would violate [One Concep
 | (transformation, carried by Agent) | Action |
 
 Same blocks; the formal-systems framing just foregrounds the invariants and the agent that ordinary usage leaves implicit.
+
+Honesty check: the *top-level* four map cleanly, but Layer 1 does introduce net-new sub-terms — *understanding-unit*, *Agent*, *Constraint*, *Artifact*, *realizes-beyond*. These are provisional. Each should either earn its place by proving load-bearing or be pruned; a foundation that quietly grows a second vocabulary would be failing its own "One Concept, Not Two" test.
 
 ---
 
