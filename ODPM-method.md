@@ -6,6 +6,18 @@ The method is deliberately small. It is meant to be picked up on a real piece of
 
 ---
 
+## The Two Layers
+
+ODPM has a **Base Ontology Layer** and a **Lightweight Execution Layer**.
+
+The Base Ontology Layer names the world: Concepts, Relationships, Rules, States, and Actions.
+
+The Lightweight Execution Layer uses that ontology: source artifact → ontology → open questions → Decision Readiness → execution → feedback.
+
+This document describes the Lightweight Execution Layer. It does not replace PMBOK, Agile, Scrum, Kanban, SAFe, or other methodologies; it gives them a clearer ontology to execute against.
+
+---
+
 ## The Cycle
 
 ```text

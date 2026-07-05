@@ -1,13 +1,43 @@
 # ODPM at a Glance
 
-**Ontology-Driven Project Management (ODPM)**
+**Ontology-Driven Practice Model (ODPM)**
 
-> ODPM is a framework for building a shared ontology before execution.
+> ODPM is the Ontology-Driven Practice Model.
 
-It does not replace existing project management frameworks.
-It complements them by making the team's shared model of the world explicit before planning, implementation, and execution begin.
+It is the base ontology-driven framework for turning intent into shared ontology, using that ontology to reach Decision Readiness, executing lightly against it, and updating it as reality pushes back.
 
-The name is historical. ODPM began in project management but is not limited to it — the same ontology-first approach applies to product work, project delivery, change, and any domain where teams turn understanding into verified reality.
+ODPM does not replace PMBOK, Agile, Scrum, Kanban, SAFe, or other methodologies.
+Those methodologies manage execution.
+ODPM clarifies the shared model of reality those methodologies execute against.
+
+ODPM began as Ontology-Driven Project Management. As the framework matured beyond product and project management, the same acronym now names the broader Ontology-Driven Practice Model.
+
+---
+
+## The Two Layers
+
+### Base Ontology Layer
+
+What ontology is, and how teams model the world:
+
+- Concepts
+- Relationships
+- Rules
+- States
+- Actions
+
+### Lightweight Execution Layer
+
+How teams use ontology in practice:
+
+```text
+source artifact
+→ ontology
+→ open questions
+→ Decision Readiness
+→ execution
+→ feedback
+```
 
 ---
 
