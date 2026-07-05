@@ -6,9 +6,27 @@ The team's shared model of the world: what exists, how things are related, what 
 
 Every good PRD already contains an implicit model of the world. ODPM makes that model explicit.
 
+## Ontology-Driven Practice Model
+
+The current expansion of ODPM: the base ontology-driven framework for turning intent into shared ontology, using that ontology to reach Decision Readiness, executing lightly against it, and updating it as reality pushes back.
+
+## Base Ontology Layer
+
+The ODPM layer that explains what ontology is and how teams model the world using Concepts, Relationships, Rules, States, and Actions.
+
+## Lightweight Execution Layer
+
+The ODPM layer that explains how teams use ontology in practice: source artifact → ontology → open questions → Decision Readiness → execution → feedback.
+
+## Methodology
+
+An execution strategy such as PMBOK, Agile, Scrum, Kanban, or SAFe.
+
+ODPM does not replace methodologies. It clarifies the shared ontology those methodologies execute against.
+
 ## Concept
 
-A thing that exists in the product world.
+A thing that exists in the world the team is modeling.
 
 Examples: User, Vehicle, Software Update, Campaign, Eligibility.
 

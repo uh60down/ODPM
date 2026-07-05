@@ -1,4 +1,4 @@
-# Ontology-Driven Project Management (ODPM)
+# Ontology-Driven Practice Model (ODPM)
 
 ## Building a Shared Ontology
 
@@ -22,7 +22,9 @@ This book is not the story of inventing a framework.
 
 It is the story of discovering a better way to think together.
 
-A note on the name. ODPM began in project management, but it is not limited to it. The same ontology-first approach applies to product work, project delivery, change, and any domain where teams turn understanding into verified reality. The name is historical; the scope is broader.
+A note on the name. ODPM began as Ontology-Driven Project Management. As the framework matured beyond product and project management, the same acronym now names the broader Ontology-Driven Practice Model.
+
+It has two layers: a Base Ontology Layer for making the team's model of reality explicit, and a Lightweight Execution Layer for using that ontology to reach Decision Readiness, execute, and learn from feedback.
 
 ---
 
@@ -362,7 +364,7 @@ Before a plan, there is a model.
 
 Before action, there is understanding.
 
-The work of project management — in any framework, at any scale — is to build that understanding before it is too late to use it.
+The work is not to replace methodologies. It is to clarify the world those methodologies execute against before it is too late to use that understanding.
 
 Not managing projects.
 
