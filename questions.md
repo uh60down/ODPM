@@ -22,6 +22,7 @@ These questions remain active areas for future refinement.
 
 - How should Ontology evolve across releases?
 - How should Ontology be organized across bounded contexts?
+- Should ODPM be renamed? The "Project Management" in the name is narrower than the framework's actual scope.
 
 ## Current Working Answers
 
@@ -31,6 +32,7 @@ These questions remain active areas for future refinement.
 - Ontology changes should be reviewed through agreement, not authority — proposed as a Pull Request, tested in review, confirmed at merge. *(see principles/ontology-owned-by-agreement.md)*
 - Git can become the history of understanding when commits are treated as snapshots of understanding, not just code changes. *(see principles/github-as-odpm-tool.md)*
 - How can Chase Understanding be taught to new project members? Partially answered — teach through the Core Question Set, examples, and guided practice. *(see Core Question Set below)*
+- Should ODPM be renamed? Not yet. "Project Management" is narrower than ODPM's actual scope — it applies to product, project, change, and beyond — but a Term Migration made too early is a falsifiable claim (Snapshot 012). Current answer: clarify scope in the docs and revisit if the name is shown to actively mislead. (Snapshot 013 reframes ODPM as the ontology that methodologies are strategies over, which is the evidence motivating the question.)
 
 ## Core Question Set
 

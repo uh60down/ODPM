@@ -7,6 +7,8 @@
 It does not replace existing project management frameworks.
 It complements them by making the team's shared model of the world explicit before planning, implementation, and execution begin.
 
+The name is historical. ODPM began in project management but is not limited to it — the same ontology-first approach applies to product work, project delivery, change, and any domain where teams turn understanding into verified reality.
+
 ---
 
 ## The Framework
