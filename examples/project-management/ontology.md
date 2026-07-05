@@ -42,6 +42,7 @@ Where delivery actually gets hard.
 - **consumes** — Work Item → Capacity. The edge PMBOK obsesses over and most boards leave implicit.
 - **assigned-to** — Work Item → Agent.
 - **scheduled-in** — Work Item → Sprint or Release.
+- **bounds** — Sprint → Capacity. A Sprint bounds the effort available inside it.
 - **realizes-beyond** — an Epic realizing more than its Stories define: the **+scope** overflow, a relation the agreement failed to record.
 
 > Most project pain lives here, in the relations — not in the Stories themselves.
@@ -56,6 +57,8 @@ The conditions a Work Item moves through. The observable lifecycle:
 backlog → ready → in progress → in review → qa → done
 ```
 
+A `done` item that a bug reopens drops to **diverged**, then re-enters at `in progress` and climbs back to `done` once the fix is verified.
+
 Its deep structure (from the base) is three phases:
 
 ```text
@@ -66,9 +69,9 @@ intended → enacted → verified
 
 Other lifecycles:
 
-- **Bug:** `open → triaged → fixed → verified-fixed` — or `triaged → concept-updated` when the model, not the code, was wrong.
+- **Bug:** `open → triaged → fixed → verified-fixed` — or `triaged → concept-updated` when the model, not the code, was wrong. (Its transitions are named Triage, Fix, Verify-fix.)
 - **Sprint:** `planned → active → closed`. Unfinished items return to backlog on close.
-- **Dependency** (a state of the *relation*, not the item): `satisfied` / `blocking`.
+- **Dependency** (a state of the *relation*, not the item): `satisfied` / `blocking`. A `blocking` dependency is what makes a Work Item "blocked."
 
 ---
 
@@ -79,13 +82,18 @@ Named, legitimate transitions — each with an actor and a guard.
 | Action | Actor | From → To | Guard |
 |---|---|---|---|
 | Refine | PO / team | backlog → ready | references a Product Concept; acceptance criteria defined (Decision Ready) |
-| Schedule | lead | → scheduled-in Sprint/Release | remaining Capacity |
 | Start | developer | ready → in progress | no `blocking` dependency; capacity remains |
-| Submit for Review | developer | in progress → in review | — |
-| Verify (QA Pass) | QA | in review → done (verified) | behaves as its acceptance criteria / Product Concept say |
+| Submit for Review | developer | in progress → in review | implementation complete |
+| Approve Review | reviewer | in review → qa | review approved |
+| Verify (QA Pass) | QA | qa → done (verified) | behaves as its acceptance criteria / Product Concept say |
 | Report Bug | anyone | done → diverged | observed divergence from the model |
-| Close Sprint | lead | active → closed | — (unfinished items → backlog) |
+| Fix Divergence | developer | diverged → in progress | — |
+| Close Sprint | lead | active → closed | Sprint timebox elapsed |
 
+> **Relation-establishing actions** (not lifecycle transitions): **Schedule** creates a `scheduled-in` link to a Sprint or Release, guarded by remaining Capacity; **Assign** creates an `assigned-to` link to an Agent. Neither changes the item's state.
+>
+> **Side effects:** Report Bug also creates a Bug in `open`; closing a Sprint returns its unfinished items to backlog.
+>
 > Transitions with no human actor — a dependency clearing, a Sprint timing out — are system/time triggered. The team observes them; it does not cause them.
 
 ---
@@ -97,7 +105,7 @@ What must hold in every valid state. Inherited from the project ontology (Snapsh
 - **Done means verified, never claimed.** No Story is done until QA confirms it matches its acceptance criteria. (The qa-pass discipline, as law.)
 - **Every done Work Item realizes a Product Concept** (the coverage invariant). Realized work with no concept is scope creep or a missing concept — there is no third case.
 - **Consumed capacity never exceeds Sprint capacity.** Over-commit is not "behind"; it is a broken Sprint.
-- **A Bug is a divergence, typed by the building block it violates** — broken Rule / impossible State / unguarded Action / missing Concept. (From Snapshot 011.) The type tells you whether to fix the code or the model.
+- **A Bug is a divergence, typed by the building block it violates** — broken Rule / impossible State / unguarded Action / missing Concept or Relationship. (From Snapshot 011.) The type tells you whether to fix the code or the model.
 - **Understanding only increases.** A reopened or failed item is a gain — you learned the acceptance criteria were wrong. Never a step backward.
 
 ---
@@ -119,7 +127,8 @@ graph TD
     WI -->|consumes| Cap
     WI -->|scheduled-in| Sprint
     WI -->|scheduled-in| Rel
-    Cap -->|bounded by| Sprint
+    Sprint -->|bounds| Cap
+    Epic -.->|realizes-beyond| PC
 
     subgraph grouping [decomposes — a relation, not a concept]
         Milestone --> Epic --> Feature --> WI --> Subtask
