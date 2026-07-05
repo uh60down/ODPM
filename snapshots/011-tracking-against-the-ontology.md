@@ -10,6 +10,20 @@ These are observations to react to, not decided changes.
 
 ---
 
+## What Forced This Snapshot
+
+The method had become practical upstream: source artifact → ontology → open questions → Decision Readiness.
+
+But execution was still thinly described. Step 6 said "execute" and step 7 said "update from feedback," while most project life happens between those words.
+
+That tension forced this question:
+
+> Once a team has agreed on an ontology, how does it track whether the ontology is becoming real?
+
+This snapshot answers provisionally: track execution against the ontology itself.
+
+---
+
 ## The Question ODPM Should Be Able to Answer
 
 Traditional project management answers "are we on schedule?" by counting tasks.
@@ -158,4 +172,4 @@ If these reframings hold, the thin steps of the method gain substance:
 
 ---
 
-See also: [The Change Ontology](../principles/change-ontology.md) · [ODPM and Scrum](../principles/odpm-and-scrum.md) · [GitHub as an ODPM Tool](../principles/github-as-odpm-tool.md) · [Chase Understanding](../principles/chase-understanding.md) · [The ODPM Method](../ODPM-method.md)
+See also: [Done Means Verified](../principles/done-means-verified.md) · [The Change Ontology](../principles/change-ontology.md) · [ODPM and Scrum](../principles/odpm-and-scrum.md) · [GitHub as an ODPM Tool](../principles/github-as-odpm-tool.md) · [Chase Understanding](../principles/chase-understanding.md) · [The ODPM Method](../ODPM-method.md)

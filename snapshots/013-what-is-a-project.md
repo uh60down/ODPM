@@ -19,6 +19,22 @@ This snapshot states that answer, and shows the rest of ODPM falling out of it. 
 
 ---
 
+## What Forced This Snapshot
+
+[Snapshot 012](012-ontology-evolution.md) treated ontology boundaries as evidence.
+
+But the boundary work kept presupposing something deeper: if product ontology and delivery ontology can separate, what is the thing that holds them together?
+
+The recurring answer was "project," but ODPM had never modeled what a project is.
+
+That tension forced this question:
+
+> What is a project, ontologically?
+
+This snapshot is the current best answer, not a premise that was known from the start.
+
+---
+
 ## Layer 1: The Axiom
 
 > **A project is a bounded transformation of understanding into verified reality, under constraint.**
@@ -177,4 +193,4 @@ It is the parent of the boundary and evidence questions, not a sibling. Filed as
 
 ---
 
-See also: [Tracking Against the Ontology](011-tracking-against-the-ontology.md) · [Ontology Evolution](012-ontology-evolution.md) · [Ontology Design Principles](010-ontology-design-principles.md) · [Chase Understanding](../principles/chase-understanding.md) · [One Concept, Not Two](../principles/one-concept-not-two.md) · [Open Research Questions](../questions.md)
+See also: [Methodologies Are Strategies Over Ontology](../principles/methodologies-as-strategies-over-ontology.md) · [Done Means Verified](../principles/done-means-verified.md) · [Tracking Against the Ontology](011-tracking-against-the-ontology.md) · [Ontology Evolution](012-ontology-evolution.md) · [Ontology Design Principles](010-ontology-design-principles.md) · [Chase Understanding](../principles/chase-understanding.md) · [One Concept, Not Two](../principles/one-concept-not-two.md) · [Open Research Questions](../questions.md)
