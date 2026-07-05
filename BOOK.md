@@ -22,6 +22,8 @@ This book is not the story of inventing a framework.
 
 It is the story of discovering a better way to think together.
 
+A note on the name. ODPM began in project management, but it is not limited to it. The same ontology-first approach applies to product work, project delivery, change, and any domain where teams turn understanding into verified reality. The name is historical; the scope is broader.
+
 ---
 
 ## Chapter 1: The Missing Piece

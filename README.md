@@ -4,6 +4,8 @@ ODPM is a living product management manuscript about making decisions with a sha
 
 The project treats product work as a discipline of clarity: framing problems, building Decision Readiness, practicing Chase Understanding, and keeping teams aligned through a shared ontology.
 
+ODPM began in product and project management, but it is not limited to either — the same ontology-first approach applies to change, delivery, and any domain where teams turn understanding into verified reality. The "Project Management" in the name is historical; whether to rename is an open question (see `questions.md`).
+
 ## Structure
 
 - `BOOK.md` is the current manuscript spine.
