@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SideGig — side-income dashboard</title>
+<style>
+  :root {
+    --page:           #f9f9f7;
+    --surface-1:      #fcfcfb;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #898781;
+    --grid:           #e1e0d9;
+    --baseline:       #c3c2b7;
+    --border:         rgba(11,11,11,0.10);
+    --delta-good:     #006300;
+    --delta-bad:      #d03b3b;
+    --accent:         #2a78d6;
+    --accent-track:   #cde2fb;
+    --spark-dim:      #c3c2b7;
+    --series-1: #2a78d6;
+    --series-2: #1baf7a;
+    --series-3: #eda100;
+    --series-4: #008300;
+    --series-5: #4a3aa7;
+    --series-6: #e34948;
+    --series-7: #e87ba4;
+    --series-8: #eb6834;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page:           #0d0d0d;
+      --surface-1:      #1a1a19;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted:     #898781;
+      --grid:           #2c2c2a;
+      --baseline:       #383835;
+      --border:         rgba(255,255,255,0.10);
+      --delta-good:     #0ca30c;
+      --delta-bad:      #d03b3b;
+      --accent:         #3987e5;
+      --accent-track:   #184f95;
+      --spark-dim:      #52514e;
+      --series-1: #3987e5;
+      --series-2: #199e70;
+      --series-3: #c98500;
+      --series-4: #008300;
+      --series-5: #9085e9;
+      --series-6: #e66767;
+      --series-7: #d55181;
+      --series-8: #d95926;
+    }
+  }
+  :root[data-theme="light"] {
+    --page:           #f9f9f7;
+    --surface-1:      #fcfcfb;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #898781;
+    --grid:           #e1e0d9;
+    --baseline:       #c3c2b7;
+    --border:         rgba(11,11,11,0.10);
+    --delta-good:     #006300;
+    --delta-bad:      #d03b3b;
+    --accent:         #2a78d6;
+    --accent-track:   #cde2fb;
+    --spark-dim:      #c3c2b7;
+    --series-1: #2a78d6; --series-2: #1baf7a; --series-3: #eda100; --series-4: #008300;
+    --series-5: #4a3aa7; --series-6: #e34948; --series-7: #e87ba4; --series-8: #eb6834;
+  }
+  :root[data-theme="dark"] {
+    --page:           #0d0d0d;
+    --surface-1:      #1a1a19;
+    --text-primary:   #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted:     #898781;
+    --grid:           #2c2c2a;
+    --baseline:       #383835;
+    --border:         rgba(255,255,255,0.10);
+    --delta-good:     #0ca30c;
+    --delta-bad:      #d03b3b;
+    --accent:         #3987e5;
+    --accent-track:   #184f95;
+    --spark-dim:      #52514e;
+    --series-1: #3987e5; --series-2: #199e70; --series-3: #c98500; --series-4: #008300;
+    --series-5: #9085e9; --series-6: #e66767; --series-7: #d55181; --series-8: #d95926;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--text-primary);
+    font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 24px 20px 64px; }
+
+  header.app {
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .brand h1 { font-size: 22px; margin: 0; letter-spacing: -0.01em; }
+  .brand p { margin: 2px 0 0; color: var(--text-secondary); font-size: 13px; }
+  .spacer { flex: 1; }
+  button, .btn {
+    font: inherit; font-size: 13.5px; font-weight: 600;
+    color: var(--text-primary);
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 7px 14px;
+    cursor: pointer;
+  }
+  button:hover { border-color: var(--baseline); }
+  button.primary { background: var(--accent); border-color: transparent; color: #fff; }
+  button.ghost { background: transparent; border-color: transparent; color: var(--text-secondary); }
+  button.ghost:hover { color: var(--text-primary); }
+
+  .grid { display: grid; gap: 14px; }
+  .kpis { grid-template-columns: repeat(4, 1fr); }
+  @media (max-width: 820px) { .kpis { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { .kpis { grid-template-columns: 1fr; } }
+
+  .card {
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    position: relative;
+  }
+  .card h2 {
+    font-size: 13px; font-weight: 600; margin: 0 0 2px;
+    color: var(--text-secondary);
+  }
+  .card .sub { font-size: 12px; color: var(--text-muted); margin: 0 0 10px; }
+
+  .tile .label { font-size: 12.5px; color: var(--text-secondary); }
+  .tile .value { font-size: 26px; font-weight: 650; margin-top: 2px; letter-spacing: -0.01em; }
+  .tile .value.hero { font-size: 40px; line-height: 1.15; }
+  .tile .delta { font-size: 12.5px; margin-top: 2px; color: var(--text-muted); }
+  .tile .delta .dir-up   { color: var(--delta-good); font-weight: 600; }
+  .tile .delta .dir-down { color: var(--delta-bad);  font-weight: 600; }
+  .tile svg.spark { display: block; margin-top: 8px; width: 100%; height: 28px; }
+
+  section.row { margin-top: 14px; }
+  .charts { grid-template-columns: 3fr 2fr; }
+  @media (max-width: 820px) { .charts { grid-template-columns: 1fr; } }
+
+  .legend {
+    display: flex; flex-wrap: wrap; gap: 4px 14px;
+    margin: 0 0 8px; padding: 0; list-style: none;
+    font-size: 12.5px; color: var(--text-secondary);
+  }
+  .legend li { display: inline-flex; align-items: center; gap: 6px; }
+  .legend .swatch { width: 10px; height: 10px; border-radius: 3px; flex: none; }
+
+  .chartbox { position: relative; }
+  .chartbox svg { display: block; width: 100%; height: auto; }
+  .tooltip {
+    position: absolute; pointer-events: none; z-index: 5;
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.14);
+    padding: 8px 10px;
+    font-size: 12.5px; line-height: 1.45;
+    color: var(--text-secondary);
+    max-width: 220px;
+    opacity: 0; transition: opacity .08s;
+  }
+  .tooltip b { color: var(--text-primary); font-weight: 650; }
+  .tooltip .tt-row { display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+  .tooltip .swatch { width: 8px; height: 8px; border-radius: 2px; flex: none; }
+
+  .meter-wrap { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .meter { flex: 1; min-width: 220px; height: 14px; border-radius: 7px; background: var(--accent-track); overflow: hidden; }
+  .meter .fill { height: 100%; border-radius: 7px; background: var(--accent); }
+  .meter-nums { font-size: 13px; color: var(--text-secondary); white-space: nowrap; }
+  .meter-nums b { color: var(--text-primary); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  thead th {
+    text-align: left; font-weight: 600; font-size: 12px;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--grid);
+    padding: 6px 8px;
+  }
+  tbody td { padding: 7px 8px; border-bottom: 1px solid var(--grid); }
+  tbody tr:last-child td { border-bottom: none; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  td .src-key { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 7px; vertical-align: 1px; }
+  td.note { color: var(--text-secondary); }
+  .table-scroll { max-height: 340px; overflow-y: auto; }
+  .del { border: none; background: none; color: var(--text-muted); font-size: 15px; padding: 0 4px; cursor: pointer; }
+  .del:hover { color: var(--delta-bad); border: none; }
+
+  dialog {
+    border: 1px solid var(--border); border-radius: 12px;
+    background: var(--surface-1); color: var(--text-primary);
+    padding: 20px; width: min(420px, 92vw);
+  }
+  dialog::backdrop { background: rgba(0,0,0,0.35); }
+  dialog h3 { margin: 0 0 12px; font-size: 16px; }
+  dialog label { display: block; font-size: 12.5px; color: var(--text-secondary); margin: 10px 0 4px; }
+  dialog input {
+    width: 100%; font: inherit; padding: 7px 10px;
+    border: 1px solid var(--border); border-radius: 8px;
+    background: var(--page); color: var(--text-primary);
+  }
+  dialog .actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 16px; }
+
+  footer { margin-top: 28px; font-size: 12.5px; color: var(--text-muted); text-align: center; }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="app">
+    <div class="brand">
+      <h1>SideGig</h1>
+      <p>Your side income, at a glance — data never leaves this browser.</p>
+    </div>
+    <div class="spacer"></div>
+    <button class="ghost" id="themeBtn" title="Toggle theme">◐ Theme</button>
+    <button class="ghost" id="exportBtn">Export JSON</button>
+    <button class="ghost" id="resetBtn">Reset demo</button>
+    <button class="primary" id="addBtn">＋ Add income</button>
+  </header>
+
+  <div class="grid kpis" id="kpis"></div>
+
+  <section class="row card">
+    <h2>Annual goal</h2>
+    <p class="sub" id="goalSub"></p>
+    <div class="meter-wrap">
+      <div class="meter" role="meter" aria-label="Progress toward annual goal" id="goalMeter"><div class="fill" id="goalFill"></div></div>
+      <div class="meter-nums" id="goalNums"></div>
+      <button class="ghost" id="goalBtn">Edit goal</button>
+    </div>
+  </section>
+
+  <section class="row grid charts">
+    <div class="card">
+      <h2>Monthly income by source</h2>
+      <p class="sub">Last 12 months</p>
+      <ul class="legend" id="stackLegend"></ul>
+      <div class="chartbox" id="stackBox"></div>
+    </div>
+    <div class="card">
+      <h2>Cumulative income this year</h2>
+      <p class="sub" id="cumSub"></p>
+      <div class="chartbox" id="cumBox"></div>
+    </div>
+  </section>
+
+  <section class="row card">
+    <h2>Entries</h2>
+    <p class="sub" id="entriesSub"></p>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Date</th><th>Source</th><th class="num">Amount</th><th>Note</th><th></th></tr>
+        </thead>
+        <tbody id="entryRows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>SideGig · a single-file demo app · stores data in <code>localStorage</code> only</footer>
+</div>
+
+<dialog id="addDlg">
+  <h3>Add income</h3>
+  <form method="dialog" id="addForm">
+    <label for="fDate">Date</label>
+    <input type="date" id="fDate" required>
+    <label for="fSource">Source</label>
+    <input type="text" id="fSource" list="sourceList" placeholder="e.g. Freelance dev" required>
+    <datalist id="sourceList"></datalist>
+    <label for="fAmount">Amount (USD)</label>
+    <input type="number" id="fAmount" min="0.01" step="0.01" placeholder="250" required>
+    <label for="fNote">Note (optional)</label>
+    <input type="text" id="fNote" placeholder="Invoice #12">
+    <div class="actions">
+      <button value="cancel" formnovalidate>Cancel</button>
+      <button value="ok" class="primary" id="addOk">Add</button>
+    </div>
+  </form>
+</dialog>
+
+<script>
+'use strict';
+
+/* ---------- state ---------- */
+
+const LS_KEY = 'sidegig-v1';
+const SERIES_SLOTS = 8;
+
+function seedEntries() {
+  // Deterministic pseudo-random demo data: ~14 months of entries across 5 sources.
+  let s = 42;
+  const rnd = () => (s = (s * 1103515245 + 12345) % 2147483648) / 2147483648;
+  const sources = [
+    { name: 'Freelance dev',    base: 900,  growth: 55, freq: 3 },
+    { name: 'Digital products', base: 260,  growth: 40, freq: 4 },
+    { name: 'Blog & affiliate', base: 180,  growth: 22, freq: 2 },
+    { name: 'Consulting',       base: 450,  growth: 30, freq: 1 },
+    { name: 'Stock photos',     base: 60,   growth: 6,  freq: 2 },
+  ];
+  const entries = [];
+  const now = new Date();
+  for (let m = 13; m >= 0; m--) {
+    const monthIdx = 13 - m; // 0 = oldest
+    for (const src of sources) {
+      const n = Math.max(0, Math.round(src.freq * (0.5 + rnd())));
+      for (let i = 0; i < n; i++) {
+        const d = new Date(now.getFullYear(), now.getMonth() - m, 1 + Math.floor(rnd() * 27));
+        if (d > now) continue;
+        const amt = Math.round((src.base + src.growth * monthIdx) * (0.55 + rnd() * 0.9) / n);
+        if (amt < 5) continue;
+        entries.push({
+          id: `seed-${m}-${src.name}-${i}`,
+          date: d.toISOString().slice(0, 10),
+          source: src.name,
+          amount: amt,
+          note: '',
+        });
+      }
+    }
+  }
+  entries.sort((a, b) => a.date < b.date ? -1 : 1);
+  return entries;
+}
+
+function defaultState() {
+  return { goal: 30000, entries: seedEntries() };
+}
+
+function loadState() {
+  try {
+    const raw = localStorage.getItem(LS_KEY);
+    if (raw) {
+      const st = JSON.parse(raw);
+      if (Array.isArray(st.entries) && typeof st.goal === 'number') return st;
+    }
+  } catch (e) { /* corrupted storage falls through to demo data */ }
+  return defaultState();
+}
+
+let state = loadState();
+const save = () => localStorage.setItem(LS_KEY, JSON.stringify(state));
+
+/* ---------- derived data ---------- */
+
+const fmt$ = n => '$' + Math.round(n).toLocaleString('en-US');
+const fmtCompact = n =>
+  n >= 10000 ? '$' + (n / 1000).toFixed(1).replace(/\.0$/, '') + 'K' : fmt$(n);
+const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const monthKey = d => d.slice(0, 7); // YYYY-MM
+
+function sourceOrder() {
+  // Fixed categorical assignment: sources keep their slot by all-time rank at
+  // first render of the day's data; beyond 8 slots the tail folds into "Other".
+  const totals = new Map();
+  for (const e of state.entries) totals.set(e.source, (totals.get(e.source) || 0) + e.amount);
+  const ranked = [...totals.entries()].sort((a, b) => b[1] - a[1]).map(([name]) => name);
+  return ranked.slice(0, SERIES_SLOTS - (ranked.length > SERIES_SLOTS ? 1 : 0));
+}
+
+function slotOf(source, order) {
+  const i = order.indexOf(source);
+  return i === -1 ? order.length : i; // folded tail shares the last slot as "Other"
+}
+
+function last12Keys() {
+  const keys = [];
+  const now = new Date();
+  for (let m = 11; m >= 0; m--) {
+    const d = new Date(now.getFullYear(), now.getMonth() - m, 1);
+    keys.push(`${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`);
+  }
+  return keys;
+}
+
+function monthlyBySource(keys, order) {
+  const idx = new Map(keys.map((k, i) => [k, i]));
+  const hasOther = state.entries.some(e => !order.includes(e.source));
+  const names = hasOther ? [...order, 'Other'] : order;
+  const data = names.map(() => keys.map(() => 0));
+  for (const e of state.entries) {
+    const i = idx.get(monthKey(e.date));
+    if (i === undefined) continue;
+    data[Math.min(slotOf(e.source, order), names.length - 1)][i] += e.amount;
+  }
+  return { names, data };
+}
+
+function monthlyTotals(keys) {
+  const idx = new Map(keys.map((k, i) => [k, i]));
+  const t = keys.map(() => 0);
+  for (const e of state.entries) {
+    const i = idx.get(monthKey(e.date));
+    if (i !== undefined) t[i] += e.amount;
+  }
+  return t;
+}
+
+/* ---------- svg helpers ---------- */
+
+const NS = 'http://www.w3.org/2000/svg';
+function el(tag, attrs, parent) {
+  const n = document.createElementNS(NS, tag);
+  for (const k in attrs) n.setAttribute(k, attrs[k]);
+  if (parent) parent.appendChild(n);
+  return n;
+}
+function niceTicks(max, count = 4) {
+  if (max <= 0) return [0, 1];
+  const raw = max / count;
+  const mag = Math.pow(10, Math.floor(Math.log10(raw)));
+  const step = [1, 2, 2.5, 5, 10].map(m => m * mag).find(s => s >= raw) || 10 * mag;
+  const ticks = [];
+  for (let v = 0; v <= max + step * 0.001; v += step) ticks.push(v);
+  if (ticks[ticks.length - 1] < max) ticks.push(ticks[ticks.length - 1] + step);
+  return ticks;
+}
+function makeTooltip(box) {
+  let tt = box.querySelector('.tooltip');
+  if (!tt) { tt = document.createElement('div'); tt.className = 'tooltip'; box.appendChild(tt); }
+  return {
+    show(html, x, y) {
+      tt.innerHTML = html;
+      tt.style.opacity = 1;
+      const bw = box.clientWidth;
+      const w = tt.offsetWidth, h = tt.offsetHeight;
+      let left = x + 12;
+      if (left + w > bw - 4) left = x - w - 12;
+      tt.style.left = Math.max(4, left) + 'px';
+      tt.style.top = Math.max(0, y - h - 8) + 'px';
+    },
+    hide() { tt.style.opacity = 0; }
+  };
+}
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const seriesColor = i => `var(--series-${Math.min(i, SERIES_SLOTS - 1) + 1})`;
+
+/* ---------- KPI row ---------- */
+
+function sparkline(values) {
+  const w = 120, h = 28, pad = 3;
+  const max = Math.max(...values, 1);
+  const pts = values.map((v, i) => [
+    pad + (w - 2 * pad) * i / (values.length - 1),
+    h - pad - (h - 2 * pad) * v / max,
+  ]);
+  const svg = el('svg', { class: 'spark', viewBox: `0 0 ${w} ${h}`, 'aria-hidden': 'true' });
+  el('polyline', {
+    points: pts.map(p => p.join(',')).join(' '),
+    fill: 'none', stroke: 'var(--spark-dim)', 'stroke-width': 2,
+    'stroke-linejoin': 'round', 'stroke-linecap': 'round',
+  }, svg);
+  const last = pts[pts.length - 1];
+  el('circle', { cx: last[0], cy: last[1], r: 3.5, fill: 'var(--accent)', stroke: 'var(--surface-1)', 'stroke-width': 2 }, svg);
+  return svg;
+}
+
+function renderKPIs(keys, totals) {
+  const box = document.getElementById('kpis');
+  box.innerHTML = '';
+  const thisM = totals[totals.length - 1];
+  const prevM = totals[totals.length - 2] || 0;
+  const yr = String(new Date().getFullYear());
+  const ytd = state.entries.filter(e => e.date.startsWith(yr)).reduce((s, e) => s + e.amount, 0);
+  const best = Math.max(...totals);
+  const bestIdx = totals.indexOf(best);
+  const activeSources = new Set(
+    state.entries.filter(e => monthKey(e.date) === keys[keys.length - 1]).map(e => e.source)
+  ).size;
+
+  const tiles = [
+    { label: 'This month', value: fmt$(thisM), hero: true, spark: totals,
+      delta: prevM > 0 ? { pct: (thisM - prevM) / prevM, vs: 'last month' } : null },
+    { label: 'Year to date', value: fmt$(ytd) },
+    { label: 'Best month', value: fmt$(best), sub: MONTHS[+keys[bestIdx].slice(5) - 1] + ' ' + keys[bestIdx].slice(0, 4) },
+    { label: 'Active sources', value: String(activeSources), sub: 'earning this month' },
+  ];
+
+  for (const t of tiles) {
+    const d = document.createElement('div');
+    d.className = 'card tile';
+    let deltaHtml = '';
+    if (t.delta) {
+      const up = t.delta.pct >= 0;
+      deltaHtml = `<div class="delta"><span class="${up ? 'dir-up' : 'dir-down'}">${up ? '↑' : '↓'} ${Math.abs(t.delta.pct * 100).toFixed(0)}%</span> vs ${t.delta.vs}</div>`;
+    } else if (t.sub) {
+      deltaHtml = `<div class="delta">${t.sub}</div>`;
+    }
+    d.innerHTML = `<div class="label">${t.label}</div><div class="value${t.hero ? ' hero' : ''}">${t.value}</div>${deltaHtml}`;
+    if (t.spark) d.appendChild(sparkline(t.spark));
+    box.appendChild(d);
+  }
+}
+
+/* ---------- goal meter ---------- */
+
+function renderGoal() {
+  const yr = String(new Date().getFullYear());
+  const ytd = state.entries.filter(e => e.date.startsWith(yr)).reduce((s, e) => s + e.amount, 0);
+  const pct = Math.min(1, ytd / state.goal);
+  document.getElementById('goalFill').style.width = (pct * 100).toFixed(1) + '%';
+  const meter = document.getElementById('goalMeter');
+  meter.setAttribute('aria-valuemin', 0);
+  meter.setAttribute('aria-valuemax', state.goal);
+  meter.setAttribute('aria-valuenow', Math.round(ytd));
+  document.getElementById('goalNums').innerHTML =
+    `<b>${fmt$(ytd)}</b> of ${fmt$(state.goal)} · ${(pct * 100).toFixed(0)}%`;
+  document.getElementById('goalSub').textContent =
+    `How ${yr} is tracking against your target`;
+}
+
+/* ---------- stacked monthly chart ---------- */
+
+function renderStack(keys, order) {
+  const { names, data } = monthlyBySource(keys, order);
+  const box = document.getElementById('stackBox');
+  box.innerHTML = '';
+
+  const legend = document.getElementById('stackLegend');
+  legend.innerHTML = names.map((n, i) =>
+    `<li><span class="swatch" style="background:${seriesColor(i)}"></span>${n}</li>`).join('');
+
+  const W = 640, H = 280, m = { t: 24, r: 12, b: 26, l: 46 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const totals = keys.map((_, i) => data.reduce((s, row) => s + row[i], 0));
+  const maxV = Math.max(...totals, 1);
+  const ticks = niceTicks(maxV);
+  const top = ticks[ticks.length - 1];
+  const y = v => m.t + ih - ih * v / top;
+  const band = iw / keys.length;
+  const barW = Math.min(24, band * 0.55);
+  const GAP = 2; // surface gap between stacked segments
+
+  const svg = el('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img',
+    'aria-label': 'Stacked column chart of monthly income by source; values in the entries table' });
+
+  for (const t of ticks) {
+    el('line', { x1: m.l, x2: W - m.r, y1: y(t), y2: y(t), stroke: t === 0 ? 'var(--baseline)' : 'var(--grid)', 'stroke-width': 1 }, svg);
+    el('text', { x: m.l - 8, y: y(t) + 4, 'text-anchor': 'end', 'font-size': 11,
+      fill: 'var(--text-muted)', style: 'font-variant-numeric: tabular-nums' }, svg)
+      .textContent = t >= 1000 ? (t / 1000) + 'K' : t;
+  }
+
+  keys.forEach((k, i) => {
+    const cx = m.l + band * (i + 0.5);
+    el('text', { x: cx, y: H - 8, 'text-anchor': 'middle', 'font-size': 11, fill: 'var(--text-muted)' }, svg)
+      .textContent = MONTHS[+k.slice(5) - 1];
+
+    let acc = 0;
+    const segs = [];
+    names.forEach((name, s) => {
+      const v = data[s][i];
+      if (v <= 0) return;
+      segs.push({ name, s, v, y0: acc, y1: acc + v });
+      acc += v;
+    });
+    segs.forEach((seg, j) => {
+      const isTop = j === segs.length - 1;
+      const yTop = y(seg.y1) + (isTop ? 0 : GAP / 2);
+      const yBot = y(seg.y0) - (j === 0 ? 0 : GAP / 2);
+      const h = Math.max(1, yBot - yTop);
+      const x = cx - barW / 2;
+      let node;
+      if (isTop && h > 4) {
+        const r = 4;
+        node = el('path', { d:
+          `M${x},${yBot} L${x},${yTop + r} Q${x},${yTop} ${x + r},${yTop} L${x + barW - r},${yTop} Q${x + barW},${yTop} ${x + barW},${yTop + r} L${x + barW},${yBot} Z`,
+          fill: seriesColor(seg.s) }, svg);
+      } else {
+        node = el('rect', { x, y: yTop, width: barW, height: h, fill: seriesColor(seg.s) }, svg);
+      }
+      node.dataset.tt = JSON.stringify({ month: k, name: seg.name, s: seg.s, v: seg.v, total: acc });
+    });
+  });
+
+  // Direct label: only the latest month's total (selective, not every column).
+  const li = keys.length - 1;
+  el('text', { x: m.l + band * (li + 0.5), y: y(totals[li]) - 7, 'text-anchor': 'middle',
+    'font-size': 11.5, 'font-weight': 600, fill: 'var(--text-secondary)' }, svg)
+    .textContent = fmtCompact(totals[li]);
+
+  box.appendChild(svg);
+
+  const tt = makeTooltip(box);
+  svg.addEventListener('pointermove', ev => {
+    const t = ev.target.dataset && ev.target.dataset.tt;
+    if (!t) { tt.hide(); return; }
+    const d = JSON.parse(t);
+    const r = box.getBoundingClientRect();
+    tt.show(
+      `<b>${MONTHS[+d.month.slice(5) - 1]} ${d.month.slice(0, 4)}</b><br>
+       <span class="tt-row"><span class="swatch" style="background:${seriesColor(d.s)}"></span>${d.name}: <b>${fmt$(d.v)}</b></span>
+       <span class="tt-row">Month total: ${fmt$(d.total)}</span>`,
+      ev.clientX - r.left, ev.clientY - r.top);
+  });
+  svg.addEventListener('pointerleave', () => tt.hide());
+}
+
+/* ---------- cumulative line chart ---------- */
+
+function renderCumulative() {
+  const yr = new Date().getFullYear();
+  const curM = new Date().getMonth(); // 0-based
+  const perMonth = Array(12).fill(0);
+  for (const e of state.entries) {
+    if (!e.date.startsWith(String(yr))) continue;
+    perMonth[+e.date.slice(5, 7) - 1] += e.amount;
+  }
+  const cum = [];
+  let acc = 0;
+  for (let i = 0; i <= curM; i++) { acc += perMonth[i]; cum.push(acc); }
+
+  document.getElementById('cumSub').textContent =
+    `Jan–${MONTHS[curM]} ${yr}, against the ${fmtCompact(state.goal)} goal`;
+
+  const box = document.getElementById('cumBox');
+  box.innerHTML = '';
+  const W = 440, H = 280, m = { t: 24, r: 46, b: 26, l: 46 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const maxV = Math.max(state.goal, acc, 1);
+  const ticks = niceTicks(maxV);
+  const top = ticks[ticks.length - 1];
+  const y = v => m.t + ih - ih * v / top;
+  const x = i => m.l + iw * i / 11;
+
+  const svg = el('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img',
+    'aria-label': 'Line chart of cumulative income this year versus the annual goal' });
+
+  for (const t of ticks) {
+    el('line', { x1: m.l, x2: W - m.r, y1: y(t), y2: y(t), stroke: t === 0 ? 'var(--baseline)' : 'var(--grid)', 'stroke-width': 1 }, svg);
+    el('text', { x: m.l - 8, y: y(t) + 4, 'text-anchor': 'end', 'font-size': 11,
+      fill: 'var(--text-muted)', style: 'font-variant-numeric: tabular-nums' }, svg)
+      .textContent = t >= 1000 ? (t / 1000) + 'K' : t;
+  }
+  for (let i = 0; i < 12; i += 2) {
+    el('text', { x: x(i), y: H - 8, 'text-anchor': 'middle', 'font-size': 11, fill: 'var(--text-muted)' }, svg)
+      .textContent = MONTHS[i];
+  }
+
+  // Goal line: solid hairline in muted ink with a right-edge label.
+  el('line', { x1: m.l, x2: W - m.r, y1: y(state.goal), y2: y(state.goal), stroke: 'var(--baseline)', 'stroke-width': 1.5 }, svg);
+  el('text', { x: W - m.r + 5, y: y(state.goal) + 4, 'font-size': 11, fill: 'var(--text-muted)' }, svg)
+    .textContent = 'Goal';
+
+  const pts = cum.map((v, i) => [x(i), y(v)]);
+  if (pts.length > 1) {
+    el('path', { d: 'M' + pts.map(p => p.join(',')).join(' L') + ` L${pts[pts.length - 1][0]},${y(0)} L${pts[0][0]},${y(0)} Z`,
+      fill: 'var(--accent)', opacity: 0.1 }, svg);
+    el('path', { d: 'M' + pts.map(p => p.join(',')).join(' L'), fill: 'none',
+      stroke: 'var(--accent)', 'stroke-width': 2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' }, svg);
+  }
+  const last = pts[pts.length - 1];
+  el('circle', { cx: last[0], cy: last[1], r: 4, fill: 'var(--accent)', stroke: 'var(--surface-1)', 'stroke-width': 2 }, svg);
+  el('text', { x: last[0], y: last[1] - 10, 'text-anchor': 'middle', 'font-size': 11.5,
+    'font-weight': 600, fill: 'var(--text-secondary)' }, svg).textContent = fmtCompact(acc);
+
+  box.appendChild(svg);
+
+  // Crosshair + tooltip
+  const cross = el('line', { y1: m.t, y2: m.t + ih, stroke: 'var(--baseline)', 'stroke-width': 1, opacity: 0 }, svg);
+  const dot = el('circle', { r: 4, fill: 'var(--accent)', stroke: 'var(--surface-1)', 'stroke-width': 2, opacity: 0 }, svg);
+  const tt = makeTooltip(box);
+  svg.addEventListener('pointermove', ev => {
+    const r = svg.getBoundingClientRect();
+    const px = (ev.clientX - r.left) * W / r.width;
+    const i = Math.max(0, Math.min(cum.length - 1, Math.round((px - m.l) / (iw / 11))));
+    cross.setAttribute('x1', x(i)); cross.setAttribute('x2', x(i)); cross.setAttribute('opacity', 1);
+    dot.setAttribute('cx', x(i)); dot.setAttribute('cy', y(cum[i])); dot.setAttribute('opacity', 1);
+    const br = box.getBoundingClientRect();
+    tt.show(`<b>${MONTHS[i]} ${yr}</b><br>Cumulative: <b>${fmt$(cum[i])}</b><br>` +
+            `${(cum[i] / state.goal * 100).toFixed(0)}% of goal`,
+      ev.clientX - br.left, ev.clientY - br.top);
+  });
+  svg.addEventListener('pointerleave', () => {
+    cross.setAttribute('opacity', 0); dot.setAttribute('opacity', 0); tt.hide();
+  });
+}
+
+/* ---------- entries table ---------- */
+
+function renderTable(order) {
+  const tbody = document.getElementById('entryRows');
+  const rows = [...state.entries].sort((a, b) => b.date < a.date ? -1 : 1);
+  document.getElementById('entriesSub').textContent =
+    `${rows.length} entries — the full data behind every chart above`;
+  tbody.innerHTML = '';
+  for (const e of rows) {
+    const tr = document.createElement('tr');
+    const slot = Math.min(slotOf(e.source, order), SERIES_SLOTS - 1);
+    tr.innerHTML =
+      `<td>${e.date}</td>` +
+      `<td><span class="src-key" style="background:${seriesColor(slot)}"></span>${e.source}</td>` +
+      `<td class="num">${fmt$(e.amount)}</td>` +
+      `<td class="note">${e.note || ''}</td>` +
+      `<td><button class="del" title="Delete entry" aria-label="Delete entry">✕</button></td>`;
+    tr.querySelector('.del').onclick = () => {
+      state.entries = state.entries.filter(x => x.id !== e.id);
+      save(); renderAll();
+    };
+    tbody.appendChild(tr);
+  }
+}
+
+/* ---------- actions ---------- */
+
+const dlg = document.getElementById('addDlg');
+document.getElementById('addBtn').onclick = () => {
+  document.getElementById('fDate').value = new Date().toISOString().slice(0, 10);
+  document.getElementById('sourceList').innerHTML =
+    sourceOrder().map(s => `<option value="${s.replace(/"/g, '&quot;')}">`).join('');
+  dlg.showModal();
+};
+document.getElementById('addForm').addEventListener('submit', ev => {
+  if (dlg.returnValue !== 'ok' && ev.submitter && ev.submitter.value !== 'ok') return;
+  const date = document.getElementById('fDate').value;
+  const source = document.getElementById('fSource').value.trim();
+  const amount = parseFloat(document.getElementById('fAmount').value);
+  if (!date || !source || !(amount > 0)) return;
+  state.entries.push({
+    id: 'e' + Date.now(),
+    date, source, amount,
+    note: document.getElementById('fNote').value.trim(),
+  });
+  save(); renderAll();
+  document.getElementById('addForm').reset();
+});
+
+document.getElementById('exportBtn').onclick = () => {
+  const blob = new Blob([JSON.stringify(state, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'sidegig-data.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
+};
+
+document.getElementById('resetBtn').onclick = () => {
+  if (!confirm('Replace all data with fresh demo data?')) return;
+  state = defaultState();
+  save(); renderAll();
+};
+
+document.getElementById('goalBtn').onclick = () => {
+  const v = prompt('Annual goal (USD):', state.goal);
+  const n = parseFloat(v);
+  if (n > 0) { state.goal = n; save(); renderAll(); }
+};
+
+document.getElementById('themeBtn').onclick = () => {
+  const cur = document.documentElement.dataset.theme || 'auto';
+  const next = cur === 'auto' ? 'dark' : cur === 'dark' ? 'light' : 'auto';
+  if (next === 'auto') delete document.documentElement.dataset.theme;
+  else document.documentElement.dataset.theme = next;
+  localStorage.setItem('sidegig-theme', next);
+  renderAll();
+};
+{
+  const t = localStorage.getItem('sidegig-theme');
+  if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t;
+}
+
+/* ---------- render ---------- */
+
+function renderAll() {
+  const keys = last12Keys();
+  const order = sourceOrder();
+  const totals = monthlyTotals(keys);
+  renderKPIs(keys, totals);
+  renderGoal();
+  renderStack(keys, order);
+  renderCumulative();
+  renderTable(order);
+}
+renderAll();
+</script>
+</body>
+</html>
