@@ -67,7 +67,23 @@ Everything else — AI transcription, summarization, semantic search, intelligen
 
 Most teams already have user stories. Turning them into an ontology **is** ODPM's step 2 — and it is the part where the framework earns its keep. This is that crossing, made explicit.
 
-A user story has a precise grammar, and each clause maps to a different part of the ontology:
+### A story is mostly what it doesn't say
+
+A user story tells you what an actor *wants to do*. Almost everything else, it leaves implied. A story is the tip of an iceberg: one stated capability floating on an assumed world the actor never writes down. ODPM's work — making the implicit model explicit — is nowhere more concentrated than here, because a story is *almost all* implication.
+
+| The story states… | …the ontology must surface |
+|---|---|
+| a capability — "record a voice note" | the **Concepts** it touches: VoiceRecord, AudioFile, the list |
+| an action | the **States** those concepts move through — a lifecycle no story enumerates |
+| a happy path | the **Rules** that must hold: single recording session, audio required, only-saved-plays — all "obvious," none written |
+| one actor's want | how concepts **relate**, and what happens when two capabilities **collide** |
+| what to build | the **negative space** — what is out of scope or forbidden (R9, the exclusions) |
+
+Extracting the ontology is dragging that iceberg to the surface. You are not relabeling the story — you are excavating the world in which it makes sense. "What an actor wants to do" is one line; "the world where that line is coherent" is the ontology.
+
+### The stated part has a grammar
+
+The part a story *does* say has a precise shape, and each clause maps to a different building block:
 
 > **As a** [role] · **I want** [capability] · **so that** [intention].
 
