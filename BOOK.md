@@ -224,6 +224,20 @@ User stories describe work.
 
 Ontology describes the world.
 
+A story tells you the intention and the concept. The ontology tells you the world.
+
+A story is the seed — one actor, one want, one central thing. The ontology is the world that seed needs in order to be true.
+
+Most of a story is what it does not say. It states one capability and silently assumes the rest: the concepts it touches, the states they move through, the rules that must hold, how they connect, what happens when two capabilities collide.
+
+Turning a story into an ontology is not relabeling. It is excavating the world in which the story makes sense.
+
+Three things the crossing recovers:
+
+- The missing actors. A story is told from one vantage — "As a user." Every rule that begins "the app must" is another actor the story left off-stage.
+- The missing links. A story states a capability, not how the nouns connect. The relationships surface only by asking how things relate.
+- The intention. The "so that" clause carries why it matters. The crossing either promotes it into a rule or loses it silently.
+
 A story should not redefine the world.
 
 Multiple stories should reference the same ontology.
@@ -385,6 +399,10 @@ But helping people discover reality together.
 > Artifacts preserve understanding.
 
 > User stories describe work. Ontology describes the world.
+
+> A user story tells you the intention and the concept. The ontology tells you the world.
+
+> The story is the seed. The ontology is the world.
 
 > Every good PRD already contains an implicit model of the world. ODPM makes that model explicit.
 

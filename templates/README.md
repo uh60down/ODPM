@@ -10,6 +10,7 @@ The goal is not bureaucracy. The goal is to make ODPM usable without reading the
 |---|---|---|
 | [Ontology Canvas](ontology-canvas.md) | Extracting the five building blocks from a source artifact | 2 |
 | [PRD-to-Ontology Extraction](prd-to-ontology-extraction.md) | Reading a PRD or charter into an ontology | 1–2 |
+| [User Stories → Ontology](user-stories-to-ontology.md) | Turning existing user stories into an ontology | 1–2 |
 | [Open Question Log](open-question-log.md) | Keeping findings from leaking between runs | 3–4, 7 |
 | [Decision Readiness Checklist](decision-readiness-checklist.md) | Deciding whether to execute | 5 |
 | [Change Ontology Canvas](change-ontology-canvas.md) | Modeling a change as the delta between two ontologies | 1–2 |
