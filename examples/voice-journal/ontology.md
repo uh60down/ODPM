@@ -67,6 +67,10 @@ Everything else — AI transcription, summarization, semantic search, intelligen
 
 Most teams already have user stories. Turning them into an ontology **is** ODPM's step 2 — and it is the part where the framework earns its keep. This is that crossing, made explicit.
 
+> **A user story tells you the intention and the concept. The ontology tells you the world.**
+>
+> The story is the seed — one actor, one want, one central thing. The ontology is the world that seed needs in order to be true: every other actor, every link, every state and rule the story assumed but never said. The story *points*; the ontology *maps*.
+
 ### A story is mostly what it doesn't say
 
 A user story tells you what an actor *wants to do*. Almost everything else, it leaves implied. A story is the tip of an iceberg: one stated capability floating on an assumed world the actor never writes down. ODPM's work — making the implicit model explicit — is nowhere more concentrated than here, because a story is *almost all* implication.
