@@ -63,6 +63,38 @@ Everything else — AI transcription, summarization, semantic search, intelligen
 
 ---
 
+## From User Stories to Ontology
+
+Most teams already have user stories. Turning them into an ontology **is** ODPM's step 2 — and it is the part where the framework earns its keep. This is that crossing, made explicit.
+
+A user story has a precise grammar, and each clause maps to a different part of the ontology:
+
+> **As a** [role] · **I want** [capability] · **so that** [intention].
+
+| Story clause | Becomes | From the Voice Journal stories |
+|---|---|---|
+| **role** — "As a user" | a **Concept** (an actor) | User |
+| **capability** — "I want to record / browse / edit / remove" | **Actions** + the **Concepts** they touch | Record Voice, Play, Update Metadata, Delete → VoiceRecord, AudioFile, RecordMetadata, VoiceRecordList |
+| **so that** — the intention | a **Rule** or a priority — *or nothing* | "so I can capture before I forget" → **R1 Capture First** |
+
+Mechanically:
+
+- **Nouns → Concepts.** "voice note" → VoiceRecord + AudioFile; "previous voice records" → VoiceRecordList; "title or description" → RecordMetadata.
+- **Verbs → Actions.** record, browse, play, edit, remove → Record Voice, View List, Play, Update Metadata, Delete.
+- **Qualifiers → Rules and States.** "record immediately" → R1; "when necessary" and the implied lifecycle → the States.
+
+### Where intention leaks
+
+The **"so that"** clause is where a story carries *intention* — why it matters. The transformation reliably keeps the nouns and verbs but tends to drop the "so that." "Capture first, organize later" survived only because it was promoted to a Rule; had it stayed in the story's tail, the ontology would never have known recording must never be blocked.
+
+So the story→ontology crossing is exactly where intention is **either promoted into a rule or silently lost**. Watch the "so that" clauses — they are the intention trying to survive the crossing. (This is the [intention gap](#the-intention-gap) in the making.)
+
+### Where the stories fell silent
+
+The crossing also reveals what the stories never said. None of the three mentioned what happens when playback and recording collide, or when you delete a playing record. The transformation surfaced their *absence* as open questions; building later surfaced the answers — the five [dynamic-relationship findings](#the-learning-log--what-realizing-it-revealed).
+
+---
+
 ## Concepts
 
 *(In formal-ontology terms these are entities; ODPM keeps the plain word — see [One Concept, Not Two](../../principles/one-concept-not-two.md).)*
