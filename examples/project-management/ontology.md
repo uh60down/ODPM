@@ -11,22 +11,22 @@ Two domains, two examples: the [banking send-money](../banking/send-money-p2p.md
 
 ## Concepts
 
-The things that exist in delivery. Each is an instance of a base building block, noted in the second column.
+The things that exist in delivery. Each is a **Concept** — the base building block — playing a particular role (the role names come from Snapshot 013's formal lens; they are sub-kinds of Concept, not blocks beside it).
 
-| Concept | Base kind | Meaning |
+| Concept | Building block · role | Meaning |
 |---|---|---|
-| Work Item | understanding-unit | the atom of delivery; **Story** and **Bug** are its two shapes |
-| Story | understanding-unit | a work item that realizes *new* product understanding |
-| Bug | understanding-unit | a work item that restores understanding↔reality alignment — a divergence to close |
-| Product Concept | Concept (product-side) | what a work item realizes (the bridge; a `product_concept_id`) |
-| Agent | Agent | who transforms — assignee, reviewer, QA |
-| Sprint | Constraint | a time-boxed capacity window over a set of work items |
-| Capacity | Constraint | available effort (time / people) in a Sprint |
-| Release | Artifact | verified work delivered to users |
+| Work Item | Concept · *understanding-unit* | the atom of delivery; **Story** and **Bug** are its two shapes |
+| Story | Concept · *understanding-unit* | a work item that realizes *new* product understanding |
+| Bug | Concept · *understanding-unit* | a work item that restores understanding↔reality alignment — a divergence to close |
+| Product Concept | Concept | what a work item realizes (the bridge; a `product_concept_id`) |
+| Agent | Concept · *actor* | who transforms — assignee, reviewer, QA |
+| Sprint | Concept · *constraint* | a time-boxed capacity window over a set of work items |
+| Capacity | Concept · *constraint* | available effort (time / people) in a Sprint |
+| Release | Concept · *artifact* | verified work delivered to users |
 
 ### What is *not* a Concept
 
-Per Snapshot 013, **Epic, Feature, and Milestone are not entities — they are groupings**, i.e. relations over work items. They live under Relations below.
+Per Snapshot 013, **Epic, Feature, and Milestone are not concepts — they are groupings**, i.e. relationships over work items. They live under Relations below.
 
 > Falsifiable claim: if an Epic carries a property not derivable from its members (its own state, its own owner-of-record), promote it to a Concept. Today's typical data model suggests it stays a relation.
 
