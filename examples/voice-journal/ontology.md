@@ -99,6 +99,23 @@ Mechanically:
 - **Verbs → Actions.** record, browse, play, edit, remove → Record Voice, View List, Play, Update Metadata, Delete.
 - **Qualifiers → Rules and States.** "record immediately" → R1; "when necessary" and the implied lifecycle → the States.
 
+### The actors and links a story leaves out
+
+Because a story is told from *one* vantage — "As a **user**" — it hides two things the ontology must recover, and this is where the transformation gives back more than it took.
+
+**Missing actors.** The stories name only the User. But most rules and behaviors are performed by actors no story mentions:
+
+- the **System** — assigns the default display name (R3), saves on stop (F3), enforces the single session (R8), stops playback when recording begins (F4);
+- the **Clock** — stamps `createdAt` / `updatedAt`;
+- the **Recorder** and the **Player** — two distinct subsystems (the Player is its own state machine, per F1);
+- later, an **AI service** (R9).
+
+The story's "user" is one actor in a larger cast. Every rule that begins "the app must…" is a system actor the story left off-stage — and note the drafted ontology, too, named only User. Recovering the rest is ontology work, not story work.
+
+**Missing links.** A story states a capability, not how the nouns connect. `VoiceRecord contains AudioFile`, `VoiceRecord has RecordMetadata`, `VoiceRecordList displays VoiceRecord` — none of these appears in any story; they surface only by asking "how are these related?" And the *dynamic* links — recording **preempts** playback, delete **stops** playback, stop-recording **triggers** save — stay invisible until the ontology (and then the build) forces them out.
+
+So the transformation is generative, not clerical: a story narrates one actor's wants; the ontology returns the whole cast and the wiring between them.
+
 ### Where intention leaks
 
 The **"so that"** clause is where a story carries *intention* — why it matters. The transformation reliably keeps the nouns and verbs but tends to drop the "so that." "Capture first, organize later" survived only because it was promoted to a Rule; had it stayed in the story's tail, the ontology would never have known recording must never be blocked.
