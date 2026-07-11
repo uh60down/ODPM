@@ -20,7 +20,7 @@ ODPM began as Ontology-Driven Project Management. As the framework matured beyon
 
 What ontology is, and how teams model the world:
 
-- Concepts
+- Things
 - Relationships
 - Rules
 - States
@@ -78,9 +78,9 @@ Feedback refines it.
 
 An ontology is built from five fundamental elements.
 
-### Concepts
+### Things
 
-The things that exist.
+What exists — concrete or abstract.
 
 Examples:
 
@@ -97,7 +97,7 @@ Ask:
 
 ### Relationships
 
-How concepts are connected.
+How things are connected.
 
 Examples:
 
@@ -128,7 +128,7 @@ Ask:
 
 ### States
 
-The current reality of a concept.
+The current reality of a thing.
 
 Examples:
 
@@ -144,7 +144,7 @@ Ask:
 
 ### Actions
 
-The named, legitimate ways a concept moves from one state to another.
+The named, legitimate ways a thing moves from one state to another.
 
 Examples:
 
@@ -180,7 +180,7 @@ The team's shared model of the world.
 
 ---
 
-**Concept**
+**Thing**
 
 Something that exists in the world the team is building.
 
@@ -188,7 +188,7 @@ Something that exists in the world the team is building.
 
 **Action**
 
-A named, legitimate way to move a concept from one state to another.
+A named, legitimate way to move a thing from one state to another.
 
 ---
 

@@ -12,7 +12,7 @@ Copy this file per phase gate.
 
 ## Ontology at This Gate
 
-- [ ] The ontology has been extracted from the Charter / prior-phase artifacts: Concepts, Relationships, Rules, States, Actions.
+- [ ] The ontology has been extracted from the Charter / prior-phase artifacts: Things, Relationships, Rules, States, Actions.
 - [ ] The Assumptions Log has been read as a source of open questions — assumptions are unresolved ontology questions.
 - [ ] Open questions that could change this phase's decisions are in the [Open Question Log](open-question-log.md) with owners.
 
@@ -27,7 +27,7 @@ Phase gates are Decision Readiness checkpoints. Use the [Decision Readiness Chec
 
 ## Integrated Change Control
 
-- [ ] Every change request at this gate has been evaluated for whether it redefines the ontology — a concept, relationship, rule, state, or action.
+- [ ] Every change request at this gate has been evaluated for whether it redefines the ontology — a thing, relationship, rule, state, or action.
 - [ ] Ontology-level changes were evaluated at that level before approving scope, schedule, or cost.
 
 ## Gate Decision
@@ -37,7 +37,7 @@ Phase gates are Decision Readiness checkpoints. Use the [Decision Readiness Chec
 
 ## Closing (final gate only)
 
-- [ ] Lessons Learned run against the ontology: What concepts were wrong or missing? What rules didn't hold? What states or actions were we missing?
+- [ ] Lessons Learned run against the ontology: What things were wrong or missing? What rules didn't hold? What states or actions were we missing?
 - [ ] Final ontology archived as a starting point for similar future projects.
 
 ---

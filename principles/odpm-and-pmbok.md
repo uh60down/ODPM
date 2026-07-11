@@ -40,7 +40,7 @@ Scope Statement → WBS → Schedule → Execution
 
 After the Project Charter is approved, extract the implicit ontology before Planning begins.
 
-What concepts does the charter assume? What relationships? What rules and constraints? What states will deliverables move through?
+What things does the charter assume? What relationships? What rules and constraints? What states will deliverables move through?
 
 Most projects skip this step. Each team member then builds a private model from the charter. Misalignment follows.
 
@@ -64,9 +64,9 @@ That question is often faster and more durable than stakeholder management alone
 
 Integrated Change Control is the most important PMBOK process for ODPM.
 
-Every change request should be evaluated for whether it redefines the ontology — a concept, relationship, rule, state, or action.
+Every change request should be evaluated for whether it redefines the ontology — a thing, relationship, rule, state, or action.
 
-A change that redefines a concept is architecturally significant.
+A change that redefines a thing is architecturally significant.
 
 A change that adds a task is not.
 
@@ -76,7 +76,7 @@ PMBOK's change control process does not make this distinction. ODPM does.
 
 Lessons Learned is the natural ontology snapshot moment.
 
-What did we learn about the world that we did not know at the start? What concepts were missing? What rules turned out to be wrong?
+What did we learn about the world that we did not know at the start? What things were missing? What rules turned out to be wrong?
 
 That is ontology refinement for the next project, not just process improvement.
 
@@ -90,8 +90,8 @@ That is ontology refinement for the next project, not just process improvement.
 | Assumptions Log | Unresolved ontology questions — Chase Understanding targets |
 | Scope Statement | Work that executes the ontology |
 | WBS | Delivery structure downstream of the ontology |
-| Stakeholder Register | Stakeholders as Concepts in the project ontology |
-| Risk Register | Significant risks may reveal concepts, states, or rules that should be reflected in the ontology |
+| Stakeholder Register | Stakeholders as Things in the project ontology |
+| Risk Register | Significant risks may reveal things, states, or rules that should be reflected in the ontology |
 | Change Request | Proposed ontology refinement |
 | Communications Plan | One Ontology, Multiple Views — per audience |
 | Lessons Learned | End-of-project ontology snapshot |

@@ -12,7 +12,7 @@ The current expansion of ODPM: the base ontology-driven framework for turning in
 
 ## Base Ontology Layer
 
-The ODPM layer that explains what ontology is and how teams model the world using Concepts, Relationships, Rules, States, and Actions.
+The ODPM layer that explains what ontology is and how teams model the world using Things, Relationships, Rules, States, and Actions.
 
 ## Lightweight Execution Layer
 
@@ -56,13 +56,13 @@ An item is done only when it has been confirmed to match the ontology, acceptanc
 
 ## Realizes
 
-The relationship between a delivery unit and the concept or understanding it brings into verified reality.
+The relationship between a delivery unit and the thing or understanding it brings into verified reality.
 
 Example: a Story realizes a Product Concept.
 
 ## Realizes-beyond
 
-A relationship where a delivery grouping realizes more than its agreed concepts or child work items define.
+A relationship where a delivery grouping realizes more than its agreed things or child work items define.
 
 It is a signal of unrecorded scope or an ontology gap.
 
@@ -78,15 +78,17 @@ An ontology evolution operation where a term changes meaning, name, or scope.
 
 Term migrations should be evidence-driven because a premature rename can hide confusion rather than resolve it.
 
-## Concept
+## Thing
 
-A thing that exists in the world the team is modeling.
+Something that exists in the world the team is modeling — concrete or abstract. The answer to "what exists?"
+
+Formerly called *Concept* (still a valid synonym; see [One Concept, Not Two](principles/one-concept-not-two.md)).
 
 Examples: User, Vehicle, Software Update, Campaign, Eligibility.
 
 ## Relationship
 
-How concepts connect to each other.
+How things connect to each other.
 
 Examples: a User owns a Vehicle, a Vehicle receives a Software Update, a Campaign targets a Vehicle Group.
 
@@ -98,13 +100,13 @@ Examples: an update cannot install while a vehicle is moving, a campaign cannot 
 
 ## State
 
-A meaningful condition a concept can be in.
+A meaningful condition a thing can be in.
 
 Examples: update available, download in progress, install scheduled, install failed, rollback required.
 
 ## Action
 
-A named, legitimate way to move a concept from one state to another.
+A named, legitimate way to move a thing from one state to another.
 
 Distinct from a Rule, which constrains whether the action is allowed to happen, and from a State, which describes the condition before or after.
 

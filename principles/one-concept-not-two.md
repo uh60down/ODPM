@@ -44,21 +44,21 @@ Ontology is the shared object that activity produces and that ODPM manages.
 
 The same discipline applies to the five building blocks. Each has one canonical name — the plain-English one:
 
-**Concept · Relationship · Rule · State · Action.**
+**Thing · Relationship · Rule · State · Action.**
 
 Formal ontology and data modeling have their own words for these. Treat them as synonyms that map to the canonical set, not as a second vocabulary to maintain:
 
 | ODPM (canonical) | Formal-ontology synonym |
 |---|---|
-| Concept | Entity / Class |
+| Thing | Concept / Entity / Class |
 | Relationship | Relation / Association |
 | Rule | Axiom / Invariant / Constraint |
 | State | State |
 | Action | Transition / Event |
 
-ODPM keeps the plain-English term deliberately: *ontology is not philosophy, it is the team's shared model of the world.* "Concept" is more approachable than "Entity," and both name the same thing. When a document reaches for the formal word (a snapshot exploring a formal-systems lens, say), it is describing the same block under a different light — not introducing a new one.
+ODPM keeps the plain-English term deliberately: *ontology is not philosophy, it is the team's shared model of the world.* "Thing" names exactly what the block is — *something that exists* — and reads plainer than "Concept" or "Entity" (both of which lean abstract or technical). When a document reaches for a formal word (a snapshot exploring a formal-systems lens, say), it is describing the same block under a different light — not introducing a new one.
 
-Finer distinctions — an *understanding-unit*, an *agent*, a *constraint*, an *artifact* — are **roles a Concept can play**, not building blocks beside it. They live in the domain layer, as sub-kinds, never as rivals to the five.
+Finer distinctions — an *understanding-unit*, an *agent*, a *constraint*, an *artifact* — are **roles a Thing can play**, not building blocks beside it. They live in the domain layer, as sub-kinds, never as rivals to the five.
 
 ## The Simplified Lifecycle
 

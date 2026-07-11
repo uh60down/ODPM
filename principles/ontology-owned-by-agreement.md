@@ -24,7 +24,7 @@ This is not bureaucracy. It is the minimum structure that makes "shared" mean so
 
 ## What This Prevents
 
-- One team silently redefining a concept that other teams depend on.
+- One team silently redefining a thing that other teams depend on.
 - A sponsor overwriting the ontology without the implementation team's understanding.
 - An ontology that exists on paper but not in practice.
 
@@ -34,7 +34,7 @@ Agreement does not mean consensus on every word.
 
 It means Decision Readiness: the ontology is aligned enough to move forward responsibly.
 
-If two people disagree about a concept, that disagreement is an open question — not a blocker, but a thread to pull.
+If two people disagree about a thing, that disagreement is an open question — not a blocker, but a thread to pull.
 
 ---
 

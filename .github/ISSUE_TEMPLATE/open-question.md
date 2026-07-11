@@ -17,7 +17,7 @@ _What decision would this change? What would most improve because we answered it
 
 _Which building block does this concern?_
 
-- [ ] Concept
+- [ ] Thing
 - [ ] Relationship
 - [ ] Rule
 - [ ] State

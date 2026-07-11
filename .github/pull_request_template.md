@@ -12,7 +12,7 @@ _What part of the ontology or the framework does this change?_
 
 _Does this redefine any of the five building blocks?_
 
-- [ ] Concept
+- [ ] Thing
 - [ ] Relationship
 - [ ] Rule
 - [ ] State

@@ -8,7 +8,7 @@ ODPM began as Ontology-Driven Project Management. As the framework matured beyon
 
 ODPM has two layers:
 
-1. **Base Ontology Layer** — what ontology is, and how teams model the world through Concepts, Relationships, Rules, States, and Actions.
+1. **Base Ontology Layer** — what ontology is, and how teams model the world through Things, Relationships, Rules, States, and Actions.
 2. **Lightweight Execution Layer** — how teams use ontology in practice: source artifact → ontology → open questions → Decision Readiness → execution → feedback.
 
 ## Structure

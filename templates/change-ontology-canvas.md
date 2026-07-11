@@ -14,7 +14,7 @@ Copy this file, model both states, and make the delta visible. The delta is the 
 
 What exists today — not what the org chart says, what is real.
 
-- **Concepts:** _()_
+- **Things:** _()_
 - **Relationships:** _()_
 - **Rules:** _()_
 - **States:** _()_
@@ -24,7 +24,7 @@ What exists today — not what the org chart says, what is real.
 
 What will exist after the change.
 
-- **Concepts:** _(new / changed / retired)_
+- **Things:** _(new / changed / retired)_
 - **Relationships:** _(what connects differently)_
 - **Rules:** _(what new rules apply)_
 - **States:** _(what new states matter)_

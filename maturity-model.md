@@ -31,9 +31,9 @@ Teams rely on private understanding and scattered documents. Everyone has a mode
 
 ## Level 1 — Named
 
-The team uses ODPM language: ontology, concepts, relationships, rules, states, actions. The vocabulary is shared even if the model isn't written yet.
+The team uses ODPM language: ontology, things, relationships, rules, states, actions. The vocabulary is shared even if the model isn't written yet.
 
-**You're here when:** people say "that's a new concept" or "which state is it in?" without being prompted.
+**You're here when:** people say "that's a new thing" or "which state is it in?" without being prompted.
 
 **To advance:** write the vocabulary down. A [glossary](glossary.md) is enough to start.
 
@@ -47,7 +47,7 @@ A lightweight ontology exists as an artifact: a glossary, a relationship map, an
 
 ## Level 3 — Reviewed
 
-Ontology changes are proposed, reviewed, and agreed — like pull requests. No single person redefines a shared concept alone.
+Ontology changes are proposed, reviewed, and agreed — like pull requests. No single person redefines a shared thing alone.
 
 **You're here when:** changing the ontology feels like changing shared code: it needs a proposal and a second pair of eyes.
 
@@ -67,7 +67,7 @@ open question → tracked item → owner → decision → ontology update
 
 ## Level 5 — Platformed
 
-The ontology becomes executable or semi-executable through tools, workflows, agents, or systems. Applications query the same objects, follow the same relationships, respect the same rules — there is no per-application re-interpretation of what a concept means.
+The ontology becomes executable or semi-executable through tools, workflows, agents, or systems. Applications query the same objects, follow the same relationships, respect the same rules — there is no per-application re-interpretation of what a thing means.
 
 **You're here when:** the ontology is not just describing the world, it is running part of it. See [Snapshot 006: Ontology as a Platform Layer](snapshots/006-ontology-as-platform-layer.md). (That snapshot predates the Action building block, so it maps four blocks to a platform's objects, links, rules, and states; at this level, Actions become the platform's operations.)
 

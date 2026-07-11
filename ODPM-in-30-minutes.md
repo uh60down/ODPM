@@ -18,7 +18,7 @@ Read the artifact once. Write one sentence: *what is this actually trying to do?
 
 Fill the [Ontology Canvas](templates/ontology-canvas.md). One pass per building block:
 
-- **Concepts** — the nouns that are real things.
+- **Things** — the nouns that are real things.
 - **Relationships** — how they connect.
 - **Rules** — what must always be true.
 - **States** — the conditions things can be in.
@@ -30,7 +30,7 @@ Keep it rough. Bullet points beat diagrams. If you get stuck naming an action's 
 
 Every time the artifact was unclear, disputed, missing, or assumed, write it in the [Open Question Log](templates/open-question-log.md). Give each one an **owner** — a name, not a team.
 
-The best signals: an Action with no clear actor, a State nothing reaches, a Rule that's really a guard on an unnamed action, a concept used but never defined.
+The best signals: an Action with no clear actor, a State nothing reaches, a Rule that's really a guard on an unnamed action, a thing used but never defined.
 
 ### 24–29 min — Decide readiness
 

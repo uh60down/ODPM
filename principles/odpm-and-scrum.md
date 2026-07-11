@@ -26,7 +26,7 @@ During product discovery, before stories are written, build the initial ontology
 
 A glossary and a lightweight relationship diagram are enough.
 
-The goal is for the team to agree on what exists — the Concepts, Relationships, Rules, States, and Actions — before agreeing on what to build.
+The goal is for the team to agree on what exists — the Things, Relationships, Rules, States, and Actions — before agreeing on what to build.
 
 Stories written before this agreement each encode a private model.
 
@@ -38,11 +38,11 @@ Stories written after share a common one.
 
 Add one question to every story review:
 
-> Does this story reference established ontology concepts, or does it introduce an undefined one?
+> Does this story reference established ontology things, or does it introduce an undefined one?
 
-An undefined concept is not a blocker. It is a Chase Understanding signal.
+An undefined thing is not a blocker. It is a Chase Understanding signal.
 
-Resolve the concept first. Then write the story.
+Resolve the thing first. Then write the story.
 
 ---
 

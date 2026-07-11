@@ -22,8 +22,8 @@ Read the artifact once per building block. Each pass asks one question.
 
 | Pass | Question | What to look for |
 |---|---|---|
-| Concepts | What exists? | Nouns the artifact treats as real things |
-| Relationships | How do they connect? | Verbs and phrases linking concepts |
+| Things | What exists? | Nouns the artifact treats as real things |
+| Relationships | How do they connect? | Verbs and phrases linking things |
 | Rules | What must be true? | "must", "cannot", "only", constraints, limits |
 | States | What conditions matter? | Lifecycle words, statuses, phases |
 | Actions | What legitimately changes a state? | Named operations, who triggers them, guards |
@@ -39,7 +39,7 @@ Watch especially for:
 - A rule stated as a guard on an unnamed action ("must not X unless Y" — what action is X?).
 - A state with no action that reaches or leaves it.
 - An actor implied but never named ("the system does Z" — which actor, under what authority?).
-- A concept referenced once and never defined.
+- A thing referenced once and never defined.
 
 ## 4. Separate intent-gaps from evidence-gaps
 

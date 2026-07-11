@@ -10,7 +10,7 @@ It is done when reality has been checked against the understanding the work was 
 
 Verification asks:
 
-- Does the Concept exist as intended?
+- Does the Thing exist as intended?
 - Does the Relationship actually hold?
 - Does the Rule resist violation?
 - Are the States reachable and constrained as agreed?

@@ -10,18 +10,18 @@ Copy this file, fill each section, and keep it short. The goal is a shared model
 
 ---
 
-## Concepts
+## Things
 
 The things that exist in this world.
 
-| Concept | Meaning |
+| Thing | Meaning |
 |---|---|
 | | |
 | | |
 
 ## Relationships
 
-How the concepts connect.
+How the things connect.
 
 - _(A owns B)_
 - _(B receives C)_
@@ -35,13 +35,13 @@ What must always be true. Constraints, independent of any single action.
 
 ## States
 
-The meaningful conditions a concept can be in.
+The meaningful conditions a thing can be in.
 
-- _(Concept: state → state → state)_
+- _(Thing: state → state → state)_
 
 ## Actions
 
-The named, legitimate ways a concept moves from one state to another.
+The named, legitimate ways a thing moves from one state to another.
 
 | Action | Actor | From → To | Guard (what must be true first) |
 |---|---|---|---|
@@ -62,7 +62,7 @@ Anything unclear, disputed, missing, or assumed. Move each of these into the [Op
 
 A small slice, using the software-update domain from the [glossary](../glossary.md), to show the shape:
 
-- **Concepts:** Vehicle, Software Update, Campaign.
+- **Things:** Vehicle, Software Update, Campaign.
 - **Relationships:** a Campaign targets Vehicles; a Vehicle receives a Software Update.
 - **Rules:** an update cannot install while a vehicle is moving.
 - **States:** Software Update — available → downloading → install scheduled → installed → install failed.

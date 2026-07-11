@@ -16,10 +16,10 @@ The view you show does.
 
 | Audience | What they need to see |
 |---|---|
-| Sponsors | Why the concepts exist and what rules constrain decisions |
-| Managers | How their team's concepts relate to others, and what states they own |
+| Sponsors | Why the things exist and what rules constrain decisions |
+| Managers | How their team's things relate to others, and what states they own |
 | End users | What states they will experience and what they need to do differently |
-| Engineers | Concepts, relationships, and rules that constrain implementation |
+| Engineers | Things, relationships, and rules that constrain implementation |
 
 ## What This Is Not
 
