@@ -12,10 +12,10 @@ Instead of beginning with implementation artifacts — user interfaces, APIs, da
 
 Every practice starts with the same five questions:
 
-1. What **concepts** exist?
-2. How are those concepts **related**?
+1. What **entities** exist?
+2. How are those entities **related**?
 3. What **actions** are allowed?
-4. What **states** can those concepts be in?
+4. What **states** can those entities be in?
 5. What **rules** govern the domain?
 
 The resulting ontology becomes the shared understanding that guides every subsequent decision — from product discovery and software design to implementation and future evolution.
@@ -26,7 +26,7 @@ The resulting ontology becomes the shared understanding that guides every subseq
 
 A voice journal is intentionally simple. Most people can understand its purpose within minutes, which makes it ideal for demonstrating the complete ODPM process without the complexity of an enterprise system.
 
-Although the product is small, it contains every essential building block: Concepts, Relationships, Actions, States, and Rules.
+Although the product is small, it contains every essential building block: Entities, Relationships, Actions, States, and Rules.
 
 ---
 
@@ -40,7 +40,7 @@ The guiding principle is:
 
 Recording should never be blocked by titles, descriptions, tags, AI processing, or other metadata.
 
-*(Notice how much weight this single line carries — it does more design work than the entire concept graph. See [The Intention Gap](#the-intention-gap).)*
+*(Notice how much weight this single line carries — it does more design work than the entire entity graph. See [The Intention Gap](#the-intention-gap).)*
 
 ### User Stories
 
@@ -67,7 +67,7 @@ Everything else — AI transcription, summarization, semantic search, intelligen
 
 Most teams already have user stories. Turning them into an ontology **is** ODPM's step 2 — and it is the part where the framework earns its keep. This is that crossing, made explicit.
 
-> **A user story tells you the intention and the concept. The ontology tells you the world.**
+> **A user story tells you the intention and the entity. The ontology tells you the world.**
 >
 > The story is the seed — one actor, one want, one central thing. The ontology is the world that seed needs in order to be true: every other actor, every link, every state and rule the story assumed but never said. The story *points*; the ontology *maps*.
 
@@ -77,10 +77,10 @@ A user story tells you what an actor *wants to do*. Almost everything else, it l
 
 | The story states… | …the ontology must surface |
 |---|---|
-| a capability — "record a voice note" | the **Concepts** it touches: VoiceRecord, AudioFile, the list |
-| an action | the **States** those concepts move through — a lifecycle no story enumerates |
+| a capability — "record a voice note" | the **Entities** it touches: VoiceRecord, AudioFile, the list |
+| an action | the **States** those entities move through — a lifecycle no story enumerates |
 | a happy path | the **Rules** that must hold: single recording session, audio required, only-saved-plays — all "obvious," none written |
-| one actor's want | how concepts **relate**, and what happens when two capabilities **collide** |
+| one actor's want | how entities **relate**, and what happens when two capabilities **collide** |
 | what to build | the **negative space** — what is out of scope or forbidden (R9, the exclusions) |
 
 Extracting the ontology is dragging that iceberg to the surface. You are not relabeling the story — you are excavating the world in which it makes sense. "What an actor wants to do" is one line; "the world where that line is coherent" is the ontology.
@@ -93,13 +93,13 @@ The part a story *does* say has a precise shape, and each clause maps to a diffe
 
 | Story clause | Becomes | From the Voice Journal stories |
 |---|---|---|
-| **role** — "As a user" | a **Concept** (an actor) | User |
-| **capability** — "I want to record / browse / edit / remove" | **Actions** + the **Concepts** they touch | Record Voice, Play, Update Metadata, Delete → VoiceRecord, AudioFile, RecordMetadata, VoiceRecordList |
+| **role** — "As a user" | a **Entity** (an actor) | User |
+| **capability** — "I want to record / browse / edit / remove" | **Actions** + the **Entities** they touch | Record Voice, Play, Update Metadata, Delete → VoiceRecord, AudioFile, RecordMetadata, VoiceRecordList |
 | **so that** — the intention | a **Rule** or a priority — *or nothing* | "so I can capture before I forget" → **R1 Capture First** |
 
 Mechanically:
 
-- **Nouns → Concepts.** "voice note" → VoiceRecord + AudioFile; "previous voice records" → VoiceRecordList; "title or description" → RecordMetadata.
+- **Nouns → Entities.** "voice note" → VoiceRecord + AudioFile; "previous voice records" → VoiceRecordList; "title or description" → RecordMetadata.
 - **Verbs → Actions.** record, browse, play, edit, remove → Record Voice, View List, Play, Update Metadata, Delete.
 - **Qualifiers → Rules and States.** "record immediately" → R1; "when necessary" and the implied lifecycle → the States.
 
@@ -132,9 +132,9 @@ The crossing also reveals what the stories never said. None of the three mention
 
 ---
 
-## Concepts
+## Entities
 
-*(In formal-ontology terms these are entities; ODPM keeps the plain word — see [One Concept, Not Two](../../principles/one-concept-not-two.md).)*
+*(In formal-ontology terms these are entities; ODPM keeps the plain word — see [One Entity, Not Two](../../principles/one-entity-not-two.md).)*
 
 ### User
 
@@ -142,7 +142,7 @@ The person who records and manages voice thoughts.
 
 ### VoiceRecord
 
-A single captured voice thought. **This is the central concept of the domain** — every meaningful interaction revolves around it.
+A single captured voice thought. **This is the central entity of the domain** — every meaningful interaction revolves around it.
 
 ### AudioFile
 
@@ -291,7 +291,7 @@ On paper, this looked complete. Then it was built.
 
 ## The Learning Log — What Realizing It Revealed
 
-Building the MVP surfaced five gaps. **Every one was a relationship, and every one was a _dynamic_ relationship** — concurrency, exclusion, causation, side-effects, state/behavior coherence — the kind invisible by inspection that only appears when the system runs. The Concepts were right; the *verbs between the verbs* were missing.
+Building the MVP surfaced five gaps. **Every one was a relationship, and every one was a _dynamic_ relationship** — concurrency, exclusion, causation, side-effects, state/behavior coherence — the kind invisible by inspection that only appears when the system runs. The Entities were right; the *verbs between the verbs* were missing.
 
 Each finding follows the ODPM loop: **observation → ontology impact → rule candidate**.
 
@@ -358,19 +358,19 @@ The five questions ODPM starts with collect *static* relationships cleanly but s
 
 ### The Intention Gap
 
-One more hole, of a different kind. **"Capture first. Organize later."** — a single sentence of value-ordering — did more UX design work than the whole concept graph. The ontology captures *structure* (what the domain is), not *intention* (what it's for, what matters, what to build first). ODPM currently smuggles intention in via the user stories sitting on top of the ontology. Worth naming as a known gap, not papering over.
+One more hole, of a different kind. **"Capture first. Organize later."** — a single sentence of value-ordering — did more UX design work than the whole entity graph. The ontology captures *structure* (what the domain is), not *intention* (what it's for, what matters, what to build first). ODPM currently smuggles intention in via the user stories sitting on top of the ontology. Worth naming as a known gap, not papering over.
 
 ---
 
 ## Future Evolution
 
-The ontology remains stable even as the product evolves. New capabilities are introduced by **adding** concepts and relationships rather than modifying existing ones:
+The ontology remains stable even as the product evolves. New capabilities are introduced by **adding** entities and relationships rather than modifying existing ones:
 
 - VoiceRecord — has → **Transcript**
 - VoiceRecord — produces → **Insight**
 - VoiceRecord — indexed by → **SearchIndex**
 
-The product grows without changing the meaning of its core concepts. `Paused` (deferred in F2) re-enters here as an explicit behavior when the time comes.
+The product grows without changing the meaning of its core entities. `Paused` (deferred in F2) re-enters here as an explicit behavior when the time comes.
 
 ---
 
@@ -378,9 +378,9 @@ The product grows without changing the meaning of its core concepts. `Paused` (d
 
 This example demonstrates the central philosophy of ODPM.
 
-A conventional software process typically starts by discussing screens, APIs, database tables, or implementation details. ODPM starts somewhere else — by building a shared understanding of the domain. Once the concepts, relationships, actions, states, and rules are understood, implementation becomes a matter of expressing that understanding through software.
+A conventional software process typically starts by discussing screens, APIs, database tables, or implementation details. ODPM starts somewhere else — by building a shared understanding of the domain. Once the entities, relationships, actions, states, and rules are understood, implementation becomes a matter of expressing that understanding through software.
 
-Here, `VoiceRecord` naturally emerged as the central concept — not because of a database design or class hierarchy, but because every meaningful interaction in the domain revolves around it. The resulting ontology is small, stable, and easy to evolve.
+Here, `VoiceRecord` naturally emerged as the central entity — not because of a database design or class hierarchy, but because every meaningful interaction in the domain revolves around it. The resulting ontology is small, stable, and easy to evolve.
 
 > **Understand the domain before designing the solution.**
 
@@ -390,4 +390,4 @@ And the sharper lesson — the one only building could teach: the ontology wasn'
 
 ---
 
-See also: [The ODPM Method](../../ODPM-method.md) · [Tracking Against the Ontology](../../snapshots/011-tracking-against-the-ontology.md) · [One Concept, Not Two](../../principles/one-concept-not-two.md) · [Banking: Send Money](../banking/send-money-p2p.md) · [Project Management Domain Ontology](../project-management/ontology.md)
+See also: [The ODPM Method](../../ODPM-method.md) · [Tracking Against the Ontology](../../snapshots/011-tracking-against-the-ontology.md) · [One Entity, Not Two](../../principles/one-entity-not-two.md) · [Banking: Send Money](../banking/send-money-p2p.md) · [Project Management Domain Ontology](../project-management/ontology.md)

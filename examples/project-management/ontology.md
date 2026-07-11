@@ -3,32 +3,32 @@
 A worked ontology of software product and project **delivery** — Stories, Bugs, Sprints, and the rest — modeled with ODPM's five building blocks.
 
 > **This is a domain ontology built _with_ ODPM, not part of ODPM.**
-> It specializes the generic project ontology (Snapshot 013, *What Is a Project?*) to one domain: software delivery. The base — the five building blocks, the method, the project invariants — stays domain-independent. The PM-specific terms (Story, Bug, Sprint, Epic) live here, as *instances* of base concepts. Nothing here climbs into the base.
+> It specializes the generic project ontology (Snapshot 013, *What Is a Project?*) to one domain: software delivery. The base — the five building blocks, the method, the project invariants — stays domain-independent. The PM-specific terms (Story, Bug, Sprint, Epic) live here, as *instances* of base entities. Nothing here climbs into the base.
 
 Two domains, two examples: the [banking send-money](../banking/send-money-p2p.md) example models a *product* world (Transfer, Account). This models the *delivery* world — the work of building any product.
 
 ---
 
-## Concepts
+## Entities
 
-The things that exist in delivery. Each is a **Concept** — the base building block — playing a particular role (the role names come from Snapshot 013's formal lens; they are sub-kinds of Concept, not blocks beside it).
+The things that exist in delivery. Each is an **Entity** — the base building block — playing a particular role (the role names come from Snapshot 013's formal lens; they are sub-kinds of Entity, not blocks beside it).
 
-| Concept | Building block · role | Meaning |
+| Entity | Building block · role | Meaning |
 |---|---|---|
-| Work Item | Concept · *understanding-unit* | the atom of delivery; **Story** and **Bug** are its two shapes |
-| Story | Concept · *understanding-unit* | a work item that realizes *new* product understanding |
-| Bug | Concept · *understanding-unit* | a work item that restores understanding↔reality alignment — a divergence to close |
-| Product Concept | Concept | what a work item realizes (the bridge; a `product_concept_id`) |
-| Agent | Concept · *actor* | who transforms — assignee, reviewer, QA |
-| Sprint | Concept · *constraint* | a time-boxed capacity window over a set of work items |
-| Capacity | Concept · *constraint* | available effort (time / people) in a Sprint |
-| Release | Concept · *artifact* | verified work delivered to users |
+| Work Item | Entity · *understanding-unit* | the atom of delivery; **Story** and **Bug** are its two shapes |
+| Story | Entity · *understanding-unit* | a work item that realizes *new* product understanding |
+| Bug | Entity · *understanding-unit* | a work item that restores understanding↔reality alignment — a divergence to close |
+| Product Entity | Entity | what a work item realizes (the bridge; a `product_entity_id`) |
+| Agent | Entity · *actor* | who transforms — assignee, reviewer, QA |
+| Sprint | Entity · *constraint* | a time-boxed capacity window over a set of work items |
+| Capacity | Entity · *constraint* | available effort (time / people) in a Sprint |
+| Release | Entity · *artifact* | verified work delivered to users |
 
-### What is *not* a Concept
+### What is *not* an Entity
 
-Per Snapshot 013, **Epic, Feature, and Milestone are not concepts — they are groupings**, i.e. relationships over work items. They live under Relations below.
+Per Snapshot 013, **Epic, Feature, and Milestone are not entities — they are groupings**, i.e. relationships over work items. They live under Relations below.
 
-> Falsifiable claim: if an Epic carries a property not derivable from its members (its own state, its own owner-of-record), promote it to a Concept. Today's typical data model suggests it stays a relation.
+> Falsifiable claim: if an Epic carries a property not derivable from its members (its own state, its own owner-of-record), promote it to an Entity. Today's typical data model suggests it stays a relation.
 
 ---
 
@@ -36,8 +36,8 @@ Per Snapshot 013, **Epic, Feature, and Milestone are not concepts — they are g
 
 Where delivery actually gets hard.
 
-- **realizes** — Work Item → Product Concept. The bridge from delivery to product. A story with no concept realizes nothing nameable.
-- **decomposes** — the grouping tree: Milestone ⊃ Epic ⊃ Feature ⊃ Story ⊃ Subtask. *Epic / Feature / Milestone are this relation, not concepts.*
+- **realizes** — Work Item → Product Entity. The bridge from delivery to product. A story with no entity realizes nothing nameable.
+- **decomposes** — the grouping tree: Milestone ⊃ Epic ⊃ Feature ⊃ Story ⊃ Subtask. *Epic / Feature / Milestone are this relation, not entities.*
 - **depends-on** — Work Item → Work Item. Its bad state *is* "blocked" — which is why a blocker always points at another item, never at the item itself.
 - **consumes** — Work Item → Capacity. The edge PMBOK obsesses over and most boards leave implicit.
 - **assigned-to** — Work Item → Agent.
@@ -69,7 +69,7 @@ intended → enacted → verified
 
 Other lifecycles:
 
-- **Bug:** `open → triaged → fixed → verified-fixed` — or `triaged → concept-updated` when the model, not the code, was wrong. (Its transitions are named Triage, Fix, Verify-fix.)
+- **Bug:** `open → triaged → fixed → verified-fixed` — or `triaged → entity-updated` when the model, not the code, was wrong. (Its transitions are named Triage, Fix, Verify-fix.)
 - **Sprint:** `planned → active → closed`. Unfinished items return to backlog on close.
 - **Dependency** (a state of the *relation*, not the item): `satisfied` / `blocking`. A `blocking` dependency is what makes a Work Item "blocked."
 
@@ -81,11 +81,11 @@ Named, legitimate transitions — each with an actor and a guard.
 
 | Action | Actor | From → To | Guard |
 |---|---|---|---|
-| Refine | PO / team | backlog → ready | references a Product Concept; acceptance criteria defined (Decision Ready) |
+| Refine | PO / team | backlog → ready | references a Product Entity; acceptance criteria defined (Decision Ready) |
 | Start | developer | ready → in progress | no `blocking` dependency; capacity remains |
 | Submit for Review | developer | in progress → in review | implementation complete |
 | Approve Review | reviewer | in review → qa | review approved |
-| Verify (QA Pass) | QA | qa → done (verified) | behaves as its acceptance criteria / Product Concept say |
+| Verify (QA Pass) | QA | qa → done (verified) | behaves as its acceptance criteria / Product Entity say |
 | Report Bug | anyone | done → diverged | observed divergence from the model |
 | Fix Divergence | developer | diverged → in progress | — |
 | Close Sprint | lead | active → closed | Sprint timebox elapsed |
@@ -103,9 +103,9 @@ Named, legitimate transitions — each with an actor and a guard.
 What must hold in every valid state. Inherited from the project ontology (Snapshot 013), specialized to delivery.
 
 - **Done means verified, never claimed.** No Story is done until QA confirms it matches its acceptance criteria. (The qa-pass discipline, as law.)
-- **Every done Work Item realizes a Product Concept** (the coverage invariant). Realized work with no concept is scope creep or a missing concept — there is no third case.
+- **Every done Work Item realizes a Product Entity** (the coverage invariant). Realized work with no entity is scope creep or a missing entity — there is no third case.
 - **Consumed capacity never exceeds Sprint capacity.** Over-commit is not "behind"; it is a broken Sprint.
-- **A Bug is a divergence, typed by the building block it violates** — broken Rule / impossible State / unguarded Action / missing Concept or Relationship. (From Snapshot 011.) The type tells you whether to fix the code or the model.
+- **A Bug is a divergence, typed by the building block it violates** — broken Rule / impossible State / unguarded Action / missing Entity or Relationship. (From Snapshot 011.) The type tells you whether to fix the code or the model.
 - **Understanding only increases.** A reopened or failed item is a gain — you learned the acceptance criteria were wrong. Never a step backward.
 
 ---
@@ -116,7 +116,7 @@ What must hold in every valid state. Inherited from the project ontology (Snapsh
 graph TD
     Agent["Agent"]
     WI["Work Item<br/>(Story · Bug)"]
-    PC["Product Concept"]
+    PC["Product Entity"]
     Cap["Capacity"]
     Sprint["Sprint"]
     Rel["Release"]
@@ -130,7 +130,7 @@ graph TD
     Sprint -->|bounds| Cap
     Epic -.->|realizes-beyond| PC
 
-    subgraph grouping [decomposes — a relation, not a concept]
+    subgraph grouping [decomposes — a relation, not an entity]
         Milestone --> Epic --> Feature --> WI --> Subtask
     end
 ```

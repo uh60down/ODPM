@@ -4,7 +4,7 @@ A complete ODPM worked example on a small, realistic consumer product — a voic
 
 ## Available
 
-- [Voice Journal Ontology + Learning Log](ontology.md) — the drafted domain ontology (Concepts, Relationships, Actions, States, Rules), followed by the five gaps that surfaced when it was actually built, each becoming a named rule.
+- [Voice Journal Ontology + Learning Log](ontology.md) — the drafted domain ontology (Entities, Relationships, Actions, States, Rules), followed by the five gaps that surfaced when it was actually built, each becoming a named rule.
 
 ## Why it's worth reading
 

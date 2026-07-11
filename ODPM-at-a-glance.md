@@ -20,11 +20,11 @@ ODPM began as Ontology-Driven Project Management. As the framework matured beyon
 
 What ontology is, and how teams model the world:
 
-- Concepts
+- Entities
 - Relationships
-- Rules
-- States
 - Actions
+- States
+- Rules
 
 ### Lightweight Execution Layer
 
@@ -78,7 +78,7 @@ Feedback refines it.
 
 An ontology is built from five fundamental elements.
 
-### Concepts
+### Entities
 
 The things that exist.
 
@@ -97,7 +97,7 @@ Ask:
 
 ### Relationships
 
-How concepts are connected.
+How entities are connected.
 
 Examples:
 
@@ -108,6 +108,40 @@ Examples:
 Ask:
 
 > How are they related?
+
+---
+
+### Actions
+
+The named, legitimate ways an entity moves from one state to another.
+
+Examples:
+
+- Install (Downloading → Installing)
+- Rollback (Install Failed → Rollback Required)
+- Offer Update (Not Eligible → Available)
+
+Ask:
+
+> What is this transition called?
+>
+> Who is allowed to trigger it?
+
+---
+
+### States
+
+The current reality of an entity.
+
+Examples:
+
+Available → Downloading → Installing → Completed
+
+Ask:
+
+> What condition can they be in?
+>
+> What is possible next?
 
 ---
 
@@ -122,41 +156,7 @@ Examples:
 
 Ask:
 
-> What must always be true?
-
----
-
-### States
-
-The current reality of a concept.
-
-Examples:
-
-Available → Downloading → Installing → Completed
-
-Ask:
-
-> What is true right now?
->
-> What is possible next?
-
----
-
-### Actions
-
-The named, legitimate ways a concept moves from one state to another.
-
-Examples:
-
-- Install (Downloading → Installing)
-- Rollback (Install Failed → Rollback Required)
-- Offer Update (Not Eligible → Available)
-
-Ask:
-
-> What is this transition called?
->
-> Who is allowed to trigger it?
+> What must always hold?
 
 ---
 
@@ -180,7 +180,7 @@ The team's shared model of the world.
 
 ---
 
-**Concept**
+**Entity**
 
 Something that exists in the world the team is building.
 
@@ -188,7 +188,7 @@ Something that exists in the world the team is building.
 
 **Action**
 
-A named, legitimate way to move a concept from one state to another.
+A named, legitimate way to move an entity from one state to another.
 
 ---
 

@@ -31,4 +31,4 @@ ODPM treats a boundary as evidence discovered through understanding, not a desig
 
 ---
 
-See also: [Ontology Evolution](../snapshots/012-ontology-evolution.md) · [One Concept, Not Two](one-concept-not-two.md)
+See also: [Ontology Evolution](../snapshots/012-ontology-evolution.md) · [One Entity, Not Two](one-entity-not-two.md)

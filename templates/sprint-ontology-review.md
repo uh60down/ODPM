@@ -13,8 +13,8 @@ Copy this file per sprint. Keep it short.
 
 A story is Decision Ready when it references the shared ontology.
 
-- [ ] Each story references established Concepts, Relationships, Rules, States, and Actions — not undefined ones.
-- [ ] Stories that introduce an undefined concept are labelled `open-question` and have a Chase Understanding session scheduled.
+- [ ] Each story references established Entities, Relationships, Actions, States, and Rules — not undefined ones.
+- [ ] Stories that introduce an undefined entity are labelled `open-question` and have a Chase Understanding session scheduled.
 
 ## Sprint Planning
 

@@ -8,7 +8,7 @@ ODPM began as Ontology-Driven Project Management. As the framework matured beyon
 
 ODPM has two layers:
 
-1. **Base Ontology Layer** — what ontology is, and how teams model the world through Concepts, Relationships, Rules, States, and Actions.
+1. **Base Ontology Layer** — what ontology is, and how teams model the world through Entities, Relationships, Actions, States, and Rules.
 2. **Lightweight Execution Layer** — how teams use ontology in practice: source artifact → ontology → open questions → Decision Readiness → execution → feedback.
 
 ## Structure
@@ -37,4 +37,4 @@ New to ODPM? Read these in order:
 5. [Maturity Model](maturity-model.md) — the Level 0–5 path from implicit to platformed.
 6. [Worked Example: Send Money](examples/banking/send-money-p2p.md) — the method run end to end on one feature.
 
-The [snapshots](snapshots/) trace how the thinking evolved, from software origins (#000–#004) through project and change management (#005), the platform layer (#006), framework-agnostic positioning (#007), the Action building block (#008), the tool-vs-process distinction (#009), ontology design principles borrowed from software engineering (#010), tracking execution against the ontology — progress as coverage, bugs as divergence (#011), how ontology evolves — boundaries as evidence (#012), the project ontology that grounds the whole framework (#013), and ODPM as the Ontology-Driven Practice Model (#014).
+The [snapshots](snapshots/) trace how the thinking evolved, from software origins (#000–#004) through project and change management (#005), the platform layer (#006), framework-agnostic positioning (#007), the Action building block (#008), the tool-vs-process distinction (#009), ontology design principles borrowed from software engineering (#010), tracking execution against the ontology — progress as coverage, bugs as divergence (#011), how ontology evolves — boundaries as evidence (#012), the project ontology that grounds the whole framework (#013), ODPM as the Ontology-Driven Practice Model (#014), and Entity as the first building block (#015).

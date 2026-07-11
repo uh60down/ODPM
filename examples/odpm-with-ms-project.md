@@ -26,8 +26,8 @@ The living ontology belongs in SharePoint, not in MS Project.
 
 | SharePoint Page or Document | ODPM Role |
 |---|---|
-| Glossary page | Concept definitions — the shared vocabulary |
-| Relationship diagram | How concepts connect (Visio, draw.io, or embedded diagram) |
+| Glossary page | Entity definitions — the shared vocabulary |
+| Relationship diagram | How entities connect (Visio, draw.io, or embedded diagram) |
 | Project Charter page | Intent, Requirements, Assumptions, Constraints |
 | Assumptions Log | Unresolved ontology questions — Chase Understanding targets |
 | Decision Log | Snapshots of understanding at key decisions |
@@ -38,9 +38,9 @@ The living ontology belongs in SharePoint, not in MS Project.
 
 A minimal ontology space needs four pages:
 
-1. **Glossary** — one entry per concept: name, definition, example
-2. **Relationship Diagram** — the most important connections between concepts
-3. **Rules, States, and Actions** — what must be true; what conditions concepts can be in; what legitimately moves a concept between them
+1. **Glossary** — one entry per entity: name, definition, example
+2. **Relationship Diagram** — the most important connections between entities
+3. **Actions, States, and Rules** — what legitimately moves an entity; what conditions entities can be in; what must always hold
 4. **Assumptions Log** — open questions being chased, with status and owner
 
 Update these at each phase gate. The version history becomes the evolution of understanding.
@@ -54,7 +54,7 @@ MS Project tracks the work that delivers the ontology into reality.
 | MS Project Element | ODPM Role |
 |---|---|
 | Project Summary Task | Maps to the top-level ontology scope |
-| WBS phases | Map to ontology domains or concept clusters |
+| WBS phases | Map to ontology domains or entity clusters |
 | Tasks | Implementation steps within the shared model |
 | Milestones | Phase gates — Decision Readiness checkpoints |
 | Resource assignments | Execution ownership mapped to roles and responsibilities |
@@ -66,7 +66,7 @@ These are example labels. Adapt them to your organization's existing conventions
 
 | Label | Meaning |
 |---|---|
-| `open-question` | Concept or scope area not yet agreed on |
+| `open-question` | Entity or scope area not yet agreed on |
 | `ontology-update` | Work item requires ontology change before execution starts |
 | `decision-ready` | Shared model agreed, item is ready to execute |
 
@@ -78,7 +78,7 @@ These are example labels. Adapt them to your organization's existing conventions
 
 1. Receive the approved Project Charter.
 2. Create the ontology space in SharePoint.
-3. Extract the implicit ontology from the Charter: What concepts exist? What relationships? What rules? What states? What actions?
+3. Extract the implicit ontology from the Charter: What entities exist? What relationships? What actions? What states? What rules?
 4. Add unresolved assumptions to the Assumptions Log as open questions.
 
 ### During Planning
@@ -96,13 +96,13 @@ These are example labels. Adapt them to your organization's existing conventions
 
 ### During Monitoring and Controlling
 
-1. For every change request, ask first: does this redefine a concept, relationship, rule, state, or action?
+1. For every change request, ask first: does this redefine an entity, relationship, rule, state, or action?
 2. If yes — that is an ontology-level change. Evaluate it at that level before approving scope, schedule, or cost changes.
 3. Update the ontology in SharePoint when a change is approved. The version history records the snapshot.
 
 ### During Closing
 
-1. Conduct a Lessons Learned session structured around the ontology: What concepts were wrong or missing? What rules turned out not to hold? What states were we missing? What actions were missing or wrongly guarded?
+1. Conduct a Lessons Learned session structured around the ontology: What entities were wrong or missing? What rules turned out not to hold? What states were we missing? What actions were missing or wrongly guarded?
 2. Archive the final ontology alongside the project closure documents.
 3. The ontology becomes a starting point for similar future projects — brownfield onboarding rather than starting from zero.
 

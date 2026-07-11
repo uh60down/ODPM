@@ -37,7 +37,7 @@ Building the target-state ontology — and sharing it — before execution begin
 ## How to Use This
 
 1. Before designing the change, model the current state. What actually exists? What rules actually govern? (Not what the org chart says. What is real.)
-2. Model the target state with the same five building blocks: Concepts, Relationships, Rules, States, Actions.
+2. Model the target state with the same five building blocks: Entities, Relationships, Actions, States, Rules.
 3. Make the delta between the two models visible and discussable.
 4. Treat every point of confusion or resistance as a question about which model the person is holding.
 

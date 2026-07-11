@@ -2,7 +2,7 @@
 
 GitHub was designed to support collaborative software development.
 
-Surprisingly, many of its concepts also fit collaborative understanding-building.
+Surprisingly, many of its native structures also fit collaborative understanding-building.
 
 ODPM makes that explicit.
 

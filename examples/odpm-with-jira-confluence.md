@@ -26,8 +26,8 @@ The living ontology belongs in Confluence, not in Jira.
 
 | Confluence Page | ODPM Role |
 |---|---|
-| Glossary | Concept definitions — the shared vocabulary |
-| Relationship Map | Diagram showing how concepts connect |
+| Glossary | Entity definitions — the shared vocabulary |
+| Relationship Map | Diagram showing how entities connect |
 | PRD | Intent, Requirements, Assumptions, Constraints |
 | Decision Log | Snapshots of understanding at key decisions |
 | Meeting Notes | Chase Understanding conversations preserved as evidence |
@@ -36,9 +36,9 @@ The living ontology belongs in Confluence, not in Jira.
 
 A minimal ontology space needs three pages:
 
-1. **Glossary** — one entry per concept: name, definition, example
+1. **Glossary** — one entry per entity: name, definition, example
 2. **Relationship Map** — a Mermaid or draw.io diagram showing the most important connections
-3. **Rules, States, and Actions** — what must be true; what conditions concepts can be in; what legitimately moves a concept between them
+3. **Actions, States, and Rules** — what legitimately moves an entity; what conditions entities can be in; what must always hold
 
 Update these pages at the end of each sprint. The page history becomes the evolution of understanding.
 
@@ -48,8 +48,8 @@ Update these pages at the end of each sprint. The page history becomes the evolu
 
 | Jira Artifact | ODPM Role |
 |---|---|
-| Epic | Ontology domain or concept cluster |
-| Story | Work that references ontology concepts |
+| Epic | Ontology domain or entity cluster |
+| Story | Work that references ontology entities |
 | Bug | Reality diverging from the ontology |
 | Task | Implementation step within the shared model |
 | Sprint | A snapshot cycle — understanding and increment evolve together |
@@ -62,18 +62,18 @@ These are example labels. Adapt them to your organization's existing conventions
 
 | Label | Meaning |
 |---|---|
-| `open-question` | Concept not yet agreed on; needs Chase Understanding |
+| `open-question` | Entity not yet agreed on; needs Chase Understanding |
 | `chase` | Active conversation in progress |
 | `ontology-update` | Story requires an ontology change before development starts |
-| `decision-ready` | Concept agreed, story references shared ontology, ready to build |
+| `decision-ready` | Entity agreed, story references shared ontology, ready to build |
 
 ### Epics as Ontology Domains
 
-Each Epic covers a cluster of related concepts.
+Each Epic covers a cluster of related entities.
 
 For an OTA feature: one Epic for Campaign, one for Vehicle Eligibility, one for Update State.
 
-Stories within an Epic reference the concepts defined for that domain.
+Stories within an Epic reference the entities defined for that domain.
 
 A story that crosses Epic boundaries often signals an ontology relationship that has not been named yet.
 
@@ -85,13 +85,13 @@ A story that crosses Epic boundaries often signals an ontology relationship that
 
 1. Create a Confluence space for the ontology.
 2. Draft the glossary and relationship map with the team.
-3. Reach agreement on Concepts, Relationships, Rules, States, and Actions before opening Jira.
+3. Reach agreement on Entities, Relationships, Actions, States, and Rules before opening Jira.
 
 ### During Backlog Refinement
 
 1. Review each story for ontology references.
-2. If a story introduces an undefined concept, label it `open-question` and schedule a Chase Understanding session.
-3. Only label a story `decision-ready` when it references the shared ontology without introducing undefined concepts.
+2. If a story introduces an undefined entity, label it `open-question` and schedule a Chase Understanding session.
+3. Only label a story `decision-ready` when it references the shared ontology without introducing undefined entities.
 
 ### During Sprint Review
 
