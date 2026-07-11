@@ -188,15 +188,21 @@ A collection that displays existing VoiceRecords.
 
 ## Actions
 
-- Record Voice
-- Stop Recording
-- Save VoiceRecord
-- View VoiceRecordList
-- Select VoiceRecord
-- Play VoiceRecord
-- Stop Playback
-- Update Metadata
-- Delete VoiceRecord(s)
+An Action is a named transition with an **actor**, a **from → to** over the States, and a **guard** — the same structure the [banking example](../banking/send-money-p2p.md) uses.
+
+Filling that structure is itself revealing. Drafted from the stories, the table below is honest but incomplete — and its gaps *are* the [Learning Log](#the-learning-log--what-realizing-it-revealed): `Paused` appears in the States but in no row here (nothing produces or leaves it); Stop Recording and Save collapse to the same transition; and every guard is silent about what else is running.
+
+| Action | Actor | From → To | Guard |
+|---|---|---|---|
+| Record Voice | User | App: Idle → Recording | no active recording session (R8) |
+| Stop Recording | User | Recording → Saved | audio captured (R4) |
+| Save VoiceRecord | System | Recording → Saved | audio present (R4) |
+| View VoiceRecordList | User | any → list shown | — |
+| Select VoiceRecord | User | → Selection Mode | at least one record exists |
+| Play VoiceRecord | User | Saved → Playing | record is saved (R5) |
+| Stop Playback | User | Playing → Saved | — |
+| Update Metadata | User | Saved → Updating → Saved | — |
+| Delete VoiceRecord(s) | User | any → Deleted | — |
 
 ---
 
@@ -322,6 +328,21 @@ Each finding follows the ODPM loop: **observation → ontology impact → rule c
 - **Rule candidate (R14):** deleting the currently-playing VoiceRecord must stop playback before deletion.
 
 > Rules R10–R14 **precipitated out of realization** — each traceable to a specific runtime collision. That is the ODPM loop's output signature: `decision → finding → rule candidate → ontology amendment`.
+
+### The Actions, amended
+
+The findings complete the Action table the drafted version left ambiguous. Note the axis split from F1 (**App Mode** vs **Playback State**), the dropped `Paused` (F2), and the guards and side-effects that only building forced out:
+
+| Action | Actor | From → To | Guard / side-effect |
+|---|---|---|---|
+| Record Voice | User | App: Idle → Recording | R8 single session; **first stops active playback** (R13/F4) |
+| Stop Recording | User | Recording → Saved | **always creates and saves** a VoiceRecord; no Discard (R12/F3) |
+| Play | User | Playback: Stopped → Playing | record is saved (R5); **runs alongside** the App mode (R10/F1) |
+| Stop Playback | User | Playback: Playing → Stopped | — |
+| Update Metadata | User | Saved → Updating → Saved | — |
+| Delete VoiceRecord(s) | User | any → Deleted | **if the target is playing, stop playback first** (R14/F5) |
+
+Two actions merged (Stop Recording *is* Save), a `Stopped` playback state appeared, `Paused` left, and three guards/side-effects that no story or drafted table contained are now explicit. That is the ontology, completed by being built.
 
 ### The Gap-Pattern Checklist (earned here)
 
