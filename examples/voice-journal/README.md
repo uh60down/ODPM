@@ -8,4 +8,4 @@ A complete ODPM worked example on a small, realistic consumer product — a voic
 
 ## Why it's worth reading
 
-Most examples show a clean ontology. This one shows the clean ontology *and what realizing it revealed* — five dynamic relationships (concurrency, exclusion, causation, side-effects, state/behavior coherence) that were invisible on paper and only appeared when the system ran. It's the clearest field evidence that, in ODPM, the build is a **discovery instrument for the ontology**, not just an implementation of it — and it produces an earned hardening of the method: the gap-pattern checklist.
+Most examples show a clean ontology. This one shows the clean ontology *and what realizing it revealed* — five dynamic relationships (concurrency, exclusion, causation, side-effects, state/action coherence) that were invisible on paper and only appeared when the system ran. It's the clearest field evidence that, in ODPM, the build is a **discovery instrument for the ontology**, not just an implementation of it — and it produces an earned hardening of the method: the gap-pattern checklist.

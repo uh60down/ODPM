@@ -107,7 +107,7 @@ Mechanically:
 
 Because a story is told from *one* vantage — "As a **user**" — it hides two things the ontology must recover, and this is where the transformation gives back more than it took.
 
-**Missing actors.** The stories name only the User. But most rules and behaviors are performed by actors no story mentions:
+**Missing actors.** The stories name only the User. But most rules and actions are carried out by actors no story mentions:
 
 - the **System** — assigns the default display name (R3), saves on stop (F3), enforces the single session (R8), stops playback when recording begins (F4);
 - the **Clock** — stamps `createdAt` / `updatedAt`;
@@ -291,7 +291,7 @@ On paper, this looked complete. Then it was built.
 
 ## The Learning Log — What Realizing It Revealed
 
-Building the MVP surfaced five gaps. **Every one was a relationship, and every one was a _dynamic_ relationship** — concurrency, exclusion, causation, side-effects, state/behavior coherence — the kind invisible by inspection that only appears when the system runs. The Concepts were right; the *verbs between the verbs* were missing.
+Building the MVP surfaced five gaps. **Every one was a relationship, and every one was a _dynamic_ relationship** — concurrency, exclusion, causation, side-effects, state/action coherence — the kind invisible by inspection that only appears when the system runs. The Concepts were right; the *verbs between the verbs* were missing.
 
 Each finding follows the ODPM loop: **observation → ontology impact → rule candidate**.
 
@@ -349,10 +349,10 @@ Two actions merged (Stop Recording *is* Save), a `Stopped` playback state appear
 The five findings share a shape, and it generalizes into a check to run *after* drafting an ontology and *before* building. All five would have been caught up front:
 
 1. **Every state:** exclusive or concurrent with the others? *(F1)*
-2. **Every state:** does a behavior both produce *and* consume it? *(F2 — dangling states)*
-3. **Every pair of behaviors:** does one imply the other? *(F3)*
+2. **Every state:** does an Action both produce *and* consume it? *(F2 — dangling states)*
+3. **Every pair of Actions:** does one imply the other? *(F3)*
 4. **Every pair of subsystems / state machines:** what's their priority or exclusion rule when both are active? *(F4)*
-5. **Every behavior:** what states does it disturb *besides* its target? *(F5 — side-effects)*
+5. **Every Action:** what states does it disturb *besides* its target? *(F5 — side-effects)*
 
 The five questions ODPM starts with collect *static* relationships cleanly but systematically miss *dynamic* ones. This checklist is the earned hardening — a better question set, derived from evidence, not theory.
 
@@ -370,7 +370,7 @@ The ontology remains stable even as the product evolves. New capabilities are in
 - VoiceRecord — produces → **Insight**
 - VoiceRecord — indexed by → **SearchIndex**
 
-The product grows without changing the meaning of its core concepts. `Paused` (deferred in F2) re-enters here as an explicit behavior when the time comes.
+The product grows without changing the meaning of its core concepts. `Paused` (deferred in F2) re-enters here as an explicit action when the time comes.
 
 ---
 
