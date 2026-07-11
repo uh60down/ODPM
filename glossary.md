@@ -58,7 +58,7 @@ An item is done only when it has been confirmed to match the ontology, acceptanc
 
 The relationship between a delivery unit and the thing or understanding it brings into verified reality.
 
-Example: a Story realizes a Product Concept.
+Example: a Story realizes a Product Thing.
 
 ## Realizes-beyond
 
