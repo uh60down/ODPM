@@ -2,7 +2,7 @@
 
 A guide for the most common ODPM step-2 crossing. Most teams already have user stories; turning them into an ontology is where the framework earns its keep.
 
-> **A user story tells you the intention and the concept. The ontology tells you the world.**
+> **A user story tells you the intention and the entity. The ontology tells you the world.**
 
 A worked demonstration lives in the Voice Journal example (`examples/voice-journal/`).
 
@@ -16,13 +16,13 @@ A story has a precise shape, and each clause maps to a building block:
 
 | Clause | Becomes |
 |---|---|
-| **role** — "As a user" | a **Concept** (an actor) |
-| **capability** — the verbs and their nouns | **Actions** + the **Concepts** they touch |
+| **role** — "As a user" | an **Entity** (an actor) |
+| **capability** — the verbs and their nouns | **Actions** + the **Entities** they touch |
 | **so that** — the intention | a **Rule** or a priority — *or nothing* (watch this one) |
 
 Three quick passes over your stack of stories:
 
-- **Nouns → Concepts.** Every real thing a story mentions.
+- **Nouns → Entities.** Every real thing a story mentions.
 - **Verbs → Actions.** Record, browse, edit, delete…
 - **Qualifiers → Rules and States.** "immediately", "only when", "must not" → Rules; lifecycle words → States.
 
@@ -39,7 +39,7 @@ A story is told from one vantage and states one capability. Most of the ontology
 
 - **Watch the "so that."** Is each story's intention promoted into a rule, or has it silently dropped? Intention lost here is the [intention gap](../snapshots/011-tracking-against-the-ontology.md).
 - **Name the missing actors.** Does every "the app must…" rule have an actor against it?
-- **Draw the missing links.** Is every pair of concepts that interacts actually connected?
+- **Draw the missing links.** Is every pair of entities that interacts actually connected?
 
 ## 4. Mark the gaps
 

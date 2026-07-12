@@ -19,9 +19,9 @@ A PRD for OTA usually contains:
 
 The ontology extracts the shared model already implicit in those points.
 
-## Concepts
+## Entities
 
-| Concept | Meaning |
+| Entity | Meaning |
 | --- | --- |
 | Vehicle | The physical product that receives software updates. |
 | Software Version | A specific released version of vehicle software. |

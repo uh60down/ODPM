@@ -65,11 +65,13 @@ The Base Ontology Layer answers:
 
 It introduces the five building blocks:
 
-- Concepts
+- Entities
 - Relationships
-- Rules
-- States
 - Actions
+- States
+- Rules
+
+Earlier snapshots used **Concept** for the first building block. Current ODPM uses **Entity**; see [Entity as the First Building Block](015-entity-as-first-building-block.md).
 
 This layer is domain-independent. It can be used for product work, project delivery, change, operations, AI workflows, organizational alignment, or any other domain where a team must act from a shared model of reality.
 

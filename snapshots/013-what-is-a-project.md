@@ -129,11 +129,11 @@ If a concept cannot be derived, that is information — either the concept is ad
 
 ### Reconciliation with the five building blocks
 
-The four-part form is not a second vocabulary — that would violate [One Concept, Not Two](../principles/one-concept-not-two.md). It is the same ontology under a formal-systems lens:
+The four-part form is not a second vocabulary — that would violate [One Entity, Not Two](../principles/one-entity-not-two.md). It is the same ontology under a formal-systems lens:
 
 | Four-part (this snapshot) | ODPM building block |
 |---|---|
-| Entity | Concept |
+| Entity | Entity |
 | Relation | Relationship |
 | Invariant | Rule |
 | State | State |
@@ -141,7 +141,7 @@ The four-part form is not a second vocabulary — that would violate [One Concep
 
 Same blocks; the formal-systems framing just foregrounds the invariants and the agent that ordinary usage leaves implicit.
 
-Honesty check: the *top-level* four map cleanly, but Layer 1 does introduce net-new sub-terms — *understanding-unit*, *Agent*, *Constraint*, *Artifact*, *realizes-beyond*. These are provisional. Each should either earn its place by proving load-bearing or be pruned; a foundation that quietly grows a second vocabulary would be failing its own "One Concept, Not Two" test.
+Honesty check: the *top-level* four map cleanly, but Layer 1 does introduce net-new sub-terms — *understanding-unit*, *Agent*, *Constraint*, *Artifact*, *realizes-beyond*. These are provisional. Each should either earn its place by proving load-bearing or be pruned; a foundation that quietly grows a second vocabulary would be failing its own "One Entity, Not Two" test.
 
 ---
 
@@ -193,4 +193,4 @@ It is the parent of the boundary and evidence questions, not a sibling. Filed as
 
 ---
 
-See also: [Methodologies Are Strategies Over Ontology](../principles/methodologies-as-strategies-over-ontology.md) · [Done Means Verified](../principles/done-means-verified.md) · [Tracking Against the Ontology](011-tracking-against-the-ontology.md) · [Ontology Evolution](012-ontology-evolution.md) · [Ontology Design Principles](010-ontology-design-principles.md) · [Chase Understanding](../principles/chase-understanding.md) · [One Concept, Not Two](../principles/one-concept-not-two.md) · [Open Research Questions](../questions.md)
+See also: [Methodologies Are Strategies Over Ontology](../principles/methodologies-as-strategies-over-ontology.md) · [Done Means Verified](../principles/done-means-verified.md) · [Tracking Against the Ontology](011-tracking-against-the-ontology.md) · [Ontology Evolution](012-ontology-evolution.md) · [Ontology Design Principles](010-ontology-design-principles.md) · [Chase Understanding](../principles/chase-understanding.md) · [One Entity, Not Two](../principles/one-entity-not-two.md) · [Open Research Questions](../questions.md)

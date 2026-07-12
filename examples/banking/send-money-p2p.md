@@ -30,9 +30,9 @@ That is enough intent to extract a model — and, as we'll see, enough ambiguity
 
 Reading the PRD through the five building blocks (see the [Ontology Canvas](../../templates/ontology-canvas.md)).
 
-### Concepts
+### Entities
 
-| Concept | Meaning |
+| Entity | Meaning |
 |---|---|
 | Sender | A verified customer initiating a transfer |
 | Recipient | A verified customer receiving a transfer |
@@ -137,7 +137,7 @@ Q4 produced no ontology change — it confirmed the existing ledger already supp
 
 Apply the [Decision Readiness Checklist](../../templates/decision-readiness-checklist.md). The decision: *ship Send Money v1.*
 
-- [x] **Point to the model.** The ontology above is the model — concepts, relationships, rules, states, and actions are all named.
+- [x] **Point to the model.** The ontology above is the model — entities, relationships, actions, states, and rules are all named.
 - [x] **Show what is uncertain.** One open question remains: Q3 (new-account limit).
 - [x] **Show who owns each uncertainty.** Q3 has the PM as owner, marked accepted-risk with a rationale.
 - [x] **Explain why the unknowns no longer block.** v1 uses a single limit deliberately; the ledger-hold question (Q4) is confirmed resolved; reversal (Q1) is fully specified.

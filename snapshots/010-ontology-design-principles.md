@@ -42,7 +42,7 @@ This is already ODPM's core. Concepts are the things that exist in the world; "t
 
 Refactor repeated workflows into one canonical representation.
 
-ODPM already holds the principle: [One Concept, Not Two](../principles/one-concept-not-two.md). What ODPM lacks is the *heuristic* — the Rule of Three: wait until an idea repeats a third time, then canonicalize it. That is a concrete tool for deciding *when* to promote something into the shared ontology, rather than modeling everything up front.
+ODPM already holds the principle: [One Entity, Not Two](../principles/one-entity-not-two.md). What ODPM lacks is the *heuristic* — the Rule of Three: wait until an idea repeats a third time, then canonicalize it. That is a concrete tool for deciding *when* to promote something into the shared ontology, rather than modeling everything up front.
 
 ### Open for Extension, Closed for Modification — transfers, with care
 
@@ -76,4 +76,4 @@ The test is the usual one: not whether the idea is elegant, but whether naming i
 
 ---
 
-See also: [Ontology as a Platform Layer](006-ontology-as-platform-layer.md) · [Actions as a Missing Building Block](008-actions-as-a-missing-building-block.md) · [One Concept, Not Two](../principles/one-concept-not-two.md)
+See also: [Ontology as a Platform Layer](006-ontology-as-platform-layer.md) · [Actions as a Missing Building Block](008-actions-as-a-missing-building-block.md) · [One Entity, Not Two](../principles/one-entity-not-two.md)

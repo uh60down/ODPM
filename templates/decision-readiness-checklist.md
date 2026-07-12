@@ -9,7 +9,7 @@ Decision Readiness is observable, not a feeling. Use this checklist for a specif
 
 A team is Decision Ready when it can do all four of these out loud:
 
-- [ ] **Point to the model.** We can name the concepts, relationships, rules, states, and actions this decision touches.
+- [ ] **Point to the model.** We can name the entities, relationships, actions, states, and rules this decision touches.
 - [ ] **Show what is uncertain.** The open questions that remain are written down, not carried in someone's head.
 - [ ] **Show who owns each uncertainty.** Every remaining open question has a name against it in the [Open Question Log](open-question-log.md).
 - [ ] **Explain why the unknowns no longer block.** We can say why the remaining questions do not prevent this specific decision.

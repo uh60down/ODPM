@@ -10,11 +10,11 @@ It is done when reality has been checked against the understanding the work was 
 
 Verification asks:
 
-- Does the Concept exist as intended?
+- Does the Entity exist as intended?
 - Does the Relationship actually hold?
-- Does the Rule resist violation?
-- Are the States reachable and constrained as agreed?
 - Do the Actions work with the right actor and guard?
+- Are the States reachable and constrained as agreed?
+- Does the Rule resist violation?
 
 The form of evidence can vary: a test, demo, review, production observation, or explicit human check.
 

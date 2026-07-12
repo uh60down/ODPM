@@ -14,21 +14,21 @@ Copy this file, model both states, and make the delta visible. The delta is the 
 
 What exists today — not what the org chart says, what is real.
 
-- **Concepts:** _()_
+- **Entities:** _()_
 - **Relationships:** _()_
-- **Rules:** _()_
-- **States:** _()_
 - **Actions:** _()_
+- **States:** _()_
+- **Rules:** _()_
 
 ## Target-State Ontology
 
 What will exist after the change.
 
-- **Concepts:** _(new / changed / retired)_
+- **Entities:** _(new / changed / retired)_
 - **Relationships:** _(what connects differently)_
-- **Rules:** _(what new rules apply)_
-- **States:** _(what new states matter)_
 - **Actions:** _(what new transitions become legitimate; which old ones stop)_
+- **States:** _(what new states matter)_
+- **Rules:** _(what new rules apply)_
 
 ## The Delta
 

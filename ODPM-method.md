@@ -10,7 +10,7 @@ The method is deliberately small. It is meant to be picked up on a real piece of
 
 ODPM has a **Base Ontology Layer** and a **Lightweight Execution Layer**.
 
-The Base Ontology Layer names the world: Concepts, Relationships, Rules, States, and Actions.
+The Base Ontology Layer names the world: Entities, Relationships, Actions, States, and Rules.
 
 The Lightweight Execution Layer uses that ontology: source artifact → ontology → open questions → Decision Readiness → execution → feedback.
 
@@ -43,13 +43,13 @@ ODPM does not ask for a new artifact first. It reads the one you already have.
 
 Read the artifact for the five building blocks:
 
-- **Concepts** — the things that exist.
+- **Entities** — the things that exist.
 - **Relationships** — how they connect.
-- **Rules** — what must be true.
-- **States** — the conditions things can be in.
 - **Actions** — the named, legitimate ways things move between states.
+- **States** — the conditions things can be in.
+- **Rules** — what must always hold.
 
-The output is a lightweight model, not a finished document: a glossary, a relationship sketch, and a list of rules, states, and actions.
+The output is a lightweight model, not a finished document: a glossary, a relationship sketch, and a list of actions, states, and rules.
 
 ### 3. Mark open questions
 
@@ -109,7 +109,7 @@ The mechanism already exists in this repository: see [GitHub as an ODPM Tool](pr
 
 Decision Readiness is observable, not a feeling. A team is Decision Ready for a given decision when it can do four things out loud:
 
-1. **Point to the model** it is executing from — the concepts, relationships, rules, states, and actions in scope.
+1. **Point to the model** it is executing from — the entities, relationships, actions, states, and rules in scope.
 2. **Show what is still uncertain** — the open questions that remain.
 3. **Show who owns each uncertainty** — every remaining open question has a name against it.
 4. **Explain why the remaining unknowns no longer block** the next responsible decision.

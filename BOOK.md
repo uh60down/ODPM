@@ -72,11 +72,11 @@ Ontology is simply the team's shared model of the world.
 
 In ODPM, a lightweight ontology has five building blocks:
 
-- Concepts: the things that exist in the world.
+- Entities: the things that exist in the world.
 - Relationships: how those things connect.
-- Rules: what must be true.
+- Actions: the named, legitimate ways an entity moves from one state to another.
 - States: the meaningful conditions those things can be in.
-- Actions: the named, legitimate ways a concept moves from one state to another.
+- Rules: what must always hold.
 
 ---
 
@@ -148,7 +148,7 @@ But ODPM does not need a heavy modeling tool.
 
 The practical starting point is a glossary plus a lightweight relationship diagram.
 
-The glossary defines the concepts.
+The glossary defines the entities.
 
 The diagram shows the most important relationships.
 
@@ -224,11 +224,11 @@ User stories describe work.
 
 Ontology describes the world.
 
-A story tells you the intention and the concept. The ontology tells you the world.
+A story tells you the intention and the entity. The ontology tells you the world.
 
 A story is the seed — one actor, one want, one central thing. The ontology is the world that seed needs in order to be true.
 
-Most of a story is what it does not say. It states one capability and silently assumes the rest: the concepts it touches, the states they move through, the rules that must hold, how they connect, what happens when two capabilities collide.
+Most of a story is what it does not say. It states one capability and silently assumes the rest: the entities it touches, the states they move through, the rules that must hold, how they connect, what happens when two capabilities collide.
 
 Turning a story into an ontology is not relabeling. It is excavating the world in which the story makes sense.
 
@@ -400,7 +400,7 @@ But helping people discover reality together.
 
 > User stories describe work. Ontology describes the world.
 
-> A user story tells you the intention and the concept. The ontology tells you the world.
+> A user story tells you the intention and the entity. The ontology tells you the world.
 
 > The story is the seed. The ontology is the world.
 

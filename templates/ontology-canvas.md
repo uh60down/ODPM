@@ -10,42 +10,42 @@ Copy this file, fill each section, and keep it short. The goal is a shared model
 
 ---
 
-## Concepts
+## Entities
 
 The things that exist in this world.
 
-| Concept | Meaning |
+| Entity | Meaning |
 |---|---|
 | | |
 | | |
 
 ## Relationships
 
-How the concepts connect.
+How the entities connect.
 
 - _(A owns B)_
 - _(B receives C)_
 
-## Rules
-
-What must always be true. Constraints, independent of any single action.
-
-- _()_
-- _()_
-
-## States
-
-The meaningful conditions a concept can be in.
-
-- _(Concept: state → state → state)_
-
 ## Actions
 
-The named, legitimate ways a concept moves from one state to another.
+The named, legitimate ways an entity moves from one state to another.
 
 | Action | Actor | From → To | Guard (what must be true first) |
 |---|---|---|---|
 | | | | |
+
+## States
+
+The meaningful conditions an entity can be in.
+
+- _(Entity: state → state → state)_
+
+## Rules
+
+What must always hold. Constraints, independent of any single action.
+
+- _()_
+- _()_
 
 ---
 
@@ -62,10 +62,8 @@ Anything unclear, disputed, missing, or assumed. Move each of these into the [Op
 
 A small slice, using the software-update domain from the [glossary](../glossary.md), to show the shape:
 
-- **Concepts:** Vehicle, Software Update, Campaign.
+- **Entities:** Vehicle, Software Update, Campaign.
 - **Relationships:** a Campaign targets Vehicles; a Vehicle receives a Software Update.
-- **Rules:** an update cannot install while a vehicle is moving.
-- **States:** Software Update — available → downloading → install scheduled → installed → install failed.
 - **Actions:**
 
 | Action | Actor | From → To | Guard |
@@ -73,6 +71,8 @@ A small slice, using the software-update domain from the [glossary](../glossary.
 | Install | Vehicle owner | install scheduled → installed | vehicle stationary; battery sufficient |
 | Roll back | System | install failed → available | update left the vehicle unsafe |
 
+- **States:** Software Update — available → downloading → install scheduled → installed → install failed.
+- **Rules:** an update cannot install while a vehicle is moving.
 - **Open question:** who is authorized to trigger *Roll back* — the owner, or the system automatically? _(→ Open Question Log)_
 
 ---
